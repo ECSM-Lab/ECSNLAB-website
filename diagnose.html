@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ECS Lab — Diagnóstico del sitio</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 1.8rem; margin-bottom: 6px; }
+  .lede { color: #555; margin-bottom: 28px; }
+  .row { display: grid; grid-template-columns: 240px 1fr 110px; gap: 14px; padding: 10px 14px; border-bottom: 1px solid #e0e0e0; align-items: start; background: #fff; }
+  .row.ok      { border-left: 4px solid #1a8a1a; }
+  .row.fail    { border-left: 4px solid #c53030; background: #fff5f5; }
+  .row.parsing { border-left: 4px solid #b58105; background: #fffbe6; }
+  .row.loading { border-left: 4px solid #4a90e2; }
+  .label { font-family: ui-monospace, Menlo, monospace; font-weight: 500; color: #143C78; }
+  .status { text-align: right; font-weight: 600; font-size: 0.9rem; }
+  .ok      .status { color: #1a8a1a; }
+  .fail    .status { color: #c53030; }
+  .parsing .status { color: #b58105; }
+  .detail  { font-size: 0.85rem; color: #555; }
+  .detail code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; font-size: 0.92em; }
+  .summary { padding: 18px; background: #143C78; color: #fff; border-radius: 8px; margin-top: 28px; }
+  .summary.bad { background: #c53030; }
+  .summary.good { background: #0f6e56; }
+  pre { background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 4px; font-size: 0.82rem; overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<h1>Diagnóstico del sitio ECS Lab</h1>
+<p class="lede">
+  Esta página verifica que tu servidor local esté sirviendo todos los archivos
+  necesarios. Si algo falla, abajo verás exactamente qué.
+</p>
+
+<div id="env" class="row">
+  <span class="label">Entorno</span>
+  <span class="detail" id="env-detail">comprobando…</span>
+  <span class="status">…</span>
+</div>
+
+<h2 style="font-size:1.1rem;margin:28px 0 8px">Archivos JSON</h2>
+<div id="json-rows"></div>
+
+<h2 style="font-size:1.1rem;margin:28px 0 8px">Archivos BibTeX</h2>
+<div id="bib-rows"></div>
+
+<h2 style="font-size:1.1rem;margin:28px 0 8px">JavaScript</h2>
+<div id="js-rows"></div>
+
+<h2 style="font-size:1.1rem;margin:28px 0 8px">Assets</h2>
+<div id="asset-rows"></div>
+
+<div id="summary" class="summary">Ejecutando pruebas…</div>
+
+<h2 style="font-size:1.1rem;margin:32px 0 8px">¿Qué verifica esta página?</h2>
+<ul style="font-size:0.95rem;line-height:1.7">
+  <li>Que tu servidor sirve cada archivo con HTTP <code>200</code>.</li>
+  <li>Que los archivos JSON estén bien formados (parseables).</li>
+  <li>Que los scripts JS sean código válido.</li>
+  <li>Que los recursos (logo, imágenes) existan.</li>
+</ul>
+
+<p style="margin-top:24px"><a href="index.html">← Volver al sitio</a></p>
+
+<script>
+const FILES = {
+  json: [
+    { url: 'data/lab.json',            requiredKey: 'name' },
+    { url: 'data/team.json',           requiredKey: 'members' },
+    { url: 'data/projects.json',       requiredKey: 'projects' },
+    { url: 'data/research-areas.json', requiredKey: 'areas' },
+    { url: 'data/news.json',           requiredKey: 'items' },
+    { url: 'data/supervision.json',    requiredKey: 'phd' }
+  ],
+  bib: [
+    { url: 'publications.bib' },
+    { url: 'reports.bib' }
+  ],
+  js: [
+    { url: 'assets/js/main.js' },
+    { url: 'assets/js/bibtex.js' },
+    { url: 'assets/js/renderers.js' }
+  ],
+  asset: [
+    { url: 'assets/css/style.css' },
+    { url: 'assets/images/logo.svg' }
+  ]
+};
+
+const counts = { ok: 0, fail: 0 };
+
+function row(parent, url, status, detail, cls) {
+  const div = document.createElement('div');
+  div.className = 'row ' + cls;
+  div.innerHTML =
+    '<span class="label">' + url + '</span>' +
+    '<span class="detail">' + detail + '</span>' +
+    '<span class="status">' + status + '</span>';
+  parent.appendChild(div);
+}
+
+document.getElementById('env-detail').textContent =
+  'URL actual: ' + location.href + '  ·  ' +
+  'Path base: ' + location.pathname.replace(/[^/]+$/, '') + '  ·  ' +
+  'Protocolo: ' + location.protocol;
+document.getElementById('env').className = 'row ' + (location.protocol === 'http:' || location.protocol === 'https:' ? 'ok' : 'fail');
+document.querySelector('#env .status').textContent = location.protocol === 'http:' || location.protocol === 'https:' ? 'OK' : 'PROBLEMA';
+if (location.protocol === 'file:') {
+  document.querySelector('#env-detail').innerHTML += '<br/><strong style="color:#c53030">⚠ Estás abriendo con file://</strong>. Necesitas <code>python -m http.server 8000</code> y abrir <code>http://localhost:8000/diagnose.html</code>.';
+}
+
+async function checkJSON(url, requiredKey, parent) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) { row(parent, url, 'HTTP ' + r.status, 'El servidor no encuentra el archivo. Revisa que estés en la carpeta correcta al ejecutar el servidor.', 'fail'); counts.fail++; return; }
+    let data;
+    try { data = await r.json(); }
+    catch (e) { row(parent, url, 'JSON inválido', 'Error de parseo: ' + e.message, 'parsing'); counts.fail++; return; }
+    if (requiredKey && !(requiredKey in data)) { row(parent, url, 'Falta clave', 'Falta la clave <code>' + requiredKey + '</code>.', 'parsing'); counts.fail++; return; }
+    const summary = describeJSON(data);
+    row(parent, url, '200 OK', summary, 'ok');
+    counts.ok++;
+  } catch (e) {
+    row(parent, url, 'Fetch error', e.message, 'fail'); counts.fail++;
+  }
+}
+function describeJSON(d) {
+  if (Array.isArray(d.members))  return d.members.length  + ' miembros';
+  if (Array.isArray(d.projects)) return d.projects.length + ' proyectos';
+  if (Array.isArray(d.areas))    return d.areas.length    + ' áreas de investigación';
+  if (Array.isArray(d.items))    return d.items.length    + ' noticias';
+  if (Array.isArray(d.phd))      return (d.phd.length || 0) + ' PhD + ' + (d.master?.length || 0) + ' Master';
+  if (Array.isArray(d.stats))    return d.stats.length + ' estadísticas';
+  if (d.name)                    return 'lab: ' + d.name;
+  return 'archivo válido';
+}
+
+async function checkText(url, parent, kind) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) { row(parent, url, 'HTTP ' + r.status, 'El servidor no encuentra el archivo.', 'fail'); counts.fail++; return; }
+    const txt = await r.text();
+    let detail = (txt.length / 1024).toFixed(1) + ' KB';
+    if (kind === 'bib') {
+      const n = (txt.match(/@\w+\{/g) || []).length;
+      detail += ' · ' + n + ' entradas BibTeX';
+    } else if (kind === 'js') {
+      try { new Function(txt); detail += ' · sintaxis válida'; }
+      catch (e) { row(parent, url, 'Syntax error', e.message, 'fail'); counts.fail++; return; }
+    }
+    row(parent, url, '200 OK', detail, 'ok'); counts.ok++;
+  } catch (e) {
+    row(parent, url, 'Fetch error', e.message, 'fail'); counts.fail++;
+  }
+}
+
+(async () => {
+  const jsonRows  = document.getElementById('json-rows');
+  const bibRows   = document.getElementById('bib-rows');
+  const jsRows    = document.getElementById('js-rows');
+  const assetRows = document.getElementById('asset-rows');
+
+  for (const f of FILES.json)  await checkJSON(f.url, f.requiredKey, jsonRows);
+  for (const f of FILES.bib)   await checkText(f.url, bibRows, 'bib');
+  for (const f of FILES.js)    await checkText(f.url, jsRows, 'js');
+  for (const f of FILES.asset) await checkText(f.url, assetRows, 'asset');
+
+  const summary = document.getElementById('summary');
+  if (counts.fail === 0) {
+    summary.className = 'summary good';
+    summary.innerHTML =
+      '<strong>✓ Todos los archivos cargan correctamente.</strong><br/>' +
+      'Si la página principal sigue vacía, abre F12 → Console en <a href="index.html" style="color:#fff;text-decoration:underline">index.html</a> y comparte el primer error rojo que veas.';
+  } else {
+    summary.className = 'summary bad';
+    summary.innerHTML =
+      '<strong>✗ ' + counts.fail + ' archivo(s) fallaron al cargar.</strong><br/>' +
+      'Ese es el motivo por el que la página principal está vacía. Lo más probable: ' +
+      'el servidor no está corriendo en la carpeta correcta. ' +
+      'Verifica que ejecutaste <code style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px">cd C:\\Users\\Franc\\Desktop\\Felipe\\Lab\\Web_Lab\\site</code> ' +
+      'antes de <code style="background:rgba(255,255,255,0.2);padding:1px 6px;border-radius:3px">python -m http.server 8000</code>.';
+  }
+})();
+</script>
+
+</body>
+</html>

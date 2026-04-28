@@ -1,0 +1,119 @@
+{
+  "_comment_howto": "Suggested thesis topics, internships, and research opportunities for prospective students. Two arrays: 'phd' and 'master'. Each topic has: id (slug for URL), title, area, summary (1-2 sentences for the card), description (longer paragraph for the detail page), motivation (research problem), objectives (array), methods (array), profile (description of ideal student), outputs (expected outputs), supervisor, co_supervisor (optional), status ('open', 'taken', 'example'). The website automatically renders each topic as a clickable card linking to topic.html?id=<id>. Topics also appear on the supervisor's member.html profile under 'Opportunities & supervised topics'. Edit and commit to update.",
+
+  "phd": [
+    {
+      "id": "phd-resilience-justice",
+      "title": "Endogenous resilience and justice in long-term energy planning",
+      "area": "Energy & Climate Systems",
+      "summary": "Develop optimization frameworks that endogenously represent resilience to extreme events and distributional justice in capacity-expansion models.",
+      "description": "This thesis advances integrated decarbonization modeling by embedding resilience and justice metrics directly into long-term capacity-expansion optimization. The work links to the DECARB-R+J project and may include applications to Chilean and Latin-American pathways.",
+      "motivation": "Long-term energy planning models rarely account for resilience to extreme climate events or for the distributional impacts of policy choices. This thesis closes that gap.",
+      "objectives": [
+        "Formulate endogenous resilience constraints for long-term planning models.",
+        "Develop distributional-justice indicators tractable for optimization.",
+        "Apply the framework to Chile and benchmark against existing approaches."
+      ],
+      "methods": ["Stochastic & robust optimization", "Bilevel formulations", "Integrated Assessment Models"],
+      "profile": "Strong background in operations research or applied mathematics; interest in energy and climate policy.",
+      "outputs": "Three Q1 publications; open-source model release.",
+      "supervisor": "Felipe Feijoo",
+      "co_supervisor": "",
+      "status": "open"
+    },
+    {
+      "id": "phd-power-to-x",
+      "title": "Power-to-X integration in 100% renewable systems",
+      "area": "Power Systems & Energy Markets",
+      "summary": "Quantify the role of Power-to-X technologies as cross-sector flexibility resources in 100%-renewable power systems.",
+      "description": "Studies the system-level value of Power-to-X (hydrogen, e-fuels, e-chemicals) when used as flexibility for a 100% renewable power system, with attention to economic, technical, and policy dimensions.",
+      "motivation": "Decarbonizing the energy system requires linking electricity to other sectors. Power-to-X is the bridge — but its system value under different policy regimes is poorly understood.",
+      "objectives": [
+        "Develop high-resolution capacity-expansion models with Power-to-X.",
+        "Quantify the system value of P2X under alternative policy regimes.",
+        "Extend to multi-country cases in Latin America and Europe."
+      ],
+      "methods": ["Capacity-expansion modeling", "PyPSA / H2RES", "Stochastic programming"],
+      "profile": "Quantitative engineering or economics background; programming proficiency.",
+      "outputs": "Two-three Q1 publications; thesis defense.",
+      "supervisor": "Felipe Feijoo",
+      "co_supervisor": "Monica Castañeda",
+      "status": "open"
+    },
+    {
+      "id": "phd-test-flores",
+      "title": "[Test] Cross-border hydrogen trade modelling",
+      "area": "Energy & Climate Systems",
+      "summary": "Test entry showing Francisco Flores as supervisor on an opportunity. Demonstrates how opportunities link to a person's profile.",
+      "description": "Placeholder PhD topic created to validate that opportunities supervised by an alumnus / postdoc surface correctly on their profile page. Replace with real content.",
+      "motivation": "Validates that the opportunity-to-supervisor link works regardless of role (current postdoc, former postdoc, alumnus).",
+      "objectives": [
+        "Verify that supervision links from opportunities show up on member profiles.",
+        "Confirm the opportunity detail page renders supervisor + co-supervisor."
+      ],
+      "methods": ["Energy system models", "PyPSA", "GCAM"],
+      "profile": "Test fixture only.",
+      "outputs": "Test outputs only.",
+      "supervisor": "Francisco Flores",
+      "co_supervisor": "Felipe Feijoo",
+      "status": "example"
+    }
+  ],
+
+  "master": [
+    {
+      "id": "msc-ev-pv-incentives",
+      "title": "Coordinated EV + distributed PV incentives",
+      "area": "Power Systems & Energy Markets",
+      "summary": "Design and evaluate incentive schemes that coordinate residential adoption of electric vehicles and distributed PV.",
+      "description": "Combines household-level adoption modeling with grid-side analysis to design coordinated incentive packages for EV and PV uptake in Chilean households.",
+      "motivation": "Adoption of electric vehicles and distributed PV is highly correlated, but incentives are typically designed in isolation. Coordinated design unlocks system-level efficiency.",
+      "objectives": [
+        "Characterize household adoption patterns.",
+        "Design and simulate coordinated incentive schemes."
+      ],
+      "methods": ["Discrete-choice models", "Agent-based simulation", "Grid impact analysis"],
+      "profile": "Industrial engineering, economics, or applied math.",
+      "outputs": "Master's thesis; one publication.",
+      "supervisor": "Felipe Feijoo",
+      "co_supervisor": "",
+      "status": "taken"
+    },
+    {
+      "id": "msc-just-transition-indicators",
+      "title": "Quantitative indicators of just transition",
+      "area": "Energy Sustainability & Policy",
+      "summary": "Develop and apply quantitative indicators of procedural and distributional justice in decarbonization.",
+      "description": "Builds a workable set of indicators of just transition for Chilean decarbonization, drawing on the literature and on data from the Chilean electricity sector.",
+      "motivation": "Just-transition concepts are widely discussed but rarely measured. This thesis builds operational indicators that can feed back into policy and modelling.",
+      "objectives": [
+        "Review and operationalize justice indicators.",
+        "Apply them to Chilean transition scenarios."
+      ],
+      "methods": ["Indicator design", "Distributional analysis", "Scenario assessment"],
+      "profile": "Industrial engineering or social sciences.",
+      "outputs": "Master's thesis.",
+      "supervisor": "Felipe Feijoo",
+      "co_supervisor": "",
+      "status": "taken"
+    },
+    {
+      "id": "msc-carbon-removal",
+      "title": "Carbon-removal sequestration pathways for Chile",
+      "area": "Global Climate Modeling",
+      "summary": "Map and assess feasible carbon-removal pathways for Chile under net-zero and net-negative scenarios.",
+      "description": "Surveys candidate carbon-removal technologies and develops scenarios for their deployment in Chile, with attention to land, water, and energy constraints.",
+      "motivation": "Net-zero and net-negative pathways depend on carbon removal at scale. Chile's options are under-studied.",
+      "objectives": [
+        "Survey carbon-removal options.",
+        "Build scenario models for Chile."
+      ],
+      "methods": ["Integrated Assessment Models", "Scenario analysis"],
+      "profile": "Industrial or environmental engineering.",
+      "outputs": "Master's thesis.",
+      "supervisor": "Felipe Feijoo",
+      "co_supervisor": "",
+      "status": "example"
+    }
+  ]
+}

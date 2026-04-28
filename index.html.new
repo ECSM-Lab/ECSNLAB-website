@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+  Energy & Climate Systems Lab — Home
+  ----------------------------------------------------------
+  This is a static, GitHub-Pages-compatible website. To
+  update content, edit the JSON / BibTeX files in /data and
+  /publications.bib, /reports.bib. See README.md.
+
+  HEADER and FOOTER are inlined on every page (search for
+  "BEGIN SITE HEADER" / "BEGIN SITE FOOTER"). If you change
+  the nav, update every page or use sed:
+    sed -i 's|OLD|NEW|' *.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Energy &amp; Climate Systems Lab — PUCV, Chile</title>
+  <meta name="description" content="The Energy &amp; Climate Systems Lab at PUCV advances energy transitions, climate policy, and decarbonization pathways through rigorous mathematical modeling and policy analysis." />
+  <meta name="author" content="ECS Lab — PUCV" />
+
+  <meta property="og:title" content="Energy &amp; Climate Systems Lab — PUCV" />
+  <meta property="og:description" content="Energy systems modeling, climate policy, and decarbonization pathways. Director: Felipe Feijoo. Co-Director: Monica Castañeda." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/logo.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=20260427c" />
+</head>
+<body>
+
+<!-- ============== BEGIN SITE HEADER ============== -->
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="index.html">
+      <img class="brand-logo" src="assets/images/logo.svg" alt="" aria-hidden="true" />
+      <span class="brand-block">
+        <span class="brand-name">Energy &amp; Climate Systems Lab</span>
+        <span class="brand-sub">PUCV · Chile</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- ============== END SITE HEADER ============== -->
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-eyebrow">School of Industrial Engineering · PUCV</span>
+        <h1>
+          Energy &amp; Climate
+          <span class="lab-mark">Systems Lab</span>
+        </h1>
+        <p class="hero-lede">
+          A research laboratory advancing the global energy transition through
+          rigorous mathematical modeling, climate policy analysis, and
+          sustainable development frameworks for decision-making.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="research.html">Research areas</a>
+          <a class="btn" href="projects.html">Projects</a>
+          <a class="btn btn-ghost" href="publications.html">Publications</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-art-circle">
+          <img class="hero-art-logo" src="assets/images/logo.svg" alt="ECS Lab logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <div class="container" style="padding-top:0;padding-bottom:0">
+    <div class="stats" id="stats-strip"></div>
+  </div>
+
+  <!-- ===== MISSION + LEADERSHIP ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Our mission</p>
+        <h2 class="section-title">Modeling the energy transition</h2>
+        <p class="section-sub">
+          We generate scientific knowledge to accelerate the global energy
+          transition — integrating mathematical modeling, climate policy
+          analysis, and sustainable development frameworks to inform
+          real-world decisions.
+        </p>
+      </div>
+      <div id="leadership" class="leadership"></div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH AREAS ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">What we work on</p>
+        <h2 class="section-title">Research areas</h2>
+        <p class="section-sub">
+          Six interconnected lines of research, anchored in operations
+          research and applied to energy and climate systems.
+        </p>
+      </div>
+      <div id="home-research-areas" class="cards cols-3"></div>
+      <p style="margin-top:24px"><a class="readmore" href="research.html">All research areas</a></p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROJECTS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">In progress</p>
+        <h2 class="section-title">Active projects</h2>
+        <p class="section-sub">
+          A selection of currently funded research lines.
+        </p>
+      </div>
+      <div id="home-projects" class="cards"></div>
+      <p style="margin-top:24px"><a class="readmore" href="projects.html">All projects</a></p>
+    </div>
+  </section>
+
+  <!-- ===== SELECTED PUBLICATIONS ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Featured</p>
+        <h2 class="section-title">Selected publications</h2>
+        <p class="section-sub">
+          Curated highlights from the lab's bibliography.
+        </p>
+      </div>
+      <div id="selected-papers"></div>
+      <p style="margin-top:24px"><a class="readmore" href="publications.html">All publications</a></p>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Lab life</p>
+        <h2 class="section-title">News &amp; activities</h2>
+      </div>
+      <div id="home-news"></div>
+      <p style="margin-top:18px"><a class="readmore" href="news.html">All news</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============== BEGIN SITE FOOTER ============== -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/images/logo.svg" alt="" aria-hidden="true" />
+      <div>
+        <h3>Energy &amp; Climate Systems Lab</h3>
+        <p>School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV) — Valparaíso, Chile.</p>
+      </div>
+    </div>
+    <div>
+      <h3>Sections</h3>
+      <ul class="foot-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul class="foot-links">
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Institutional</h3>
+      <ul class="foot-links">
+        <li><a href="https://www.pucv.cl/" target="_blank" rel="noopener">PUCV</a></li>
+        <li><a href="http://eii.pucv.cl/" target="_blank" rel="noopener">School of Industrial Engineering</a></li>
+        <li><a href="https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year"></span> Energy &amp; Climate Systems Lab — PUCV</span>
+    <span>Static site · GitHub Pages</span>
+  </div>
+</footer>
+<!-- ============== END SITE FOOTER ============== -->
+
+<a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
+
+<script src="assets/js/main.js?v=20260427c"></script>
+<script src="assets/js/renderers.js?v=20260427c"></script>
+<script src="assets/js/bibtex.js?v=20260427c"></script>
+<script src="assets/js/renderers.js?v=20260427c"></script>
+<script>
+(function () {
+  if (typeof ECSRender === 'undefined') {
+    var html = '<p style="color:#c53030;padding:14px;border-left:3px solid #c53030;background:#fff5f5">' +
+      '<strong>renderers.js failed to load.</strong> Hard-refresh with Ctrl+Shift+R, or open ' +
+      '<a href="diagnose.html">diagnose.html</a>.</p>';
+    var ids = ['stats-strip','leadership','home-research-areas','home-projects','selected-papers','home-news'];
+    ids.forEach(function (id) { var el = document.getElementById(id); if (el) el.innerHTML = html; });
+    return;
+  }
+  try {
+    ECSRender.stats('#stats-strip');
+    ECSRender.leadership('#leadership');
+    ECSRender.researchAreas('#home-research-areas', 6);
+    ECSRender.projects('#home-projects', { featured: 3 });
+    ECSRender.selectedPapers('#selected-papers');
+    ECSRender.news('#home-news', 4);
+  } catch (e) {
+    console.error('[ECS home] render error:', e);
+    var el = document.getElementById('leadership');
+    if (el) el.innerHTML = '<p style="color:#c53030">Render error: ' + e.message + '</p>';
+  }
+})();
+</script>
+</body>
+</html>

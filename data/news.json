@@ -1,0 +1,46 @@
+{
+  "_comment_howto": "News, activities, conferences, workshops. Each item has: id (slug, optional), date (YYYY-MM-DD or year only), title, kind ('news', 'event', 'workshop', 'conference', 'award', 'media'), summary, link (optional). Items are sorted newest-first by 'date'. Edit and commit to update.",
+
+  "items": [
+    {
+      "id": "challenges-2026",
+      "date": "2026-01-15",
+      "kind": "news",
+      "title": "Lab Challenges 2026: RES-JUST workshop, APEC hydrogen, and Energy Planning Summer School",
+      "summary": "The lab launches three flagship initiatives for 2026: the 4th International Workshop on Resilient Energy Systems for a Just Transition (RES-JUST), the APEC project on local demand as an enabler of a low-carbon hydrogen economy, and a Summer School on Energy Planning of 100% Renewable Energy Systems.",
+      "link": ""
+    },
+    {
+      "id": "ipcc-ar7",
+      "date": "2025-09-01",
+      "kind": "news",
+      "title": "Felipe Feijoo named Lead Author for IPCC AR7, Working Group III",
+      "summary": "Lab Director Felipe Feijoo has been confirmed as Lead Author for the chapter on Energy Systems in the upcoming IPCC Seventh Assessment Report, Working Group III on Climate Mitigation.",
+      "link": ""
+    },
+    {
+      "id": "sdewes-la-2024",
+      "date": "2024-03-01",
+      "kind": "conference",
+      "title": "4th Latin American SDEWES Conference — Viña del Mar",
+      "summary": "The lab co-organized the 4th LA Conference on Sustainable Development of Energy, Water and Environment Systems, with 130 on-site participants from 62 institutions across 27 countries. The program included 130 oral presentations, 16 regular sessions, 3 plenary lectures, and a panel.",
+      "link": ""
+    },
+    {
+      "id": "apec-hydrogen-launch",
+      "date": "2025-04-01",
+      "kind": "event",
+      "title": "APEC project on hydrogen certification kicks off",
+      "summary": "The lab begins its APEC EWG 104-105 engagement, supporting the Ministry of Energy of Chile in mapping hydrogen-certification regimes across Asia-Pacific economies.",
+      "link": ""
+    },
+    {
+      "id": "fondecyt-decarb-r-j",
+      "date": "2026-03-01",
+      "kind": "award",
+      "title": "DECARB-R+J project awarded FONDECYT Regular funding",
+      "summary": "The DECARB-R+J project, on deep-decarbonization pathways with endogenous resilience and justice, has been awarded a 4-year FONDECYT Regular grant from ANID.",
+      "link": ""
+    }
+  ]
+}

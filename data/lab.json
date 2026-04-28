@@ -1,0 +1,36 @@
+{
+  "_comment": "Lab-wide metadata. Edit values, commit, push. Used by every page header/footer/home.",
+
+  "name": "Energy & Climate Systems Lab",
+  "short_name": "ECS Lab",
+  "tagline": "Advancing energy transitions, climate policy, and decarbonization pathways",
+  "institution": "School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV)",
+  "city": "Valparaíso, Chile",
+
+  "mission": "Generate rigorous scientific knowledge to accelerate the global energy transition, integrating advanced mathematical modeling, climate policy analysis, and sustainable development frameworks to inform real-world decision-making.",
+  "vision": "To become the leading research hub in the Southern Hemisphere for integrated energy–climate–economy modeling, empowering the next generation of engineers and policymakers to design evidence-based, equitable decarbonization pathways.",
+
+  "stats": [
+    { "value": "~75",   "label": "Peer-reviewed publications" },
+    { "value": "13+",   "label": "Funded projects" },
+    { "value": "45+",   "label": "Students & alumni" },
+    { "value": "27",    "label": "Countries reached" }
+  ],
+
+  "contact": {
+    "email": "felipe.feijoo@pucv.cl",
+    "address_lines": [
+      "Escuela de Ingeniería Industrial",
+      "Pontificia Universidad Católica de Valparaíso",
+      "Avenida Brasil 2241, Valparaíso, Chile"
+    ]
+  },
+
+  "links": {
+    "pucv":    "https://www.pucv.cl/",
+    "school":  "http://eii.pucv.cl/",
+    "scholar": "https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en",
+    "anid":    "https://investigadores.anid.cl/es/public_search/researcher?id=25636",
+    "github":  "https://github.com/felipefeijoo"
+  }
+}

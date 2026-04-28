@@ -1,0 +1,309 @@
+{
+  "_comment_howto": "Lab projects portfolio. Each project has an id (slug) used by project.html?id=<slug>. Schema: id, title, tagline, source (funding name), funding_institution, role (PI/Co-PI/etc.), status ('active', 'completed', 'review'), period, amount, scope ('national' or 'international'), research_areas (array of research-area ids — drives cross-links), abstract, objectives (array), methodology, results, keywords (array), team (array of {member_id, role}); related_publications (array of free-text {title, venue, year, url}). Missing fields are skipped gracefully.",
+
+  "projects": [
+    {
+      "id": "decarb-r-j",
+      "title": "DECARB-R+J",
+      "tagline": "Advancing deep decarbonization pathways through endogenous modeling of resilience, justice, and renewable integration.",
+      "source": "FONDECYT Regular (ANID, Chile)",
+      "funding_institution": "ANID — Agencia Nacional de Investigación y Desarrollo (Chile)",
+      "role": "Principal Investigator",
+      "status": "active",
+      "period": "2026 – 2029",
+      "amount": "CLP 150M (~USD 150K)",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy", "global-climate-modeling", "operations-research"],
+      "abstract": "DECARB-R+J advances integrated decarbonization modeling by endogenously representing resilience to extreme events, distributional justice, and the pace of renewable deployment. The framework is used to study net-zero and net-negative pathways for Chile under uncertainty, with attention to the social and territorial trade-offs of the transition.",
+      "objectives": [
+        "Extend integrated-assessment modeling with endogenous resilience metrics for extreme climate events.",
+        "Embed distributional-justice indicators into long-term capacity-expansion decisions.",
+        "Quantify feasible pacing of renewable deployment under investment and supply-chain constraints.",
+        "Apply the framework to Chilean net-zero and net-negative pathways and compare policy packages."
+      ],
+      "methodology": "Bilevel and stochastic optimization coupled with an Integrated Assessment Model. Resilience constraints are embedded endogenously through scenario-conditioned reliability metrics; justice is quantified through region- and household-level distributional indicators.",
+      "results": "TODO: project just starting — results will be added as the work progresses.",
+      "keywords": ["deep decarbonization", "resilience", "just transition", "renewables", "Chile"],
+      "team": [
+        { "member_id": "felipe-feijoo",   "role": "Principal Investigator" },
+        { "member_id": "monica-castaneda","role": "Co-Investigator" },
+        { "member_id": "paola-paredes",   "role": "PhD Student" },
+        { "member_id": "alonso-gonzalez", "role": "Master's Student" }
+      ],
+      "related_publications": []
+    },
+    {
+      "id": "apec-hydrogen",
+      "title": "APEC Hydrogen Certification",
+      "tagline": "Building resilient energy policies in Asia-Pacific through certification of hydrogen and its derivatives.",
+      "source": "APEC EWG 104-105",
+      "funding_institution": "Asia-Pacific Economic Cooperation — Energy Working Group",
+      "role": "Principal Investigator",
+      "status": "active",
+      "period": "2025 – 2026",
+      "amount": "CLP 5M",
+      "scope": "international",
+      "research_areas": ["energy-sustainability-policy"],
+      "abstract": "Policy research project analyzing how APEC economies certify hydrogen and its derivatives, and what the emerging certification landscape means for cross-border trade and market development. Supports the Ministry of Energy of Chile in its APEC engagement on low-carbon hydrogen.",
+      "objectives": [
+        "Map hydrogen-certification regimes in APEC economies and identify divergences.",
+        "Assess implications for cross-border hydrogen trade and market integration.",
+        "Produce a policy briefing for the Ministry of Energy of Chile's APEC engagement."
+      ],
+      "methodology": "Comparative policy analysis of APEC economies; structured stakeholder consultations; framework for cross-recognition of certificates.",
+      "results": "Briefing material delivered to the Ministry of Energy of Chile (2025); public-facing policy report in preparation.",
+      "keywords": ["hydrogen", "certification", "APEC", "energy policy"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ],
+      "related_publications": []
+    },
+    {
+      "id": "internexus",
+      "title": "INTERNEXUS",
+      "tagline": "Energy–Water–Food nexus and Power-to-X for deep-decarbonization pathways toward 100% renewable energy systems.",
+      "source": "FONDECYT Regular (ANID, Chile)",
+      "funding_institution": "ANID — Agencia Nacional de Investigación y Desarrollo (Chile)",
+      "role": "Principal Investigator",
+      "status": "active",
+      "period": "2022 – 2026",
+      "amount": "CLP 120M (~USD 120K)",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy", "power-systems-energy-markets", "global-climate-modeling"],
+      "abstract": "INTERNEXUS develops coupled energy-water-food modeling frameworks to study deep-decarbonization pathways that explicitly account for nexus feedbacks. The project assesses the role of Power-to-X technologies as integrators across sectors and quantifies pathways toward 100% renewable energy systems.",
+      "objectives": [
+        "Develop a coupled energy-water-food optimization framework.",
+        "Assess the role of Power-to-X as a cross-sector integrator.",
+        "Quantify 100%-renewable pathways with endogenous nexus constraints."
+      ],
+      "methodology": "Integrated Assessment Modeling (GCAM-LA) soft-linked to a high-resolution power-system optimization model (PyPSA / H2RES).",
+      "results": "Several Q1 publications in Energy and Energy Strategy Reviews; cross-model linking framework published with applications to Bolivia and Chile.",
+      "keywords": ["energy-water-food nexus", "Power-to-X", "100% renewables", "decarbonization"],
+      "team": [
+        { "member_id": "felipe-feijoo",   "role": "Principal Investigator" },
+        { "member_id": "francisco-flores","role": "PhD Researcher" }
+      ],
+      "related_publications": []
+    },
+    {
+      "id": "ev-pv-strategy",
+      "title": "EV & Distributed PV Strategy",
+      "tagline": "Coordinated deployment of electric vehicles and distributed PV in Chilean households.",
+      "source": "FONDECYT Regular (ANID, Chile)",
+      "funding_institution": "ANID",
+      "role": "Co-Principal Investigator",
+      "status": "active",
+      "period": "2024 – 2027",
+      "amount": "CLP 150M (~USD 150K)",
+      "scope": "national",
+      "research_areas": ["power-systems-energy-markets", "ai-machine-learning"],
+      "abstract": "Studies the coupled deployment of residential PV and electric mobility, with attention to grid-side flexibility, distributional effects, and adoption incentives.",
+      "objectives": [
+        "Characterize household-level adoption patterns for EV+PV.",
+        "Design coordinated incentive schemes.",
+        "Assess grid-side impacts under high-penetration scenarios."
+      ],
+      "keywords": ["electric vehicles", "distributed PV", "residential", "incentive design"],
+      "team": [
+        { "member_id": "felipe-feijoo",   "role": "Co-Principal Investigator" },
+        { "member_id": "isidora-loaiza",  "role": "Master's Student" }
+      ]
+    },
+    {
+      "id": "res-just",
+      "title": "RES-JUST",
+      "tagline": "Resilient energy systems for a just transition through multiscale modeling.",
+      "source": "FOVI (ANID, Chile)",
+      "funding_institution": "ANID",
+      "role": "Principal Investigator",
+      "status": "active",
+      "period": "2025 – 2027",
+      "amount": "CLP 30M",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy", "operations-research"],
+      "abstract": "Multi-scale modeling framework for resilient energy systems, integrating local, regional, and national perspectives on a just transition. Joint workshop with international partners.",
+      "objectives": [
+        "Develop multi-scale energy-system models with embedded resilience and equity metrics.",
+        "Run a 4th International Workshop on Resilient Energy Systems.",
+        "Train graduate students through hands-on modeling and policy analysis."
+      ],
+      "keywords": ["resilience", "just transition", "multiscale", "workshop"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "heat-ai-cities",
+      "title": "HEAT — AI for Smart Cities",
+      "tagline": "Heat exposure analytics and AI-supported urban planning.",
+      "source": "PUCV Centennial",
+      "funding_institution": "Pontificia Universidad Católica de Valparaíso",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2022 – 2024",
+      "amount": "CLP 50M",
+      "scope": "national",
+      "research_areas": ["ai-machine-learning"],
+      "abstract": "Developed AI methods to analyze urban heat exposure and inform city-scale climate-adaptation strategies.",
+      "objectives": [
+        "Build models linking urban form, mobility, and heat exposure.",
+        "Develop tools for municipal climate-adaptation planning."
+      ],
+      "keywords": ["AI", "smart cities", "heat exposure", "climate adaptation"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "enter-1-5n",
+      "title": "ENTER-1.5N — Energy–Water–Food Nexus",
+      "tagline": "Integrated nexus modeling for 1.5 °C-compatible pathways.",
+      "source": "FONDECYT Iniciación (ANID, Chile)",
+      "funding_institution": "ANID",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2018 – 2022",
+      "amount": "CLP 75M",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy", "global-climate-modeling"],
+      "abstract": "Foundational project for the lab's integrated energy-water-food nexus research, with applications to Latin America.",
+      "objectives": [
+        "Build the first GCAM-LA configurations for nexus analysis.",
+        "Publish on water-energy trade-offs under aggressive mitigation."
+      ],
+      "keywords": ["nexus", "GCAM", "1.5C", "Latin America"],
+      "team": [
+        { "member_id": "felipe-feijoo",    "role": "Principal Investigator" },
+        { "member_id": "francisco-flores", "role": "PhD Researcher" }
+      ]
+    },
+    {
+      "id": "electromobility-flex",
+      "title": "Electromobility & Grid Flexibility",
+      "tagline": "Optimizing the integration of electric mobility into the Chilean grid.",
+      "source": "Ministry of Energy of Chile",
+      "funding_institution": "Ministerio de Energía de Chile",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2021 – 2023",
+      "amount": "Competitive",
+      "scope": "national",
+      "research_areas": ["power-systems-energy-markets"],
+      "abstract": "Studied charging-infrastructure requirements and grid-flexibility needs for electromobility deployment in Chile.",
+      "keywords": ["electromobility", "grid flexibility"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "equienergy",
+      "title": "EquiEnergy — Just Energy Transitions",
+      "tagline": "Distributional and equity dimensions of decarbonization.",
+      "source": "FOVI (ANID, Chile)",
+      "funding_institution": "ANID",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2022 – 2024",
+      "amount": "CLP 30M",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy"],
+      "abstract": "Studied equity and just-transition dimensions of Chilean decarbonization through distributional indicators and stakeholder engagement.",
+      "keywords": ["just transition", "equity", "Chile"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "100res-p2x",
+      "title": "100% RES + Power-to-X Long-term Planning",
+      "tagline": "Long-term capacity-expansion analysis for 100% renewable systems with Power-to-X.",
+      "source": "FONDECYT Regular (ANID, Chile)",
+      "funding_institution": "ANID",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2018 – 2022",
+      "amount": "CLP 120M",
+      "scope": "national",
+      "research_areas": ["energy-sustainability-policy", "power-systems-energy-markets"],
+      "abstract": "Long-term planning models for 100% renewable energy systems incorporating Power-to-X (hydrogen, e-fuels) as a flexibility resource.",
+      "keywords": ["100% RES", "Power-to-X", "capacity expansion"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "net-zero-world",
+      "title": "Net Zero World Initiative",
+      "tagline": "U.S. DOE-supported initiative on Net Zero pathways for partner countries.",
+      "source": "U.S. Department of Energy",
+      "funding_institution": "U.S. Department of Energy",
+      "role": "Co-Principal Investigator",
+      "status": "completed",
+      "period": "2022 – 2024",
+      "amount": "In-kind",
+      "scope": "international",
+      "research_areas": ["global-climate-modeling"],
+      "abstract": "Contributed Latin-American modeling support to the Net Zero World Initiative led by the U.S. Department of Energy and PNNL/JGCRI.",
+      "keywords": ["Net Zero", "GCAM", "Latin America", "DOE"],
+      "team": [
+        { "member_id": "felipe-feijoo",    "role": "Co-Principal Investigator" },
+        { "member_id": "francisco-flores", "role": "PhD Researcher" }
+      ]
+    },
+    {
+      "id": "apec-resilient",
+      "title": "Resilient Energy Policies — APEC",
+      "tagline": "Resilient policy frameworks for APEC economies.",
+      "source": "APEC",
+      "funding_institution": "Asia-Pacific Economic Cooperation",
+      "role": "Principal Investigator",
+      "status": "completed",
+      "period": "2023 – 2024",
+      "amount": "CLP 5M",
+      "scope": "international",
+      "research_areas": ["energy-sustainability-policy"],
+      "abstract": "Developed resilient policy frameworks for APEC economies under climate and energy-supply uncertainty.",
+      "keywords": ["resilience", "APEC", "policy"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    },
+    {
+      "id": "ai-aided-energy",
+      "title": "AI-Aided Energy Planning",
+      "tagline": "Machine learning support for long-term energy planning models.",
+      "source": "Croatian Science Foundation",
+      "funding_institution": "Croatian Science Foundation",
+      "role": "Co-Principal Investigator",
+      "status": "active",
+      "period": "2024 – 2027",
+      "amount": "EUR 150K",
+      "scope": "international",
+      "research_areas": ["ai-machine-learning", "operations-research"],
+      "abstract": "Joint Chilean–Croatian project applying machine learning to accelerate and inform large-scale energy-system planning models.",
+      "keywords": ["machine learning", "energy planning", "Croatia"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Co-Principal Investigator" },
+        { "member_id": "neven-duic",    "role": "Co-Principal Investigator" }
+      ]
+    },
+    {
+      "id": "apec-hydrogen-demand",
+      "title": "Hydrogen Demand — APEC",
+      "tagline": "Mapping hydrogen demand drivers in APEC economies.",
+      "source": "APEC",
+      "funding_institution": "Asia-Pacific Economic Cooperation",
+      "role": "Principal Investigator",
+      "status": "active",
+      "period": "2025 – 2026",
+      "amount": "CLP 9M",
+      "scope": "international",
+      "research_areas": ["energy-sustainability-policy"],
+      "abstract": "Companion APEC project to the certification work, focusing on the demand-side outlook for low-carbon hydrogen across APEC economies.",
+      "keywords": ["hydrogen", "demand", "APEC"],
+      "team": [
+        { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
+      ]
+    }
+  ]
+}

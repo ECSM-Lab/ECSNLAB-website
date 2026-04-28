@@ -1,0 +1,72 @@
+{
+  "_comment_howto": "Six research areas. Edit text below. Each area has an id (slug) used by research-area.html?id=<slug>. The 'paper_count' is shown on the card. The 'projects' and 'people' arrays are id-references to projects.json and team.json — they render as cross-links automatically. The 'keywords' array drives the publications filter on publications.html.",
+
+  "areas": [
+    {
+      "id": "energy-sustainability-policy",
+      "title": "Energy Sustainability & Policy",
+      "tagline": "Scenario analysis, multi-objective optimization, and life-cycle assessment for sustainable energy systems.",
+      "paper_count": "~21 papers",
+      "description": "We design and evaluate sustainable energy policies through quantitative scenario analysis, multi-objective optimization, and life-cycle assessment. Our work links policy levers — carbon pricing, mandates, subsidies — to measurable outcomes in cost, emissions, equity, and resilience. We collaborate with national ministries, APEC, and the IPCC to translate models into actionable guidance.",
+      "methods": ["Scenario analysis", "Multi-objective optimization", "Life-cycle assessment", "Cost–benefit & policy modeling"],
+      "keywords": ["energy policy", "sustainability", "decarbonization", "scenario analysis", "life-cycle assessment"],
+      "projects": ["decarb-r-j", "apec-hydrogen", "internexus", "res-just"],
+      "people":   ["felipe-feijoo", "monica-castaneda"]
+    },
+    {
+      "id": "power-systems-energy-markets",
+      "title": "Power Systems & Energy Markets",
+      "tagline": "Market equilibrium, game theory, and stochastic programming for electricity market design.",
+      "paper_count": "~22 papers",
+      "description": "We study electricity market design and operation using equilibrium models, game-theoretic formulations, and stochastic programming. Our research informs questions on market clearing under high renewable shares, capacity mechanisms, distributed-resource integration, and the strategic behavior of market participants.",
+      "methods": ["Mixed Complementarity Problems (MCP)", "Bilevel & Stackelberg models", "Stochastic programming", "Equilibrium analysis"],
+      "keywords": ["power systems", "electricity markets", "stochastic programming", "bilevel optimization", "game theory"],
+      "projects": ["internexus", "ev-pv-strategy"],
+      "people":   ["felipe-feijoo"]
+    },
+    {
+      "id": "global-climate-modeling",
+      "title": "Global Climate Modeling",
+      "tagline": "Integrated Assessment Models, carbon budgets, and Paris-aligned mitigation pathways.",
+      "paper_count": "~12 papers",
+      "description": "We build and apply Integrated Assessment Models (notably GCAM and GCAM-Latin America) to study Paris-aligned mitigation pathways, carbon budgets, and the cross-sectoral feedbacks among energy, water, land, and food. The lab is a contributor to IPCC Working Group III on climate-change mitigation.",
+      "methods": ["Integrated Assessment Models (GCAM, GCAM-LA)", "Carbon-budget accounting", "Cross-model linking (GCAM ↔ PyPSA, H2RES)"],
+      "keywords": ["GCAM", "integrated assessment", "carbon budget", "IPCC", "climate policy", "Paris Agreement"],
+      "projects": ["internexus", "decarb-r-j", "net-zero-world"],
+      "people":   ["felipe-feijoo"]
+    },
+    {
+      "id": "operations-research",
+      "title": "Operations Research",
+      "tagline": "Linear, nonlinear, MCP, and bilevel optimization for industrial and energy decision-making.",
+      "paper_count": "~12 papers",
+      "description": "Foundational methodological work in mathematical programming, with applications to energy, transportation, healthcare, and infrastructure. We develop reformulations and solution methods for bilevel and complementarity problems, and we study how uncertainty and equilibrium structures shape long-term planning.",
+      "methods": ["Linear & integer programming", "Nonlinear & bilevel optimization", "MCP reformulations", "Decomposition & large-scale algorithms"],
+      "keywords": ["operations research", "optimization", "bilevel", "MCP", "stochastic programming"],
+      "projects": ["internexus", "decarb-r-j"],
+      "people":   ["felipe-feijoo"]
+    },
+    {
+      "id": "ai-machine-learning",
+      "title": "AI & Machine Learning",
+      "tagline": "Deep learning and forecasting for energy systems and smart cities.",
+      "paper_count": "~10 papers",
+      "description": "We develop machine-learning methods for energy-systems forecasting, demand modeling, and pattern recognition in mobility and urban data. Recent work combines neural networks with physical and economic constraints to produce models that are accurate, interpretable, and policy-relevant.",
+      "methods": ["Deep learning & neural networks", "Time-series forecasting", "Hybrid physics-ML models"],
+      "keywords": ["machine learning", "deep learning", "forecasting", "smart cities", "AI"],
+      "projects": ["heat-ai-cities", "ai-aided-energy"],
+      "people":   ["felipe-feijoo"]
+    },
+    {
+      "id": "healthcare-systems",
+      "title": "Healthcare Systems",
+      "tagline": "Stochastic decision models and data analysis for health-systems research.",
+      "paper_count": "~10 papers",
+      "description": "An interdisciplinary thread bringing operations-research and stochastic-decision tools to public-health questions, including hospital operations, screening policies, and the health externalities of energy and transport choices.",
+      "methods": ["Stochastic decision models", "Markov decision processes", "Health-data analytics"],
+      "keywords": ["healthcare", "stochastic models", "decision analysis", "public health"],
+      "projects": [],
+      "people":   ["felipe-feijoo"]
+    }
+  ]
+}

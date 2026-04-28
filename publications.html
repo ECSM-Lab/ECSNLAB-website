@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications — ECS Lab</title>
+  <meta name="description" content="Peer-reviewed publications, reports, and technical documents from the ECS Lab — generated from BibTeX." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260427e" />
+</head>
+<body>
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-brand" href="index.html">
+      <img class="brand-logo" src="assets/images/logo.svg" alt="" aria-hidden="true" />
+      <span class="brand-block">
+        <span class="brand-name">Energy &amp; Climate Systems Lab</span>
+        <span class="brand-sub">PUCV · Chile</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="opportunities.html">Opportunities</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="detail-hero"><div class="container">
+  <p class="profile-eyebrow">Publications</p>
+  <h1 class="profile-name">Publications</h1>
+  <p class="profile-title">Peer-reviewed journals, conference proceedings, book chapters, and reports — generated from BibTeX.</p>
+</div></section>
+
+<section class="section"><div class="container">
+  <p class="section-sub" style="margin-bottom:18px">
+    Publications are rendered from
+    <code>publications.bib</code> (peer-reviewed work) and
+    <code>reports.bib</code> (technical / advisory). Click a title to expand
+    the abstract, copy the BibTeX, and find the DOI.
+    Names of <strong>Felipe Feijoo</strong> and <strong>Monica Castañeda</strong> are highlighted automatically.
+  </p>
+
+  <div class="tabs" role="tablist" aria-label="Publication type filter">
+    <button class="tab is-active" role="tab" data-pubfilter="journals" aria-selected="true">Peer-Reviewed Journals</button>
+    <button class="tab" role="tab" data-pubfilter="reports" aria-selected="false">Reports &amp; Technical Documents</button>
+    <button class="tab" role="tab" data-pubfilter="all" aria-selected="false">All</button>
+  </div>
+
+  <div class="pub-filters" role="region" aria-label="Publication filters">
+    <input type="search" id="pub-search" placeholder="Search title, author, venue, keyword…" aria-label="Search publications" />
+    <select id="pub-year"   aria-label="Filter by year"><option value="all">All years</option></select>
+    <select id="pub-author" aria-label="Filter by author"><option value="all">All authors</option></select>
+    <select id="pub-area"   aria-label="Filter by research area"><option value="all">All areas</option></select>
+    <select id="pub-type"   aria-label="Filter by type"><option value="all">All types</option></select>
+    <span class="pub-count" id="pub-count" aria-live="polite"></span>
+  </div>
+
+  <div class="pub-subsection" id="pub-subsection-journals">
+    <h3 class="sub-title">Peer-Reviewed Journals</h3>
+    <p class="pub-subsection-note">Articles, conference proceedings, and book chapters indexed as peer-reviewed academic work.</p>
+    <div id="pub-list-journals" class="pub-list"><p class="loading">Loading publications…</p></div>
+  </div>
+
+  <div class="pub-subsection" id="pub-subsection-reports" hidden>
+    <h3 class="sub-title">Reports and Technical Documents</h3>
+    <p class="pub-subsection-note">Technical reports, policy briefs, and commissioned work for APEC, the IPCC, ministries, and international panels.</p>
+    <div id="pub-list-reports" class="pub-list"><p class="loading">Loading reports…</p></div>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/images/logo.svg" alt="" aria-hidden="true" />
+      <div>
+        <h3>Energy &amp; Climate Systems Lab</h3>
+        <p>School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV) — Valparaíso, Chile.</p>
+      </div>
+    </div>
+    <div>
+      <h3>Sections</h3>
+      <ul class="foot-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul class="foot-links">
+        <li><a href="opportunities.html">Opportunities</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reports.html">Reports</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Institutional</h3>
+      <ul class="foot-links">
+        <li><a href="https://www.pucv.cl/" target="_blank" rel="noopener">PUCV</a></li>
+        <li><a href="http://eii.pucv.cl/" target="_blank" rel="noopener">School of Industrial Engineering</a></li>
+        <li><a href="https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year"></span> Energy &amp; Climate Systems Lab — PUCV</span>
+    <span>Static site · GitHub Pages</span>
+  </div>
+</footer>
+<a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
+<script src="assets/js/main.js?v=20260427e"></script>
+<script src="assets/js/bibtex.js?v=20260427e"></script><script>ECSPubs.init({ initialType: "journals" });</script>
+</body></html>
