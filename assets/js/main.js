@@ -28,6 +28,49 @@
     });
   }
 
+  /* ----- Light / dark theme toggle -----
+     The initial theme is set by an inline script in each page's <head>
+     (saved choice, else system preference). A manual choice is saved in
+     localStorage; without one, the site keeps following the system. */
+  var THEME_KEY = 'scale-theme';
+  var root = document.documentElement;
+  function currentTheme() { return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'; }
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    var btn = $('#theme-toggle');
+    if (btn) {
+      var label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+  }
+  var nav = $('.nav');
+  if (nav) {
+    var themeBtn = document.createElement('button');
+    themeBtn.type = 'button';
+    themeBtn.className = 'theme-toggle';
+    themeBtn.id = 'theme-toggle';
+    themeBtn.innerHTML =
+      '<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>' +
+      '<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>';
+    nav.insertBefore(themeBtn, $('#nav-toggle') || null);
+    themeBtn.addEventListener('click', function () {
+      var next = currentTheme() === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+      applyTheme(next);
+    });
+  }
+  applyTheme(currentTheme());
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    var onSystemChange = function (e) {
+      var saved; try { saved = localStorage.getItem(THEME_KEY); } catch (err) {}
+      if (saved !== 'light' && saved !== 'dark') applyTheme(e.matches ? 'dark' : 'light');
+    };
+    if (mq.addEventListener) mq.addEventListener('change', onSystemChange);
+    else if (mq.addListener) mq.addListener(onSystemChange);
+  }
+
   /* ----- Mark active nav link based on URL ----- */
   var path = location.pathname.replace(/\/+$/, '').split('/').pop() || 'index.html';
   $$('#nav-menu a').forEach(function (a) {

@@ -222,6 +222,12 @@ Any other static server (`npx serve`, `caddy file-server`, etc.) works too.
   deep teal `#003F3D` (`--brand-900`, footer), light turquoise `#00AAAE`
   (`--brand-bright`) and gold `#F5C66C` (`--gold`). All defined at the top of
   `assets/css/style.css`. Change them there to rebrand.
+- **Dark mode** follows the visitor's system setting, with a sun/moon toggle
+  in the header (added by `main.js`; the choice is saved in the browser). The
+  dark palette lives in the `:root[data-theme="dark"]` block of `style.css`.
+  Logos come in pairs (`logo-mark.svg` / `logo-mark-dark.svg`,
+  `wordmark.svg` / `wordmark-dark.svg`, `logo.svg` / `logo-dark.svg`);
+  `favicon.svg` adapts on its own.
 - **Typography** Newsreader (serif, headings) + Inter (sans, body) + JetBrains
   Mono (code). Loaded from Google Fonts.
 - **Names of leadership** Monica Castañeda (Director) and Felipe Feijoo
