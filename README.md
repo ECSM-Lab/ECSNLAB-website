@@ -14,7 +14,7 @@ site/
 ├── about.html              Mission, vision, leadership
 ├── research.html           Six research areas
 ├── research-area.html      Individual research area  (?id=…)
-├── team.html               Director, co-director, researchers, students, alumni
+├── team.html               Co-directors, researchers, students, alumni
 ├── member.html             Individual team member    (?id=…)
 ├── projects.html           Filterable projects list
 ├── project.html            Individual project page   (?id=…)
@@ -230,8 +230,8 @@ Any other static server (`npx serve`, `caddy file-server`, etc.) works too.
   `favicon.svg` adapts on its own.
 - **Typography** Newsreader (serif, headings) + Inter (sans, body) + JetBrains
   Mono (code). Loaded from Google Fonts.
-- **Names of leadership** Monica Castañeda (Director) and Felipe Feijoo
-  (Co-Director) are
+- **Names of leadership** Monica Castañeda and Felipe Feijoo
+  (Co-Directors) are
   auto-highlighted in bold across the entire site by `assets/js/main.js`. No
   special markup required when authoring content.
 - **Responsive** All pages collapse to a mobile-friendly layout below 900 px.

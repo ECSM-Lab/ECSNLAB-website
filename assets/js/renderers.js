@@ -884,14 +884,14 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var areaBlock = t.area
         ? '<div class="aside-block"><h4>Research area</h4><p>' + ESC(t.area) + '</p></div>'
         : '';
-      // Apply to the topic's supervisors; fall back to the lab director.
+      // Apply to the topic's supervisors; fall back to the lab co-directors.
       var emails = [t.supervisor, t.co_supervisor].map(function (name) {
         var m = name && members.find(function (x) { return x.name === name; });
         return m && m.email;
       }).filter(Boolean);
       if (!emails.length) {
-        var dir = members.find(function (x) { return x.role === 'Director'; });
-        if (dir && dir.email) emails.push(dir.email);
+        members.filter(function (x) { return x.role === 'Co-Director' && x.email; })
+          .forEach(function (x) { emails.push(x.email); });
       }
       var contactBlock = '<div class="aside-block"><h4>Apply</h4><p>If interested, write to ' +
         emails.map(function (e) { return '<a href="mailto:' + ESC(e) + '">' + ESC(e) + '</a>'; }).join(' and ') +
