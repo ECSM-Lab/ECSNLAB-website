@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ECS Lab — Diagnóstico del sitio</title>
+<meta name="robots" content="noindex" />
+<title>SCALE — Diagnóstico del sitio</title>
 <style>
   body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fafafa; }
   h1 { font-size: 1.8rem; margin-bottom: 6px; }
@@ -13,14 +14,14 @@
   .row.fail    { border-left: 4px solid #c53030; background: #fff5f5; }
   .row.parsing { border-left: 4px solid #b58105; background: #fffbe6; }
   .row.loading { border-left: 4px solid #4a90e2; }
-  .label { font-family: ui-monospace, Menlo, monospace; font-weight: 500; color: #143C78; }
+  .label { font-family: ui-monospace, Menlo, monospace; font-weight: 500; color: #007F82; }
   .status { text-align: right; font-weight: 600; font-size: 0.9rem; }
   .ok      .status { color: #1a8a1a; }
   .fail    .status { color: #c53030; }
   .parsing .status { color: #b58105; }
   .detail  { font-size: 0.85rem; color: #555; }
   .detail code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; font-size: 0.92em; }
-  .summary { padding: 18px; background: #143C78; color: #fff; border-radius: 8px; margin-top: 28px; }
+  .summary { padding: 18px; background: #007F82; color: #fff; border-radius: 8px; margin-top: 28px; }
   .summary.bad { background: #c53030; }
   .summary.good { background: #0f6e56; }
   pre { background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 4px; font-size: 0.82rem; overflow-x: auto; }
@@ -28,7 +29,7 @@
 </head>
 <body>
 
-<h1>Diagnóstico del sitio ECS Lab</h1>
+<h1>Diagnóstico del sitio SCALE</h1>
 <p class="lede">
   Esta página verifica que tu servidor local esté sirviendo todos los archivos
   necesarios. Si algo falla, abajo verás exactamente qué.

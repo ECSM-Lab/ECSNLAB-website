@@ -1,14 +1,14 @@
 {
   "_comment": "Lab-wide metadata. Edit values, commit, push. Used by every page header/footer/home.",
 
-  "name": "Energy & Climate Systems Lab",
-  "short_name": "ECS Lab",
-  "tagline": "Advancing energy transitions, climate policy, and decarbonization pathways",
+  "name": "SCALE — Sustainable Climate Analysis & Energy Decision Lab",
+  "short_name": "SCALE",
+  "tagline": "Climate and energy analysis for better decisions",
   "institution": "School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV)",
   "city": "Valparaíso, Chile",
 
-  "mission": "Generate rigorous scientific knowledge to accelerate the global energy transition, integrating advanced mathematical modeling, climate policy analysis, and sustainable development frameworks to inform real-world decision-making.",
-  "vision": "To become the leading research hub in the Southern Hemisphere for integrated energy–climate–economy modeling, empowering the next generation of engineers and policymakers to design evidence-based, equitable decarbonization pathways.",
+  "mission": "Produce rigorous, decision-relevant knowledge on climate and energy systems, combining integrated assessment, mathematical optimization, and system-dynamics simulation to inform policy, planning, and investment for a sustainable and just transition.",
+  "vision": "To be a leading Latin American reference in climate and energy analysis for decision-making, training engineers and analysts who design evidence-based, equitable pathways towards a sustainable future.",
 
   "stats": [
     { "value": "~75",   "label": "Peer-reviewed publications" },
@@ -18,7 +18,7 @@
   ],
 
   "contact": {
-    "email": "felipe.feijoo@pucv.cl",
+    "email": "monica.castaneda@pucv.cl",
     "address_lines": [
       "Escuela de Ingeniería Industrial",
       "Pontificia Universidad Católica de Valparaíso",
@@ -27,10 +27,8 @@
   },
 
   "links": {
-    "pucv":    "https://www.pucv.cl/",
-    "school":  "http://eii.pucv.cl/",
-    "scholar": "https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en",
-    "anid":    "https://investigadores.anid.cl/es/public_search/researcher?id=25636",
-    "github":  "https://github.com/felipefeijoo"
+    "pucv":   "https://www.pucv.cl/",
+    "school": "https://eii.pucv.cl/",
+    "phd":    "https://eii.pucv.cl/estudia-con-nosotros/postgrado/doctorado-en-ingenieria-industrial/"
   }
 }

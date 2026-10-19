@@ -1,26 +1,30 @@
 /* =========================================================================
-   ECS Lab — main stylesheet
-   Modern · minimalist · academic. Inspired by BC3 Research with the
-   lab's navy (#143C78) as accent. No frameworks; vanilla CSS only.
+   SCALE — main stylesheet
+   Modern · minimalist · academic. Palette taken from the SCALE logo:
+   deep teal ink, turquoise ribbons and a gold accent. No frameworks;
+   vanilla CSS only.
    ========================================================================= */
 
 :root {
-  /* Brand palette — pulled from the lab logo */
-  --brand:        #143C78;     /* primary navy */
-  --brand-700:    #0F2E5C;     /* hover / dark */
-  --brand-50:     #EEF2FA;     /* tinted backgrounds */
-  --brand-100:    #DCE4F2;
-  --accent:       #0E7C7B;     /* secondary teal for tags / pills */
-  --accent-amber: #C97B1F;     /* warm accent for status / highlights */
+  /* Brand palette — pulled from the SCALE logo */
+  --brand:        #007F82;     /* turquoise (lower ribbon) — links, buttons */
+  --brand-700:    #005E61;     /* hover / dark */
+  --brand-900:    #003F3D;     /* deep teal from the wordmark — footer, ink */
+  --brand-bright: #00AAAE;     /* light turquoise (nodes) — decorative only */
+  --brand-50:     #E9F5F5;     /* tinted backgrounds */
+  --brand-100:    #CDE9E9;
+  --gold:         #F5C66C;     /* gold ribbon — decorative accents */
+  --accent:       #00686B;     /* secondary teal for tags / pills */
+  --accent-amber: #8C6214;     /* darkened gold, readable as text on white */
 
-  /* Neutrals */
-  --ink:          #0F1B2D;     /* body copy */
-  --ink-soft:     #3B4759;     /* secondary copy */
-  --ink-muted:    #6B7280;
-  --line:         #E4E7EE;
+  /* Neutrals (slightly teal-tinted) */
+  --ink:          #0F2524;     /* body copy */
+  --ink-soft:     #3A504F;     /* secondary copy */
+  --ink-muted:    #66726F;
+  --line:         #E0E9E8;
   --bg:           #FFFFFF;
-  --bg-alt:       #FAFBFD;
-  --bg-tint:      #F5F7FB;
+  --bg-alt:       #F8FBFB;
+  --bg-tint:      #F2F7F7;
 
   /* Typography */
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
@@ -32,8 +36,8 @@
   --container-narrow: 880px;
   --radius: 6px;
   --radius-lg: 14px;
-  --shadow-sm: 0 1px 2px rgba(15, 27, 45, 0.04), 0 1px 3px rgba(15, 27, 45, 0.06);
-  --shadow:    0 4px 14px rgba(15, 27, 45, 0.06), 0 1px 3px rgba(15, 27, 45, 0.04);
+  --shadow-sm: 0 1px 2px rgba(15, 37, 36, 0.04), 0 1px 3px rgba(15, 37, 36, 0.06);
+  --shadow:    0 4px 14px rgba(15, 37, 36, 0.06), 0 1px 3px rgba(15, 37, 36, 0.04);
 }
 
 /* =========================================================================
@@ -97,11 +101,11 @@ p { margin: 0 0 1em; }
   color: var(--ink); text-decoration: none;
 }
 .nav-brand:hover { text-decoration: none; color: var(--brand); }
-.brand-logo { width: 36px; height: 36px; flex: 0 0 36px; }
+.brand-logo { width: 32px; height: 40px; flex: 0 0 32px; }
 .brand-block { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-name {
-  font-family: var(--serif); font-weight: 600;
-  font-size: 1.05rem; letter-spacing: 0.01em;
+  font-family: var(--sans); font-weight: 700;
+  font-size: 1.15rem; letter-spacing: 0.12em; color: var(--brand-900);
 }
 .brand-sub {
   font-size: 0.74rem; color: var(--ink-muted); letter-spacing: 0.08em;
@@ -120,7 +124,7 @@ p { margin: 0 0 1em; }
 .nav-menu a.is-active { color: var(--brand); }
 .nav-menu a.is-active::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
-  height: 2px; background: var(--brand); border-radius: 2px;
+  height: 2px; background: var(--gold); border-radius: 2px;
 }
 .nav-toggle {
   display: none; width: 38px; height: 38px;
@@ -155,7 +159,7 @@ p { margin: 0 0 1em; }
   overflow: hidden;
   background:
     linear-gradient(180deg, var(--brand-50) 0%, transparent 80%),
-    radial-gradient(1200px 500px at 90% -10%, rgba(20, 60, 120, 0.10), transparent 70%);
+    radial-gradient(1200px 500px at 90% -10%, rgba(0, 127, 130, 0.10), transparent 70%);
 }
 .hero-grid {
   display: grid;
@@ -166,17 +170,20 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--brand); font-weight: 600;
-  background: rgba(20,60,120,0.06); padding: 6px 12px; border-radius: 999px;
+  background: rgba(0,127,130,0.07); padding: 6px 12px; border-radius: 999px;
   margin-bottom: 22px;
 }
 .hero-eyebrow::before {
-  content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--brand);
+  content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
 }
 .hero h1 {
   font-size: clamp(2.4rem, 4.8vw, 3.8rem);
   letter-spacing: -0.02em; margin: 0 0 16px;
 }
-.hero h1 .lab-mark { color: var(--brand); display: block; }
+.hero h1 .lab-mark {
+  color: var(--brand); display: block;
+  font-size: 0.46em; line-height: 1.25; letter-spacing: -0.005em; margin-top: 10px;
+}
 .hero-lede {
   font-size: 1.18rem; color: var(--ink-soft); margin-bottom: 28px;
   max-width: 56ch;
@@ -188,16 +195,16 @@ p { margin: 0 0 1em; }
 }
 .hero-art-circle {
   width: min(420px, 100%); aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, rgba(20,60,120,0.10), transparent 60%);
+  background: radial-gradient(circle at 35% 30%, rgba(245,198,108,0.22), transparent 60%);
   display: grid; place-items: center;
   position: relative;
 }
 .hero-art-circle::before, .hero-art-circle::after {
   content: ""; position: absolute; inset: 0; border-radius: 50%;
-  border: 1px solid rgba(20,60,120,0.12);
+  border: 1px solid rgba(0,127,130,0.18);
 }
 .hero-art-circle::after { inset: -28px; border-style: dashed; opacity: 0.6; }
-.hero-art-logo { width: 65%; height: 65%; }
+.hero-art-logo { width: 62%; height: 62%; object-fit: contain; }
 
 @media (max-width: 880px) {
   .hero { padding: 56px 0 48px; }
@@ -251,7 +258,7 @@ p { margin: 0 0 1em; }
    Stats strip
    ========================================================================= */
 .stats {
-  display: grid; grid-template-columns: repeat(6, 1fr);
+  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr;
   gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
   background: var(--bg);
 }
@@ -267,8 +274,11 @@ p { margin: 0 0 1em; }
   margin-top: 8px; font-size: 0.82rem; color: var(--ink-muted);
   letter-spacing: 0.04em; text-transform: uppercase;
 }
-@media (max-width: 900px) { .stats { grid-template-columns: repeat(3, 1fr); } .stat:nth-child(3n) { border-right: none; } .stat:nth-child(-n+3) { border-bottom: 1px solid var(--line); } }
-@media (max-width: 500px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat { border-right: 1px solid var(--line); } .stat:nth-child(2n) { border-right: none; } .stat:nth-child(-n+4) { border-bottom: 1px solid var(--line); } }
+@media (max-width: 700px) {
+  .stats { grid-template-columns: repeat(2, 1fr); grid-auto-flow: row; }
+  .stat:nth-child(2n) { border-right: none; }
+  .stat:not(:nth-last-child(-n+2)) { border-bottom: 1px solid var(--line); }
+}
 
 /* =========================================================================
    Cards (research areas, projects, members)
@@ -307,8 +317,8 @@ p { margin: 0 0 1em; }
   color: var(--brand); background: var(--brand-50);
   padding: 4px 10px; border-radius: 999px;
 }
-.tag.tag-accent { color: var(--accent); background: rgba(14, 124, 123, 0.10); }
-.tag.tag-amber  { color: var(--accent-amber); background: rgba(201, 123, 31, 0.10); }
+.tag.tag-accent { color: var(--accent); background: rgba(0, 104, 107, 0.10); }
+.tag.tag-amber  { color: var(--accent-amber); background: rgba(245, 198, 108, 0.24); }
 .tag.tag-neutral { color: var(--ink-muted); background: var(--bg-tint); }
 
 .status {
@@ -317,7 +327,7 @@ p { margin: 0 0 1em; }
 }
 .status-active   { color: #0E6B45; background: rgba(14, 107, 69, 0.10); }
 .status-done     { color: var(--ink-muted); background: var(--bg-tint); }
-.status-review   { color: var(--accent-amber); background: rgba(201, 123, 31, 0.10); }
+.status-review   { color: var(--accent-amber); background: rgba(245, 198, 108, 0.24); }
 .status-example  { color: #6B5B95; background: rgba(107, 91, 149, 0.10); }
 
 .pill {
@@ -328,7 +338,7 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--line);
 }
 .pill.deg-phd { color: var(--brand); background: var(--brand-50); border-color: var(--brand-100); }
-.pill.deg-msc { color: var(--accent); background: rgba(14, 124, 123, 0.08); border-color: rgba(14, 124, 123, 0.20); }
+.pill.deg-msc { color: var(--accent); background: rgba(0, 104, 107, 0.08); border-color: rgba(0, 104, 107, 0.20); }
 
 .card .card-foot {
   margin-top: auto; padding-top: 14px;
@@ -637,7 +647,7 @@ p { margin: 0 0 1em; }
    Footer
    ========================================================================= */
 .site-footer {
-  background: var(--ink);
+  background: var(--brand-900);
   color: rgba(255,255,255,0.72);
   padding: 56px 0 32px;
   margin-top: 0;
@@ -658,11 +668,7 @@ p { margin: 0 0 1em; }
 .footer-brand {
   display: flex; align-items: flex-start; gap: 14px;
 }
-.footer-logo {
-  width: 56px; height: 56px;
-  filter: brightness(0) invert(1);
-  opacity: 0.95;
-}
+.footer-logo { width: 48px; height: 60px; flex: 0 0 48px; }
 .footer-brand p { color: rgba(255,255,255,0.72); font-size: 0.92rem; margin: 6px 0 0; max-width: 36ch; }
 .foot-links { list-style: none; padding: 0; margin: 0; }
 .foot-links li { margin-bottom: 8px; font-size: 0.92rem; }

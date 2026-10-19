@@ -1,7 +1,7 @@
-# Energy & Climate Systems Lab — Website
+# SCALE — Website
 
-A static, GitHub Pages-compatible website for the **Energy & Climate Systems Lab**
-at the School of Industrial Engineering, Pontificia Universidad Católica de
+A static, GitHub Pages-compatible website for **SCALE — Sustainable Climate
+Analysis & Energy Decision Lab**, at the School of Industrial Engineering, Pontificia Universidad Católica de
 Valparaíso (PUCV).
 
 ---
@@ -40,7 +40,9 @@ site/
 │   ├── js/main.js          Site chrome (nav, scroll, footer, leader-name bolding)
 │   ├── js/bibtex.js        BibTeX parser + publication renderer
 │   ├── js/renderers.js     Renders team, projects, news, etc. from JSON
-│   ├── images/logo.svg     Lab logo (used in header, hero, footer)
+│   ├── images/logo.svg     Full SCALE logo (symbol + wordmark) — og:image
+│   ├── images/logo-mark.svg  Symbol only (header, hero, footer)
+│   ├── images/favicon.svg  Symbol on a square canvas (browser tab icon)
 │   ├── images/team/<id>.jpg    (Drop in here — referenced by team.json)
 │   └── files/CV_*.pdf      CVs and other downloadables
 │
@@ -216,12 +218,14 @@ Any other static server (`npx serve`, `caddy file-server`, etc.) works too.
 
 ## Design notes
 
-- **Brand color** `#143C78` (the navy from the lab logo) is the single accent.
-  Defined as `--brand` in `assets/css/style.css`. Change in one place to
-  rebrand.
+- **Brand palette** taken from the SCALE logo: turquoise `#007F82` (`--brand`),
+  deep teal `#003F3D` (`--brand-900`, footer), light turquoise `#00AAAE`
+  (`--brand-bright`) and gold `#F5C66C` (`--gold`). All defined at the top of
+  `assets/css/style.css`. Change them there to rebrand.
 - **Typography** Newsreader (serif, headings) + Inter (sans, body) + JetBrains
   Mono (code). Loaded from Google Fonts.
-- **Names of leadership** Felipe Feijoo and Monica Castañeda are
+- **Names of leadership** Monica Castañeda (Director) and Felipe Feijoo
+  (Co-Director) are
   auto-highlighted in bold across the entire site by `assets/js/main.js`. No
   special markup required when authoring content.
 - **Responsive** All pages collapse to a mobile-friendly layout below 900 px.

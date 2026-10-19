@@ -3,13 +3,47 @@
 
   "members": [
     {
+      "id": "monica-castaneda",
+      "name": "Monica Castañeda",
+      "honorific": "Prof.",
+      "credentials": "Ph.D.",
+      "bibtex_name": "Castañeda",
+      "role": "Director",
+      "title": "Professor, Systems Area · Lab Director",
+      "affiliation": "School of Industrial Engineering, PUCV",
+      "email": "monica.castaneda@pucv.cl",
+      "photo": "assets/images/monica-castaneda.jpeg",
+      "research_topics": [
+        "Energy markets and electricity market design",
+        "Energy policy and renewable energy integration",
+        "System dynamics and simulation modeling",
+        "Security of supply in hydro-dominated power systems"
+      ],
+      "keywords": ["system dynamics", "simulation", "energy markets", "energy policy", "renewables", "security of supply"],
+      "bio_short": "Director of SCALE. Works on energy markets, energy policy, and renewable integration using system dynamics and simulation, with applications in Colombia and the United Kingdom.",
+      "bio_long": "Monica Castañeda is a Professor in the Systems Area of the School of Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile, and Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab). Her research uses system dynamics and simulation to understand how energy markets and policies shape the transition to low-carbon power systems. She has studied electricity-market reform in Great Britain, the long-term effects of feed-in tariffs on residential solar, the so-called utility death spiral, and the security of supply of hydro-dominated systems such as Colombia's, including pathways towards 100% renewable electricity. Her work appears in journals such as Energy Policy, Renewable Energy, Renewable and Sustainable Energy Reviews, Energy, and the European Journal of Operational Research. She supervises graduate students in the lab and contributes to projects on decarbonization pathways and energy planning for Latin America. She holds a Ph.D. in Engineering, an M.Sc. in Systems Engineering, and a degree in Administrative Engineering, all from Universidad Nacional de Colombia.",
+      "education": [
+        "Ph.D. in Engineering — Universidad Nacional de Colombia",
+        "M.Sc. in Systems Engineering — Universidad Nacional de Colombia",
+        "Administrative Engineering — Universidad Nacional de Colombia"
+      ],
+      "links": {
+        "scholar":  "https://scholar.google.com/citations?user=x6IGK7cAAAAJ&hl=en",
+        "linkedin": "https://www.linkedin.com/in/monica-castaneda-riascos-b5663847/",
+        "website":  "https://eii.pucv.cl/comunidad/nuestra-escuela/nuestro-equipo/monica-castaneda-riascos/"
+      },
+      "supervisors": [],
+      "current_position": "",
+      "year": ""
+    },
+    {
       "id": "felipe-feijoo",
       "name": "Felipe Feijoo",
       "honorific": "Prof.",
       "credentials": "Ph.D.",
       "bibtex_name": "Felipe Feijoo",
-      "role": "Director",
-      "title": "Associate Professor · Lab Director",
+      "role": "Co-Director",
+      "title": "Associate Professor · Lab Co-Director",
       "affiliation": "School of Industrial Engineering, PUCV",
       "email": "felipe.feijoo@pucv.cl",
       "photo": "assets/images/felipe-feijoo.jpg",
@@ -19,8 +53,8 @@
         "Bilevel and stochastic optimization",
         "Energy–water–food nexus"
       ],
-      "bio_short": "Director of the Energy & Climate Systems Lab. Lead Author for IPCC WGIII (Energy Systems), advisor to Chile's Ministry of Environment, and APEC consultant on hydrogen certification.",
-      "bio_long": "Felipe Feijoo is an Associate Professor at the School of Industrial Engineering of Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He directs the Energy & Climate Systems Lab and works at the intersection of energy systems modeling, climate policy, and operations research, with an emphasis on deep-decarbonization pathways under uncertainty and the interactions among energy, water, land, and food systems. He serves as a Lead Author for IPCC Working Group III (Chapter on Energy Systems), as advisor to the Scientific Committee on Climate Change at the Ministry of Environment of Chile, and as APEC consultant on hydrogen certification. He is Subject Editor of the journal ENERGY (Q1, IF 9.4), Co-Chair for the Americas of the SDEWES Centre, and Chair of the PhD program in Industrial Engineering at PUCV. He held postdoctoral positions at the University of Zagreb, PNNL/JGCRI (US DOE), and Johns Hopkins/MIT, and earned his Ph.D. from the University of South Florida.",
+      "bio_short": "Co-Director of SCALE. Lead Author for IPCC WGIII (Energy Systems), advisor to Chile's Ministry of Environment, and APEC consultant on hydrogen certification.",
+      "bio_long": "Felipe Feijoo is an Associate Professor at the School of Industrial Engineering of Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab) and works at the intersection of energy systems modeling, climate policy, and operations research, with an emphasis on deep-decarbonization pathways under uncertainty and the interactions among energy, water, land, and food systems. He serves as a Lead Author for IPCC Working Group III (Chapter on Energy Systems), as advisor to the Scientific Committee on Climate Change at the Ministry of Environment of Chile, and as APEC consultant on hydrogen certification. He is Subject Editor of the journal ENERGY (Q1, IF 9.4), Co-Chair for the Americas of the SDEWES Centre, and Chair of the PhD program in Industrial Engineering at PUCV. He held postdoctoral positions at the University of Zagreb, PNNL/JGCRI (US DOE), and Johns Hopkins/MIT, and earned his Ph.D. from the University of South Florida.",
       "education": [
         "Ph.D., Industrial Engineering — University of South Florida, 2015",
         "B.S., Industrial Engineering — Universidad de La Frontera, 2010"
@@ -31,33 +65,6 @@
         "github":   "https://github.com/felipefeijoo",
         "cv":       "assets/files/CV_Felipe_Feijoo.pdf"
       },
-      "supervisors": [],
-      "current_position": "",
-      "year": ""
-    },
-    {
-      "id": "monica-castaneda",
-      "name": "Monica Castañeda",
-      "honorific": "Prof.",
-      "credentials": "Ph.D.",
-      "bibtex_name": "Castañeda",
-      "role": "Co-Director",
-      "title": "Co-Director · Energy & Climate Systems Lab",
-      "affiliation": "School of Industrial Engineering, PUCV",
-      "email": "monica.castaneda@pucv.cl",
-      "photo": "assets/images/monica-castaneda.jpeg",
-      "research_topics": [
-        "Energy transitions and policy",
-        "System dynamics for energy systems",
-        "Sustainable development indicators"
-      ],
-      "bio_short": "Co-Director of the Energy & Climate Systems Lab, working on energy transitions, system dynamics, and policy modeling for sustainable development.",
-      "bio_long": "Prof. Monica Castañeda serves as Co-Director of the Energy & Climate Systems Lab at PUCV. Her research combines system-dynamics modeling, policy analysis, and applied energy economics to study transitions toward low-carbon energy systems. She co-supervises graduate students in the lab and contributes to projects on decarbonization pathways and energy planning for Latin America.",
-      "education": [
-        "Ph.D. — TODO: complete",
-        "M.Sc. — TODO: complete"
-      ],
-      "links": {},
       "supervisors": [],
       "current_position": "",
       "year": ""
@@ -235,27 +242,10 @@
     },
 
     {
-      "id": "example-postdoc",
-      "name": "Example Postdoc",
-      "role": "Postdoctoral Researcher",
-      "title": "Postdoctoral Researcher",
-      "affiliation": "ECS Lab, PUCV",
-      "email": "",
-      "photo": "",
-      "research_topics": ["Energy system modelling", "Integrated assessment"],
-      "keywords": ["energy modelling", "GCAM", "decarbonization"],
-      "bio_short": "Placeholder profile demonstrating the Postdoc category. Replace with the real postdoc when one joins.",
-      "bio_long": "This entry is a placeholder — it shows how a current postdoc profile renders, including linked projects and publications. To replace with a real postdoc, edit this entry in data/team.json (id, name, photo, bio, bibtex_name, etc.).",
-      "supervisors": ["felipe-feijoo"],
-      "start_year": "2026",
-      "status": "Current Postdoc",
-      "links": {}
-    },
-    {
       "id": "francisco-flores-postdoc",
       "name": "Francisco Flores",
       "role": "Former Postdoc",
-      "title": "Former Postdoc · ECS Lab collaboration",
+      "title": "Former Postdoc · SCALE collaboration",
       "affiliation": "Now: Postdoctoral Researcher, University of Zagreb",
       "email": "",
       "photo": "",
@@ -320,7 +310,7 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Energy systems modeling"],
-      "thesis": "TODO: complete thesis topic.",
+      "thesis": "",
       "supervisors": ["felipe-feijoo"],
       "status": "In progress",
       "photo": ""
@@ -332,7 +322,7 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Energy modeling"],
-      "thesis": "TODO: complete thesis topic.",
+      "thesis": "",
       "supervisors": ["felipe-feijoo"],
       "status": "In progress",
       "photo": ""
@@ -367,8 +357,8 @@
         "PyPSA", "decarbonization pathways", "water-energy-land nexus",
         "hydrogen", "Power-to-X", "energy transition planning"
       ],
-      "bio_short": "Postdoctoral Researcher at the University of Zagreb. PhD alumnus of the ECS Lab. Works on integrated energy and climate modelling for Latin America, combining IAMs, power-system optimization, and water-energy-land nexus analyses.",
-      "bio_long": "Francisco Flores is a Postdoctoral Researcher at the University of Zagreb and a PhD alumnus of the Energy & Climate Systems Lab at PUCV. His research develops and applies integrated modeling frameworks — coupling Integrated Assessment Models (GCAM, GCAM-LA) with high-resolution power-system optimization (PyPSA, H2RES) — to study deep-decarbonization pathways for Latin America. His work explicitly accounts for cross-border electricity and hydrogen trade, flexible technologies, and the feedbacks among energy, water, and land systems. He has published in journals including Energy, Energy Strategy Reviews, and Applied Energy, and has collaborated with the U.S. Department of Energy / PNNL on the Net Zero World Initiative.",
+      "bio_short": "Postdoctoral Researcher at the University of Zagreb. PhD alumnus of SCALE. Works on integrated energy and climate modelling for Latin America, combining IAMs, power-system optimization, and water-energy-land nexus analyses.",
+      "bio_long": "Francisco Flores is a Postdoctoral Researcher at the University of Zagreb and a PhD alumnus of SCALE at PUCV. His research develops and applies integrated modeling frameworks — coupling Integrated Assessment Models (GCAM, GCAM-LA) with high-resolution power-system optimization (PyPSA, H2RES) — to study deep-decarbonization pathways for Latin America. His work explicitly accounts for cross-border electricity and hydrogen trade, flexible technologies, and the feedbacks among energy, water, and land systems. He has published in journals including Energy, Energy Strategy Reviews, and Applied Energy, and has collaborated with the U.S. Department of Energy / PNNL on the Net Zero World Initiative.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Postdoctoral Researcher, University of Zagreb (Croatia)",
       "links": {
@@ -418,7 +408,7 @@
       "affiliation": "M.Sc. in Industrial Engineering, PUCV (2023)",
       "thesis": "Long-term effects of distributive policies on regional employment allocation in the Chilean electricity sector.",
       "supervisors": ["felipe-feijoo"],
-      "current_position": "TODO: current position",
+      "current_position": "",
       "year": "2023",
       "photo": ""
     },
@@ -431,8 +421,8 @@
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "thesis": "Carbon-removal sequestration pathways for Chile.",
       "supervisors": ["felipe-feijoo"],
-      "current_position": "TODO: current position",
-      "year": "TODO",
+      "current_position": "",
+      "year": "",
       "photo": ""
     },
     {

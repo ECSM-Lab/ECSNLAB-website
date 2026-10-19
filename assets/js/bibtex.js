@@ -1,5 +1,5 @@
 /* =============================================================
-   bibtex.js — BibTeX parser + publication renderer for ECS Lab
+   bibtex.js — BibTeX parser + publication renderer for SCALE
    - Reads publications.bib (peer-reviewed) and reports.bib (technical)
    - Renders into separate journal / report subsections
    - Filters: tab (journals/reports/all), search, year, author,
@@ -171,9 +171,11 @@
         // If scoped to a single author (e.g. a member's profile), drop
         // entries that don't include that author in the author list.
         if (STATE.authorFilter) {
-          var authorRx = new RegExp(STATE.authorFilter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+          // Accent-insensitive, so "Castañeda" also matches "Castaneda".
+          var fold = function (s) { return String(s).normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+          var authorRx = new RegExp(fold(STATE.authorFilter).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
           STATE.all = STATE.all.filter(function (p) {
-            return p.authors.some(function (a) { return authorRx.test(a); });
+            return p.authors.some(function (a) { return authorRx.test(fold(a)); });
           });
         }
         if (STATE.keywordFilter && STATE.keywordFilter.length) {

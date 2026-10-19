@@ -22,7 +22,7 @@
         "Apply the framework to Chilean net-zero and net-negative pathways and compare policy packages."
       ],
       "methodology": "Bilevel and stochastic optimization coupled with an Integrated Assessment Model. Resilience constraints are embedded endogenously through scenario-conditioned reliability metrics; justice is quantified through region- and household-level distributional indicators.",
-      "results": "TODO: project just starting — results will be added as the work progresses.",
+      "results": "",
       "keywords": ["deep decarbonization", "resilience", "just transition", "renewables", "Chile"],
       "team": [
         { "member_id": "felipe-feijoo",   "role": "Principal Investigator" },

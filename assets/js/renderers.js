@@ -513,7 +513,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
           return (p.team || []).some(function (t) { return t.member_id === m.id; });
         });
 
-        document.title = m.name + ' — ECS Lab';
+        document.title = m.name + ' — SCALE';
 
         var statusBadge = '';
         if (m.role === 'Alumni')                      statusBadge = '<span class="tag tag-neutral">' + ESC(m.subrole || 'Alumni') + '</span>';
@@ -683,7 +683,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var areas   = res[2].areas   || [];
       var root = $(rootSel); if (!root) return;
       if (!p) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Project not found. <a href="projects.html">← Back to projects</a></p></div></section>'; return; }
-      document.title = p.title + ' — ECS Lab';
+      document.title = p.title + ' — SCALE';
       function memberLink(mid, fallbackName) {
         var mm = members.find(function (x) { return x.id === mid; });
         if (mm) return '<a href="member.html?id=' + mm.id + '">' + ESC(mm.name) + '</a>';
@@ -772,7 +772,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var allMembers  = res[2].members  || [];
       var root = $(rootSel); if (!root) return;
       if (!a) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Research area not found. <a href="research.html">← Back</a></p></div></section>'; return; }
-      document.title = a.title + ' — ECS Lab';
+      document.title = a.title + ' — SCALE';
 
       var areaProjects = allProjects.filter(function (p) {
         return (p.research_areas || []).indexOf(a.id) >= 0 || (a.projects || []).indexOf(p.id) >= 0;
@@ -842,14 +842,18 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
   function renderTopicDetail(rootSel) {
     var id = window.ECS.qsParam('id');
     if (!id) return;
-    return window.ECS.fetchJSON('data/supervision.json').then(function (data) {
+    return Promise.all([
+      window.ECS.fetchJSON('data/supervision.json'),
+      window.ECS.fetchJSON('data/team.json').catch(function () { return { members: [] }; })
+    ]).then(function (res) {
+      var data = res[0], members = res[1].members || [];
       var allTopics = []
         .concat((data.phd    || []).map(function (x) { return Object.assign({}, x, { level: 'PhD' }); }))
         .concat((data.master || []).map(function (x) { return Object.assign({}, x, { level: 'Master' }); }));
       var t = allTopics.find(function (x) { return x.id === id; });
       var root = $(rootSel); if (!root) return;
       if (!t) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Topic not found. <a href="opportunities.html">← Back</a></p></div></section>'; return; }
-      document.title = t.title + ' — ECS Lab';
+      document.title = t.title + ' — SCALE';
 
       var levelPill = /PhD/i.test(t.level)
         ? '<span class="pill deg-phd">PhD</span>'
@@ -880,7 +884,18 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var areaBlock = t.area
         ? '<div class="aside-block"><h4>Research area</h4><p>' + ESC(t.area) + '</p></div>'
         : '';
-      var contactBlock = '<div class="aside-block"><h4>Apply</h4><p>If interested, write to <a href="mailto:felipe.feijoo@pucv.cl">felipe.feijoo@pucv.cl</a> with a brief CV and research statement.</p></div>';
+      // Apply to the topic's supervisors; fall back to the lab director.
+      var emails = [t.supervisor, t.co_supervisor].map(function (name) {
+        var m = name && members.find(function (x) { return x.name === name; });
+        return m && m.email;
+      }).filter(Boolean);
+      if (!emails.length) {
+        var dir = members.find(function (x) { return x.role === 'Director'; });
+        if (dir && dir.email) emails.push(dir.email);
+      }
+      var contactBlock = '<div class="aside-block"><h4>Apply</h4><p>If interested, write to ' +
+        emails.map(function (e) { return '<a href="mailto:' + ESC(e) + '">' + ESC(e) + '</a>'; }).join(' and ') +
+        ' with a brief CV and research statement.</p></div>';
 
       root.innerHTML =
         '<section class="detail-hero"><div class="container">' +
