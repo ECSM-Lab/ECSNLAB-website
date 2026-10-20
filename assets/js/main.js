@@ -124,7 +124,7 @@
       li.appendChild(socialLinks('nav-social-mobile'));
       menu.appendChild(li);
     }
-    var footBrand = $('.footer-brand > div');
+    var footBrand = $('.footer-text');
     if (footBrand) footBrand.appendChild(socialLinks('footer-social'));
   }
 
