@@ -50,6 +50,10 @@
     'Switch to dark mode': 'Cambiar a modo oscuro',
     'Switch to light mode': 'Cambiar a modo claro',
     'Loading…': 'Cargando…',
+    'Join us': 'Únete',
+    'SCALE on LinkedIn': 'SCALE en LinkedIn',
+    'SCALE on X': 'SCALE en X',
+    'SCALE on Instagram': 'SCALE en Instagram',
     'Other': 'Otros',
 
     /* ---------- Page titles (browser tab) ---------- */
@@ -184,6 +188,13 @@
     "Current Master's Student": 'Estudiante actual de magíster',
     'Current Undergraduate Student': 'Estudiante actual de pregrado',
     'View profile': 'Ver perfil',
+    'School of Industrial Engineering, PUCV': 'Escuela de Ingeniería Industrial, PUCV',
+    'PhD in Industrial Engineering, PUCV': 'Doctorado en Ingeniería Industrial, PUCV',
+    'M.Sc. in Industrial Engineering, PUCV': 'Magíster en Ingeniería Industrial, PUCV',
+    'M.Sc. in Industrial Engineering': 'Magíster en Ingeniería Industrial',
+    'University of Zagreb, Croatia': 'Universidad de Zagreb, Croacia',
+    'University of Liège, Belgium': 'Universidad de Lieja, Bélgica',
+    'University of Canterbury, New Zealand': 'Universidad de Canterbury, Nueva Zelanda',
     'Thesis:': 'Tesis:',
     'Now:': 'Actualmente:',
 
@@ -374,7 +385,7 @@
                  Jul: 'jul', Aug: 'ago', Sep: 'sept', Oct: 'oct', Nov: 'nov', Dec: 'dic' };
   var PATTERNS = [
     [/^(\d+) of (\d+) shown$/, '$1 de $2 visibles'],
-    [/^Team · (\d+) participants?$/, 'Equipo · $1 participantes'],
+    [/^Team · (\d+) participants?$/, function (m, n) { return 'Equipo · ' + n + (n === '1' ? ' participante' : ' participantes'); }],
     [/^Graduated (\d{4})$/, 'Egreso: $1'],
     [/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4})$/, function (m, mo, y) { return MONTHS[mo] + ' ' + y; }]
   ];

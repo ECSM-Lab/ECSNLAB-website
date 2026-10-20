@@ -786,7 +786,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
             (p.amount ? '<p style="margin-top:6px"><strong>Amount:</strong> ' + ESC(p.amount) + '</p>' : '') +
             (p.role ? '<p style="margin-top:6px"><strong>Role:</strong> ' + ESC(p.role) + '</p>' : '') +
             '</div>' +
-            '<div class="aside-block" id="team"><h4>Team · ' + (p.team || []).length + ' participants</h4><ul>' + teamHtml + '</ul></div>' +
+            '<div class="aside-block" id="team"><h4>Team · ' + (p.team || []).length + ((p.team || []).length === 1 ? ' participant' : ' participants') + '</h4><ul>' + teamHtml + '</ul></div>' +
           '</aside>' +
         '</div></div></section>';
       bold(root);

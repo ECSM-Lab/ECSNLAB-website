@@ -21,15 +21,19 @@
         "System dynamics and simulation modeling",
         "Security of supply in hydro-dominated power systems"
       ],
+      "research_topics_es": ["Mercados de energía y diseño de mercados eléctricos", "Política energética e integración de energías renovables", "Dinámica de sistemas y modelamiento por simulación", "Seguridad de suministro en sistemas eléctricos con predominio hidroeléctrico"],
       "keywords": ["system dynamics", "simulation", "energy markets", "energy policy", "renewables", "security of supply"],
+      "keywords_es": ["dinámica de sistemas", "simulación", "mercados de energía", "política energética", "energías renovables", "seguridad de suministro"],
       "bio_short": "Co-Director of SCALE. Works on energy markets, energy policy, and renewable integration using system dynamics and simulation, with applications in Colombia and the United Kingdom.",
       "bio_short_es": "Codirectora de SCALE. Trabaja en mercados de energía, política energética e integración de energías renovables mediante dinámica de sistemas y simulación, con aplicaciones en Colombia y el Reino Unido.",
       "bio_long": "Monica Castañeda is a Professor in the Systems Area of the School of Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile, and Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab). Her research uses system dynamics and simulation to understand how energy markets and policies shape the transition to low-carbon power systems. She has studied electricity-market reform in Great Britain, the long-term effects of feed-in tariffs on residential solar, the so-called utility death spiral, and the security of supply of hydro-dominated systems such as Colombia's, including pathways towards 100% renewable electricity. Her work appears in journals such as Energy Policy, Renewable Energy, Renewable and Sustainable Energy Reviews, Energy, and the European Journal of Operational Research. She supervises graduate students in the lab and contributes to projects on decarbonization pathways and energy planning for Latin America. She holds a Ph.D. in Engineering, an M.Sc. in Systems Engineering, and a degree in Administrative Engineering, all from Universidad Nacional de Colombia.",
+      "bio_long_es": "Monica Castañeda es Profesora del Área de Sistemas de la Escuela de Ingeniería Industrial de la Pontificia Universidad Católica de Valparaíso (PUCV), Chile, y Codirectora de SCALE (Sustainable Climate Analysis & Energy Decision Lab). Su investigación utiliza dinámica de sistemas y simulación para comprender cómo los mercados y las políticas energéticas inciden en la transición hacia sistemas eléctricos bajos en carbono. Ha estudiado la reforma del mercado eléctrico en Gran Bretaña, los efectos de largo plazo de las tarifas de inyección (feed-in tariffs) sobre la energía solar residencial, la llamada espiral de la muerte de las empresas eléctricas y la seguridad de suministro de sistemas con predominio hidroeléctrico como el colombiano, incluidas trayectorias hacia una electricidad 100 % renovable. Sus trabajos se han publicado en revistas como Energy Policy, Renewable Energy, Renewable and Sustainable Energy Reviews, Energy y European Journal of Operational Research. Supervisa estudiantes de posgrado en el laboratorio y contribuye a proyectos sobre trayectorias de descarbonización y planificación energética para América Latina. Es Doctora en Ingeniería, Magíster en Ingeniería de Sistemas e Ingeniera Administradora, todos títulos de la Universidad Nacional de Colombia.",
       "education": [
         "Ph.D. in Engineering, Universidad Nacional de Colombia",
         "M.Sc. in Systems Engineering, Universidad Nacional de Colombia",
         "Administrative Engineering, Universidad Nacional de Colombia"
       ],
+      "education_es": ["Doctorado en Ingeniería, Universidad Nacional de Colombia", "Magíster en Ingeniería de Sistemas, Universidad Nacional de Colombia", "Ingeniería Administrativa, Universidad Nacional de Colombia"],
       "links": {
         "scholar":  "https://scholar.google.com/citations?user=x6IGK7cAAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/monica-castaneda-riascos-b5663847/",
@@ -58,13 +62,16 @@
         "Bilevel and stochastic optimization",
         "Energy–water–food nexus"
       ],
+      "research_topics_es": ["Modelamiento de sistemas energéticos", "Política climática y trayectorias de mitigación", "Optimización binivel y estocástica", "Nexo energía–agua–alimentos"],
       "bio_short": "Co-Director of SCALE. Lead Author for IPCC WGIII (Energy Systems), advisor to Chile's Ministry of Environment, and APEC consultant on hydrogen certification.",
       "bio_short_es": "Codirector de SCALE. Autor principal del Grupo de Trabajo III del IPCC (Sistemas Energéticos), asesor del Ministerio del Medio Ambiente de Chile y consultor de APEC en certificación de hidrógeno.",
       "bio_long": "Felipe Feijoo is an Associate Professor at the School of Industrial Engineering of Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab) and works at the intersection of energy systems modeling, climate policy, and operations research, with an emphasis on deep-decarbonization pathways under uncertainty and the interactions among energy, water, land, and food systems. He serves as a Lead Author for IPCC Working Group III (Chapter on Energy Systems), as advisor to the Scientific Committee on Climate Change at the Ministry of Environment of Chile, and as APEC consultant on hydrogen certification. He is Subject Editor of the journal ENERGY (Q1, IF 9.4), Co-Chair for the Americas of the SDEWES Centre, and Chair of the PhD program in Industrial Engineering at PUCV. He held postdoctoral positions at the University of Zagreb, PNNL/JGCRI (US DOE), and Johns Hopkins/MIT, and earned his Ph.D. from the University of South Florida.",
+      "bio_long_es": "Felipe Feijoo es Profesor Asociado de la Escuela de Ingeniería Industrial de la Pontificia Universidad Católica de Valparaíso (PUCV), Chile. Es Codirector de SCALE (Sustainable Climate Analysis & Energy Decision Lab) y trabaja en la intersección entre el modelamiento de sistemas energéticos, la política climática y la investigación de operaciones, con énfasis en trayectorias de descarbonización profunda bajo incertidumbre y en las interacciones entre los sistemas de energía, agua, suelo y alimentos. Es Autor Principal del Grupo de Trabajo III del IPCC (capítulo de Sistemas Energéticos), asesor del Comité Científico de Cambio Climático del Ministerio del Medio Ambiente de Chile y consultor de APEC en certificación de hidrógeno. Es Subject Editor de la revista ENERGY (Q1, IF 9,4), Co-Chair para las Américas del SDEWES Centre y Director del programa de Doctorado en Ingeniería Industrial de la PUCV. Realizó estancias postdoctorales en la Universidad de Zagreb, PNNL/JGCRI (Departamento de Energía de EE. UU.) y Johns Hopkins/MIT, y obtuvo su doctorado en la University of South Florida.",
       "education": [
         "Ph.D., Industrial Engineering, University of South Florida, 2015",
         "B.S., Industrial Engineering, Universidad de La Frontera, 2010"
       ],
+      "education_es": ["Doctorado en Ingeniería Industrial, University of South Florida, 2015", "Ingeniería Industrial (B.S.), Universidad de La Frontera, 2010"],
       "links": {
         "scholar":  "https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en",
         "anid":     "https://investigadores.anid.cl/es/public_search/researcher?id=25636",
@@ -85,7 +92,9 @@
       "title": "National Collaborator",
       "affiliation": "Escuela de Ingeniería Eléctrica, PUCV",
       "research_topics": ["Power systems", "Electrical engineering"],
+      "research_topics_es": ["Sistemas eléctricos de potencia", "Ingeniería eléctrica"],
       "bio_short": "National collaborator from the School of Electrical Engineering, PUCV.",
+      "bio_short_es": "Integrante de la red de colaboración nacional, desde la Escuela de Ingeniería Eléctrica de la PUCV.",
       "photo": ""
     },
     {
@@ -97,7 +106,9 @@
       "title": "National Collaborator",
       "affiliation": "Departamento de Ingeniería Civil, Universidad de Chile",
       "research_topics": ["Civil engineering", "Water systems"],
+      "research_topics_es": ["Ingeniería civil", "Sistemas hídricos"],
       "bio_short": "National collaborator from Universidad de Chile.",
+      "bio_short_es": "Integrante de la red de colaboración nacional, desde la Universidad de Chile.",
       "photo": ""
     },
     {
@@ -109,7 +120,9 @@
       "title": "National Collaborator · PhD Alumni",
       "affiliation": "Departamento de Ingeniería Industrial, UCSC",
       "research_topics": ["Microgrid optimization", "Stackelberg models", "Energy management"],
+      "research_topics_es": ["Optimización de microrredes", "Modelos de Stackelberg", "Gestión energética"],
       "bio_short": "Assistant Professor at UCSC; PhD alumna of the lab. Works on microgrid optimization with bilevel and game-theoretic models.",
+      "bio_short_es": "Profesora Asistente en la UCSC y exalumna de doctorado del laboratorio. Trabaja en optimización de microrredes con modelos binivel y de teoría de juegos.",
       "photo": ""
     },
     {
@@ -121,7 +134,9 @@
       "title": "National Collaborator",
       "affiliation": "Escuela de Ingeniería Bioquímica, PUCV",
       "research_topics": ["Climate policy", "Environmental science"],
+      "research_topics_es": ["Política climática", "Ciencias ambientales"],
       "bio_short": "National collaborator; former Minister of the Environment of Chile.",
+      "bio_short_es": "Integrante de la red de colaboración nacional; estuvo a cargo del Ministerio del Medio Ambiente de Chile.",
       "photo": ""
     },
     {
@@ -133,6 +148,7 @@
       "title": "National Collaborator",
       "affiliation": "Facultad de Ingeniería, Universidad Adolfo Ibáñez",
       "research_topics": ["Operations research", "Industrial engineering"],
+      "research_topics_es": ["Investigación de operaciones", "Ingeniería industrial"],
       "photo": ""
     },
     {
@@ -144,6 +160,7 @@
       "title": "National Collaborator",
       "affiliation": "Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes",
       "research_topics": ["Mathematical economics", "Equilibrium models"],
+      "research_topics_es": ["Economía matemática", "Modelos de equilibrio"],
       "photo": ""
     },
     {
@@ -155,7 +172,9 @@
       "title": "International Collaborator",
       "affiliation": "University of Zagreb, Croatia",
       "research_topics": ["Sustainable energy systems", "100% RES"],
+      "research_topics_es": ["Sistemas energéticos sostenibles", "100 % energías renovables"],
       "bio_short": "Founder of the SDEWES Centre and long-standing collaborator of the lab.",
+      "bio_short_es": "Fundó el SDEWES Centre y colabora con el laboratorio desde hace muchos años.",
       "photo": ""
     },
     {
@@ -167,6 +186,7 @@
       "title": "International Collaborator",
       "affiliation": "University of Zagreb, Croatia",
       "research_topics": ["Energy planning", "Sector coupling"],
+      "research_topics_es": ["Planificación energética", "Acoplamiento sectorial"],
       "photo": ""
     },
     {
@@ -178,6 +198,7 @@
       "title": "International Collaborator",
       "affiliation": "University of Zagreb, Croatia",
       "research_topics": ["Industrial sustainability", "Process modeling"],
+      "research_topics_es": ["Sostenibilidad industrial", "Modelamiento de procesos"],
       "photo": ""
     },
     {
@@ -189,6 +210,7 @@
       "title": "International Collaborator",
       "affiliation": "University of Liège, Belgium",
       "research_topics": ["Power-system modeling", "Open-source energy models", "PyPSA"],
+      "research_topics_es": ["Modelamiento de sistemas eléctricos", "Modelos energéticos de código abierto", "PyPSA"],
       "photo": ""
     },
     {
@@ -200,6 +222,7 @@
       "title": "International Collaborator",
       "affiliation": "Ss. Cyril and Methodius University in Skopje",
       "research_topics": ["Energy systems", "Renewable integration"],
+      "research_topics_es": ["Sistemas energéticos", "Integración de energías renovables"],
       "photo": ""
     },
     {
@@ -211,6 +234,7 @@
       "title": "International Collaborator",
       "affiliation": "Macedonian Academy of Sciences and Arts",
       "research_topics": ["Climate-energy policy"],
+      "research_topics_es": ["Política climática y energética"],
       "photo": ""
     },
     {
@@ -222,6 +246,7 @@
       "title": "International Collaborator",
       "affiliation": "University of South Florida",
       "research_topics": ["Stochastic models", "Power markets"],
+      "research_topics_es": ["Modelos estocásticos", "Mercados eléctricos"],
       "photo": ""
     },
     {
@@ -233,6 +258,7 @@
       "title": "International Collaborator",
       "affiliation": "Indian School of Business",
       "research_topics": ["Optimization", "Power systems"],
+      "research_topics_es": ["Optimización", "Sistemas eléctricos de potencia"],
       "photo": ""
     },
     {
@@ -244,6 +270,7 @@
       "title": "International Collaborator",
       "affiliation": "University of Canterbury, New Zealand",
       "research_topics": ["100% renewable energy systems", "Hydropower"],
+      "research_topics_es": ["Sistemas energéticos 100 % renovables", "Energía hidroeléctrica"],
       "photo": ""
     },
 
@@ -253,6 +280,7 @@
       "role": "Former Postdoc",
       "title": "Former Postdoc · SCALE collaboration",
       "affiliation": "Now: Postdoctoral Researcher, University of Zagreb",
+      "affiliation_es": "Actualmente: Investigador postdoctoral, Universidad de Zagreb",
       "email": "",
       "photo": "",
       "bibtex_name": "Francisco Flores",
@@ -261,8 +289,11 @@
         "Integrated assessment models (GCAM)",
         "Cross-border electricity and hydrogen trade"
       ],
+      "research_topics_es": ["Modelamiento de sistemas energéticos", "Modelos de evaluación integrada (GCAM)", "Comercio transfronterizo de electricidad e hidrógeno"],
       "bio_short": "Former lab collaborator (placeholder demo entry to show the Former Postdocs category). Francisco is also listed as PhD Alumnus elsewhere.",
+      "bio_short_es": "Excolaborador del laboratorio (entrada de demostración para mostrar la categoría de ex postdoctorados). Francisco también aparece como egresado de doctorado en otra sección.",
       "current_position": "Postdoctoral Researcher, University of Zagreb",
+      "current_position_es": "Investigador postdoctoral, Universidad de Zagreb",
       "year": "2025",
       "links": {}
     },
@@ -279,19 +310,26 @@
         "Energy system resilience and climate risk assessment",
         "Energy system modeling and optimization"
       ],
+      "research_topics_es": ["Resiliencia de sistemas energéticos y evaluación de riesgos climáticos", "Modelamiento y optimización de sistemas energéticos"],
       "keywords": [
         "Energy System Resilience",
         "Energy System Modeling",
         "Climate Uncertainty"
       ],
+      "keywords_es": ["Resiliencia de sistemas energéticos", "Modelamiento de sistemas energéticos", "Incertidumbre climática"],
       "degree": "PhD in Industrial Engineering, PUCV",
       "thesis": "Modeling and Assessment of Energy System Resilience under Climate and Operational Uncertainty",
+      "thesis_es": "Modelamiento y evaluación de la resiliencia de sistemas energéticos bajo incertidumbre climática y operacional",
       "thesis_summary": "Extreme climate events threaten energy infrastructure and supply continuity, highlighting the need to assess resilience beyond conventional reliability indicators. This research proposes a framework to evaluate energy systems under climate and operational uncertainty. The H2RES model will simulate climate disturbances, sector interactions, and flexibility options. Probabilistic scenarios and stochastic planning will support the assessment of vulnerabilities and potential strategies to improve resilience and inform future energy planning.",
+      "thesis_summary_es": "Los eventos climáticos extremos amenazan la infraestructura energética y la continuidad del suministro, lo que evidencia la necesidad de evaluar la resiliencia más allá de los indicadores convencionales de confiabilidad. Esta investigación propone un marco para evaluar sistemas energéticos bajo incertidumbre climática y operacional. El modelo H2RES simulará perturbaciones climáticas, interacciones entre sectores y opciones de flexibilidad. Escenarios probabilísticos y planificación estocástica apoyarán la evaluación de vulnerabilidades y de posibles estrategias para mejorar la resiliencia y orientar la planificación energética futura.",
       "bio_short": "PhD student in Industrial Engineering researching energy system resilience and decarbonization in Chile, with a focus on energy system modeling, extreme climate events, and cross-sector disruptions.",
+      "bio_short_es": "Estudiante de doctorado en Ingeniería Industrial que investiga la resiliencia de los sistemas energéticos y la descarbonización en Chile, con foco en el modelamiento de sistemas energéticos, los eventos climáticos extremos y las disrupciones intersectoriales.",
       "bio_long": "Paola Paredes is a PhD student in Industrial Engineering at the Pontificia Universidad Católica de Valparaíso (PUCV), Chile, supported by the Chilean Scholarship “Doctorado Nacional” awarded by the Agencia Nacional de Investigación y Desarrollo (ANID). She holds a degree in Energy Engineering from the Universidad Católica Boliviana San Pablo, Bolivia.\n\nHer research focuses on energy system modeling and assessing energy resilience under climate and operational uncertainty, with particular attention to the challenges of the transition to low-carbon energy systems. Her doctoral work explores how extreme climate events can affect energy infrastructure, system performance, and interactions across interconnected energy sectors. Her broader research interests include renewable energy integration, power system planning, energy security, and the development of quantitative frameworks for evaluating energy system reliability and resilience.\n\nShe is particularly interested in combining energy modeling with practical planning approaches and the development of sustainable, reliable, and resilient energy systems. Her long-term goal is to contribute to academic research and international collaboration in sustainable energy transitions.",
+      "bio_long_es": "Paola Paredes es estudiante de doctorado en Ingeniería Industrial en la Pontificia Universidad Católica de Valparaíso (PUCV), Chile, con el apoyo de la Beca de Doctorado Nacional otorgada por la Agencia Nacional de Investigación y Desarrollo (ANID). Es Ingeniera en Energía de la Universidad Católica Boliviana San Pablo, Bolivia.\n\nSu investigación se centra en el modelamiento de sistemas energéticos y en la evaluación de la resiliencia energética bajo incertidumbre climática y operacional, con especial atención a los desafíos de la transición hacia sistemas energéticos bajos en carbono. Su trabajo doctoral explora cómo los eventos climáticos extremos pueden afectar la infraestructura energética, el desempeño del sistema y las interacciones entre sectores energéticos interconectados. Sus intereses de investigación más amplios incluyen la integración de energías renovables, la planificación de sistemas eléctricos, la seguridad energética y el desarrollo de marcos cuantitativos para evaluar la confiabilidad y la resiliencia de los sistemas energéticos.\n\nLe interesa especialmente combinar el modelamiento energético con enfoques prácticos de planificación y con el desarrollo de sistemas energéticos sostenibles, confiables y resilientes. Su objetivo de largo plazo es contribuir a la investigación académica y a la colaboración internacional en transiciones energéticas sostenibles.",
       "education": [
         "Bachelor's Degree in Energy Engineering, Universidad Católica Boliviana San Pablo, 2024"
       ],
+      "education_es": ["Ingeniería en Energía, Universidad Católica Boliviana San Pablo, 2024"],
       "supervisors": [
         "felipe-feijoo"
       ],
@@ -311,7 +349,9 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Distributed PV", "Electric vehicles", "Residential energy"],
+      "research_topics_es": ["Generación fotovoltaica distribuida", "Vehículos eléctricos", "Energía residencial"],
       "thesis": "Coordinated incentives for EV-plus-PV uptake in Chilean households.",
+      "thesis_es": "Incentivos coordinados para la adopción conjunta de vehículos eléctricos y generación fotovoltaica en hogares chilenos.",
       "supervisors": ["felipe-feijoo"],
       "start_year": "2025",
       "expected_year": "2026",
@@ -325,7 +365,9 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Just transition indicators", "Distributional analysis"],
+      "research_topics_es": ["Indicadores de transición justa", "Análisis distributivo"],
       "thesis": "Quantitative indicators of procedural and distributional justice in decarbonization.",
+      "thesis_es": "Indicadores cuantitativos de justicia procedimental y distributiva en la descarbonización.",
       "supervisors": ["felipe-feijoo"],
       "start_year": "2024",
       "expected_year": "2026",
@@ -339,6 +381,7 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Energy systems modeling"],
+      "research_topics_es": ["Modelamiento de sistemas energéticos"],
       "thesis": "",
       "supervisors": ["felipe-feijoo"],
       "status": "In progress",
@@ -351,6 +394,7 @@
       "title": "Master's Student",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "research_topics": ["Energy modeling"],
+      "research_topics_es": ["Modelamiento energético"],
       "thesis": "",
       "supervisors": ["felipe-feijoo"],
       "status": "In progress",
@@ -368,20 +412,28 @@
         "Operations research",
         "Data analysis"
       ],
+      "research_topics_es": ["Modelamiento de sistemas energéticos", "Investigación de operaciones", "Análisis de datos"],
       "keywords": [
         "Energy systems",
         "Optimization",
         "Data analytics",
         "Operations research"
       ],
+      "keywords_es": ["Sistemas energéticos", "Optimización", "Análisis de datos", "Investigación de operaciones"],
       "degree": "M.Sc. in Industrial Engineering",
+      "degree_es": "Magíster en Ingeniería Industrial",
       "thesis": "Data-Driven Enhancement of Energy Dispatch and Forecasting in the H2RES Framework",
+      "thesis_es": "Mejora basada en datos del despacho y el pronóstico energético en el marco H2RES",
       "thesis_summary": "This thesis investigates the integration of advanced data analytics and predictive modeling to improve energy dispatch and forecasting accuracy within the H2RES framework. Accurate forecasting of variable renewable energy generation and electricity demand is critical for the stability of modern power grids. By leveraging historical datasets and data-driven techniques, this research aims to refine the input parameters of the H2RES energy planning model. The enhanced framework will be applied to simulate scenarios with high renewable penetration, evaluating the operational and economic impacts of improved forecasting on decision-making. Ultimately, this work provides a robust data-driven approach to optimize resource allocation, reduce operational uncertainties, and support the transition towards sustainable and highly efficient energy systems.",
+      "thesis_summary_es": "Esta tesis investiga la integración de análisis avanzado de datos y modelamiento predictivo para mejorar el despacho energético y la precisión de los pronósticos dentro del marco H2RES. Un pronóstico preciso de la generación renovable variable y de la demanda eléctrica es clave para la estabilidad de las redes eléctricas modernas. A partir de datos históricos y de técnicas basadas en datos, esta investigación busca refinar los parámetros de entrada del modelo de planificación energética H2RES. El marco mejorado se aplicará a la simulación de escenarios con alta penetración renovable, evaluando los impactos operacionales y económicos de un mejor pronóstico en la toma de decisiones. En definitiva, este trabajo ofrece un enfoque robusto basado en datos para optimizar la asignación de recursos, reducir las incertidumbres operacionales y apoyar la transición hacia sistemas energéticos sostenibles y altamente eficientes.",
       "bio_short": "M.Sc. Student in Industrial Engineering at PUCV.",
+      "bio_short_es": "Estudiante de magíster en Ingeniería Industrial en la PUCV.",
       "bio_long": "Joaquín Vergara is a Master's student in Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is currently participating in an Erasmus+ exchange program at the University of Zagreb, Croatia, focusing on energy engineering and energy systems modeling using the H2RES framework. His academic and professional background is deeply rooted in operations research, data analytics, and process optimization.\n\nThroughout his academic journey, Joaquín has been recognized for his outstanding performance. He received the Master's Academic Excellence Scholarship in 2025 for ranking among the top three students in his cohort, and was featured on the PUCV Industrial Engineering Honor Roll for two consecutive years (2023 and 2024).\n\nLooking ahead, Joaquín aims to apply his expertise in mathematical modeling and advanced data analytics to tackle complex challenges within the energy and logistics sectors.",
+      "bio_long_es": "Joaquín Vergara es estudiante de magíster en Ingeniería Industrial en la Pontificia Universidad Católica de Valparaíso (PUCV), Chile. Actualmente participa en un programa de intercambio Erasmus+ en la Universidad de Zagreb, Croacia, enfocado en ingeniería energética y en el modelamiento de sistemas energéticos con el marco H2RES. Su formación académica y profesional tiene una base sólida en investigación de operaciones, análisis de datos y optimización de procesos.\n\nA lo largo de su trayectoria académica, Joaquín ha sido reconocido por su destacado desempeño. Recibió la Beca de Excelencia Académica de Magíster en 2025 por ubicarse entre los tres mejores estudiantes de su cohorte, y formó parte del Cuadro de Honor de Ingeniería Industrial de la PUCV durante dos años consecutivos (2023 y 2024).\n\nA futuro, Joaquín busca aplicar su experiencia en modelamiento matemático y análisis avanzado de datos para abordar desafíos complejos en los sectores de energía y logística.",
       "education": [
         "Bachelor of Engineering Sciences, Pontificia Universidad Católica de Valparaíso, 2025"
       ],
+      "education_es": ["Licenciatura en Ciencias de la Ingeniería, Pontificia Universidad Católica de Valparaíso, 2025"],
       "supervisors": [
         "felipe-feijoo"
       ],
@@ -401,13 +453,16 @@
       "subrole": "PhD Alumni",
       "title": "PhD Alumnus · Postdoctoral Researcher",
       "affiliation": "University of Zagreb · PhD from PUCV (2025)",
+      "affiliation_es": "Universidad de Zagreb · Doctorado en la PUCV (2025)",
       "email": "",
       "photo": "",
       "bibtex_name": "Francisco Flores",
       "degree": "PhD in Industrial Engineering, PUCV",
       "year": "2025",
       "thesis": "Strategic Energy Transition Planning in Latin America: An Integrated Approach with Cross-Border Trade and Flexible Technologies.",
+      "thesis_es": "Planificación estratégica de la transición energética en América Latina: un enfoque integrado con comercio transfronterizo y tecnologías flexibles.",
       "thesis_summary": "Developed integrated energy-transition planning frameworks for Latin America that endogenously represent cross-border electricity and hydrogen trade together with flexible technologies (storage, demand response, Power-to-X). Combines integrated-assessment modeling (GCAM) with high-resolution power-system models (PyPSA, H2RES) to quantify the role of regional integration and flexibility in deep-decarbonization pathways.",
+      "thesis_summary_es": "Desarrolló marcos integrados de planificación de la transición energética para América Latina que representan de forma endógena el comercio transfronterizo de electricidad e hidrógeno junto con tecnologías flexibles (almacenamiento, respuesta de la demanda, Power-to-X). Combina el modelamiento de evaluación integrada (GCAM) con modelos de sistemas eléctricos de alta resolución (PyPSA, H2RES) para cuantificar el rol de la integración regional y de la flexibilidad en trayectorias de descarbonización profunda.",
       "research_topics": [
         "Energy system modelling",
         "Integrated assessment models (GCAM)",
@@ -418,15 +473,20 @@
         "Hydrogen and Power-to-X",
         "Energy transition planning"
       ],
+      "research_topics_es": ["Modelamiento de sistemas energéticos", "Modelos de evaluación integrada (GCAM)", "Optimización de sistemas eléctricos de alta resolución (PyPSA, H2RES)", "Trayectorias de descarbonización para América Latina", "Comercio transfronterizo de electricidad e hidrógeno", "Nexo agua-energía-suelo", "Hidrógeno y Power-to-X", "Planificación de la transición energética"],
       "keywords": [
         "energy system modelling", "integrated assessment models", "GCAM", "H2RES",
         "PyPSA", "decarbonization pathways", "water-energy-land nexus",
         "hydrogen", "Power-to-X", "energy transition planning"
       ],
+      "keywords_es": ["modelamiento de sistemas energéticos", "modelos de evaluación integrada", "GCAM", "H2RES", "PyPSA", "trayectorias de descarbonización", "nexo agua-energía-suelo", "hidrógeno", "Power-to-X", "planificación de la transición energética"],
       "bio_short": "Postdoctoral Researcher at the University of Zagreb. PhD alumnus of SCALE. Works on integrated energy and climate modelling for Latin America, combining IAMs, power-system optimization, and water-energy-land nexus analyses.",
+      "bio_short_es": "Investigador postdoctoral en la Universidad de Zagreb y egresado del doctorado de SCALE. Trabaja en modelamiento integrado de energía y clima para América Latina, combinando modelos de evaluación integrada, optimización de sistemas eléctricos y análisis del nexo agua-energía-suelo.",
       "bio_long": "Francisco Flores is a Postdoctoral Researcher at the University of Zagreb and a PhD alumnus of SCALE at PUCV. His research develops and applies integrated modeling frameworks, coupling Integrated Assessment Models (GCAM, GCAM-LA) with high-resolution power-system optimization (PyPSA, H2RES), to study deep-decarbonization pathways for Latin America. His work explicitly accounts for cross-border electricity and hydrogen trade, flexible technologies, and the feedbacks among energy, water, and land systems. He has published in journals including Energy, Energy Strategy Reviews, and Applied Energy, and has collaborated with the U.S. Department of Energy / PNNL on the Net Zero World Initiative.",
+      "bio_long_es": "Francisco Flores es investigador postdoctoral en la Universidad de Zagreb y egresado del doctorado de SCALE en la PUCV. Su investigación desarrolla y aplica marcos de modelamiento integrado, que acoplan modelos de evaluación integrada (GCAM, GCAM-LA) con optimización de sistemas eléctricos de alta resolución (PyPSA, H2RES), para estudiar trayectorias de descarbonización profunda en América Latina. Su trabajo considera explícitamente el comercio transfronterizo de electricidad e hidrógeno, las tecnologías flexibles y las retroalimentaciones entre los sistemas de energía, agua y suelo. Ha publicado en revistas como Energy, Energy Strategy Reviews y Applied Energy, y ha colaborado con el Departamento de Energía de EE. UU. / PNNL en la iniciativa Net Zero World.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Postdoctoral Researcher, University of Zagreb (Croatia)",
+      "current_position_es": "Investigador postdoctoral, Universidad de Zagreb (Croacia)",
       "links": {
         "scholar":  "",
         "orcid":    "",
@@ -442,11 +502,15 @@
       "subrole": "PhD Alumni",
       "title": "PhD Alumna",
       "affiliation": "PhD in Industrial Engineering, PUCV (2024)",
+      "affiliation_es": "Doctorado en Ingeniería Industrial, PUCV (2024)",
       "bibtex_name": "Matamala",
       "research_topics": ["Microgrid operations", "Stackelberg models", "Flexibility options"],
+      "research_topics_es": ["Operación de microrredes", "Modelos de Stackelberg", "Opciones de flexibilidad"],
       "thesis": "Optimizing Microgrid Operations through Stackelberg Models and Flexibility Options: A Strategic Approach to Sustainable Energy Management.",
+      "thesis_es": "Optimización de la operación de microrredes mediante modelos de Stackelberg y opciones de flexibilidad: un enfoque estratégico para la gestión energética sostenible.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Assistant Professor, Universidad Católica de la Santísima Concepción (UCSC)",
+      "current_position_es": "Profesora Asistente, Universidad Católica de la Santísima Concepción (UCSC)",
       "year": "2024",
       "photo": ""
     },
@@ -457,11 +521,15 @@
       "subrole": "PhD Alumni",
       "title": "PhD Alumna",
       "affiliation": "PhD in Industrial Engineering, PUCV (2022)",
+      "affiliation_es": "Doctorado en Ingeniería Industrial, PUCV (2022)",
       "bibtex_name": "Arriet",
       "research_topics": ["Water management policy", "Energy–water nexus"],
+      "research_topics_es": ["Políticas de gestión del agua", "Nexo energía–agua"],
       "thesis": "Water Management Policies for the Energy Sector for North America.",
+      "thesis_es": "Políticas de gestión del agua para el sector energético en América del Norte.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Researcher, Bureau Veritas Group",
+      "current_position_es": "Investigadora, Bureau Veritas Group",
       "year": "2022",
       "photo": ""
     },
@@ -472,7 +540,9 @@
       "subrole": "Master's Alumni",
       "title": "Master's Alumnus",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV (2023)",
+      "affiliation_es": "Magíster en Ingeniería Industrial, PUCV (2023)",
       "thesis": "Long-term effects of distributive policies on regional employment allocation in the Chilean electricity sector.",
+      "thesis_es": "Efectos de largo plazo de las políticas distributivas en la asignación regional del empleo en el sector eléctrico chileno.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "",
       "year": "2023",
@@ -486,6 +556,7 @@
       "title": "Master's Alumnus",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV",
       "thesis": "Carbon-removal sequestration pathways for Chile.",
+      "thesis_es": "Trayectorias de remoción y secuestro de carbono para Chile.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "",
       "year": "",
@@ -498,10 +569,13 @@
       "subrole": "Master's Alumni",
       "title": "Master's Alumna",
       "affiliation": "M.Sc. in Industrial Engineering, PUCV (2022)",
+      "affiliation_es": "Magíster en Ingeniería Industrial, PUCV (2022)",
       "bibtex_name": "Licandeo",
       "thesis": "Assessing the impacts of economy-wide emissions policies in the water, energy, and land systems considering water scarcity scenarios.",
+      "thesis_es": "Evaluación de los impactos de políticas de emisiones a nivel de toda la economía en los sistemas de agua, energía y suelo, considerando escenarios de escasez hídrica.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Data Analyst, Servicio de Impuestos Internos (SII)",
+      "current_position_es": "Analista de datos, Servicio de Impuestos Internos (SII)",
       "year": "2022",
       "photo": ""
     },
@@ -512,7 +586,9 @@
       "title": "Exchange Student",
       "affiliation": "University of Zagreb, Croatia",
       "research_topics": ["Energy systems"],
+      "research_topics_es": ["Sistemas energéticos"],
       "bio_short": "Visiting researcher from the University of Zagreb.",
+      "bio_short_es": "Estudiante visitante de la Universidad de Zagreb.",
       "photo": ""
     },
     {
@@ -522,7 +598,9 @@
       "title": "Exchange Student",
       "affiliation": "University of Zagreb, Croatia",
       "research_topics": ["Energy systems"],
+      "research_topics_es": ["Sistemas energéticos"],
       "bio_short": "Visiting researcher from the University of Zagreb.",
+      "bio_short_es": "Estudiante visitante de la Universidad de Zagreb.",
       "photo": ""
     }
   ]

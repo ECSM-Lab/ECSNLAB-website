@@ -73,26 +73,58 @@
 
   /* ----- Mark active nav link based on URL ----- */
   var path = location.pathname.replace(/\/+$/, '').split('/').pop() || 'index.html';
+  // Detail pages count as their parent section.
+  var page = {
+    'member.html':        'team.html',
+    'project.html':       'projects.html',
+    'research-area.html': 'research.html',
+    'topic.html':         'opportunities.html',
+    'reports.html':       'publications.html'
+  }[path] || path;
   var view = new URLSearchParams(location.search).get('view');
-  $$('#nav-menu .nav-sub a').forEach(function (a) {
-    var q = (a.getAttribute('href') || '').split('?');
-    var subView = new URLSearchParams(q[1] || '').get('view');
-    if (q[0] === path && subView === view) a.classList.add('is-active');
+  $$('#nav-menu > li').forEach(function (li) {
+    var top = $('a', li);
+    var active = top && top.getAttribute('href') === page;
+    $$('.nav-sub a', li).forEach(function (a) {
+      var q = (a.getAttribute('href') || '').split('?');
+      if (q[0] !== page) return;
+      active = true;
+      if (new URLSearchParams(q[1] || '').get('view') === view) a.classList.add('is-active');
+    });
+    if (active && top) top.classList.add('is-active');
   });
-  $$('#nav-menu > li > a').forEach(function (a) {
-    var href = a.getAttribute('href');
-    if (!href) return;
-    if (href === path || (path === 'index.html' && href === './') || (path === '' && href === 'index.html')) {
-      a.classList.add('is-active');
+
+  /* ----- Social links (header, mobile menu, footer) -----
+     TODO: the URLs below are placeholders; replace them with the lab's
+     real accounts. Set a URL to '' to hide that network. */
+  var SOCIAL = [
+    { name: 'LinkedIn',  url: 'https://www.linkedin.com/company/scale-lab-pucv',
+      icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>' },
+    { name: 'X',         url: 'https://x.com/scale_pucv',
+      icon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.49l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.48 3.24H4.3l13.31 17.41z"/></svg>' },
+    { name: 'Instagram', url: 'https://www.instagram.com/scale.pucv',
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>' }
+  ].filter(function (s) { return s.url; });
+  function socialLinks(cls) {
+    var wrap = document.createElement('div');
+    wrap.className = cls;
+    wrap.innerHTML = SOCIAL.map(function (s) {
+      var label = 'SCALE on ' + s.name;
+      return '<a href="' + s.url + '" target="_blank" rel="noopener" aria-label="' + label + '" title="' + label + '">' + s.icon + '</a>';
+    }).join('');
+    return wrap;
+  }
+  if (SOCIAL.length) {
+    if (nav) nav.insertBefore(socialLinks('nav-social'), $('#theme-toggle') || null);
+    if (menu) {
+      var li = document.createElement('li');
+      li.className = 'nav-social-item';
+      li.appendChild(socialLinks('nav-social-mobile'));
+      menu.appendChild(li);
     }
-    // Group detail pages under their parent section
-    var groups = {
-      'member.html':         'team.html',
-      'project.html':        'projects.html',
-      'research-area.html':  'research.html'
-    };
-    if (groups[path] && groups[path] === href) a.classList.add('is-active');
-  });
+    var footBrand = $('.footer-brand > div');
+    if (footBrand) footBrand.appendChild(socialLinks('footer-social'));
+  }
 
   /* ----- Back-to-top button ----- */
   var toTop = $('#to-top');

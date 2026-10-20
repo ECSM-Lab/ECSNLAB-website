@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261020d" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261020e" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -32,18 +32,22 @@
     <ul class="nav-menu" id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
+      <li class="has-sub"><a href="research.html" aria-haspopup="true">Research<span class="caret" aria-hidden="true"></span></a>
+        <ul class="nav-sub">
+          <li><a href="research.html">Research areas</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+      </li>
       <li class="has-sub"><a href="team.html" aria-haspopup="true">People<span class="caret" aria-hidden="true"></span></a>
         <ul class="nav-sub">
           <li><a href="team.html">Team</a></li>
           <li><a href="team.html?view=collaborators">Collaborators</a></li>
           <li><a href="team.html?view=visiting">Visiting</a></li>
+          <li><a href="opportunities.html">Join us</a></li>
         </ul>
       </li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="publications.html">Publications</a></li>
       <li><a href="news.html">News</a></li>
-      <li><a href="opportunities.html">Opportunities</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -101,7 +105,7 @@
   </div>
 </footer>
 <a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
-<script src="assets/js/main.js?v=20261020d"></script>
-<script src="assets/js/i18n.js?v=20261020d"></script>
-<script src="assets/js/renderers.js?v=20261020d"></script><script>ECSRender.news("#news-list");</script>
+<script src="assets/js/main.js?v=20261020e"></script>
+<script src="assets/js/i18n.js?v=20261020e"></script>
+<script src="assets/js/renderers.js?v=20261020e"></script><script>ECSRender.news("#news-list");</script>
 </body></html>

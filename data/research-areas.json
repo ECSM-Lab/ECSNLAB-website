@@ -11,6 +11,7 @@
       "description": "We design and evaluate sustainable energy policies through quantitative scenario analysis, multi-objective optimization, and life-cycle assessment. Our work links policy levers (carbon pricing, mandates, subsidies) to measurable outcomes in cost, emissions, equity, and resilience. We collaborate with national ministries, APEC, and the IPCC to translate models into actionable guidance.",
       "description_es": "Diseñamos y evaluamos políticas energéticas sostenibles mediante análisis cuantitativo de escenarios, optimización multiobjetivo y análisis de ciclo de vida. Nuestro trabajo vincula instrumentos de política (precios al carbono, mandatos, subsidios) con resultados medibles en costos, emisiones, equidad y resiliencia. Colaboramos con ministerios nacionales, APEC y el IPCC para traducir los modelos en orientaciones concretas.",
       "methods": ["Scenario analysis", "Multi-objective optimization", "Life-cycle assessment", "Cost–benefit & policy modeling"],
+      "methods_es": ["Análisis de escenarios", "Optimización multiobjetivo", "Análisis de ciclo de vida", "Modelamiento costo–beneficio y de políticas"],
       "keywords": ["energy policy", "sustainability", "decarbonization", "scenario analysis", "life-cycle assessment"],
       "projects": ["decarb-r-j", "apec-hydrogen", "internexus", "res-just"],
       "people":   ["felipe-feijoo", "monica-castaneda", "paola-paredes", "joaquin-vergara"]
@@ -24,6 +25,7 @@
       "description": "We study electricity market design and operation using equilibrium models, game-theoretic formulations, and stochastic programming. Our research informs questions on market clearing under high renewable shares, capacity mechanisms, distributed-resource integration, and the strategic behavior of market participants.",
       "description_es": "Estudiamos el diseño y la operación de mercados eléctricos mediante modelos de equilibrio, formulaciones de teoría de juegos y programación estocástica. Nuestra investigación aborda la operación del mercado con alta participación renovable, los mecanismos de capacidad, la integración de recursos distribuidos y el comportamiento estratégico de los participantes del mercado.",
       "methods": ["Mixed Complementarity Problems (MCP)", "Bilevel & Stackelberg models", "Stochastic programming", "Equilibrium analysis"],
+      "methods_es": ["Problemas de complementariedad mixta (MCP)", "Modelos binivel y de Stackelberg", "Programación estocástica", "Análisis de equilibrio"],
       "keywords": ["power systems", "electricity markets", "stochastic programming", "bilevel optimization", "game theory"],
       "projects": ["internexus", "ev-pv-strategy"],
       "people":   ["felipe-feijoo", "paola-paredes", "joaquin-vergara"]
@@ -37,6 +39,7 @@
       "description": "We build and apply Integrated Assessment Models (notably GCAM and GCAM-Latin America) to study Paris-aligned mitigation pathways, carbon budgets, and the cross-sectoral feedbacks among energy, water, land, and food. The lab is a contributor to IPCC Working Group III on climate-change mitigation.",
       "description_es": "Desarrollamos y aplicamos modelos de evaluación integrada (en particular GCAM y GCAM-Latinoamérica) para estudiar trayectorias de mitigación alineadas con el Acuerdo de París, presupuestos de carbono y las retroalimentaciones entre energía, agua, suelo y alimentos. El laboratorio contribuye al Grupo de Trabajo III del IPCC sobre mitigación del cambio climático.",
       "methods": ["Integrated Assessment Models (GCAM, GCAM-LA)", "Carbon-budget accounting", "Cross-model linking (GCAM ↔ PyPSA, H2RES)"],
+      "methods_es": ["Modelos de evaluación integrada (GCAM, GCAM-LA)", "Contabilidad de presupuestos de carbono", "Vinculación entre modelos (GCAM ↔ PyPSA, H2RES)"],
       "keywords": ["GCAM", "integrated assessment", "carbon budget", "IPCC", "climate policy", "Paris Agreement"],
       "projects": ["internexus", "decarb-r-j", "net-zero-world"],
       "people":   ["felipe-feijoo"]
@@ -50,6 +53,7 @@
       "description": "Foundational methodological work in mathematical programming, with applications to energy, transportation, healthcare, and infrastructure. We develop reformulations and solution methods for bilevel and complementarity problems, and we study how uncertainty and equilibrium structures shape long-term planning.",
       "description_es": "Trabajo metodológico de base en programación matemática, con aplicaciones en energía, transporte, salud e infraestructura. Desarrollamos reformulaciones y métodos de solución para problemas binivel y de complementariedad, y estudiamos cómo la incertidumbre y las estructuras de equilibrio influyen en la planificación de largo plazo.",
       "methods": ["Linear & integer programming", "Nonlinear & bilevel optimization", "MCP reformulations", "Decomposition & large-scale algorithms"],
+      "methods_es": ["Programación lineal y entera", "Optimización no lineal y binivel", "Reformulaciones MCP", "Descomposición y algoritmos de gran escala"],
       "keywords": ["operations research", "optimization", "bilevel", "MCP", "stochastic programming"],
       "projects": ["internexus", "decarb-r-j"],
       "people":   ["felipe-feijoo", "joaquin-vergara"]
@@ -63,6 +67,7 @@
       "description": "We develop machine-learning methods for energy-systems forecasting, demand modeling, and pattern recognition in mobility and urban data. Recent work combines neural networks with physical and economic constraints to produce models that are accurate, interpretable, and policy-relevant.",
       "description_es": "Desarrollamos métodos de aprendizaje automático para el pronóstico en sistemas energéticos, el modelamiento de la demanda y el reconocimiento de patrones en datos urbanos y de movilidad. Nuestro trabajo reciente combina redes neuronales con restricciones físicas y económicas para obtener modelos precisos, interpretables y útiles para las políticas públicas.",
       "methods": ["Deep learning & neural networks", "Time-series forecasting", "Hybrid physics-ML models"],
+      "methods_es": ["Aprendizaje profundo y redes neuronales", "Pronóstico de series de tiempo", "Modelos híbridos físicos y de ML"],
       "keywords": ["machine learning", "deep learning", "forecasting", "smart cities", "AI"],
       "projects": ["heat-ai-cities", "ai-aided-energy"],
       "people":   ["felipe-feijoo"]
@@ -76,6 +81,7 @@
       "description": "An interdisciplinary thread bringing operations-research and stochastic-decision tools to public-health questions, including hospital operations, screening policies, and the health externalities of energy and transport choices.",
       "description_es": "Una línea interdisciplinaria que aplica herramientas de investigación de operaciones y de decisión estocástica a problemas de salud pública, como la operación hospitalaria, las políticas de tamizaje y las externalidades sanitarias de las decisiones en energía y transporte.",
       "methods": ["Stochastic decision models", "Markov decision processes", "Health-data analytics"],
+      "methods_es": ["Modelos de decisión estocásticos", "Procesos de decisión de Markov", "Analítica de datos de salud"],
       "keywords": ["healthcare", "stochastic models", "decision analysis", "public health"],
       "projects": [],
       "people":   ["felipe-feijoo"]

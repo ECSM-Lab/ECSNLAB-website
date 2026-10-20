@@ -24,7 +24,9 @@
         "Quantify feasible pacing of renewable deployment under investment and supply-chain constraints.",
         "Apply the framework to Chilean net-zero and net-negative pathways and compare policy packages."
       ],
+      "objectives_es": ["Extender el modelamiento de evaluación integrada con métricas endógenas de resiliencia ante eventos climáticos extremos.", "Incorporar indicadores de justicia distributiva en las decisiones de expansión de capacidad de largo plazo.", "Cuantificar ritmos factibles de despliegue de energías renovables bajo restricciones de inversión y de cadenas de suministro.", "Aplicar el marco a trayectorias chilenas de carbono neutralidad y de emisiones netas negativas, y comparar paquetes de políticas."],
       "methodology": "Bilevel and stochastic optimization coupled with an Integrated Assessment Model. Resilience constraints are embedded endogenously through scenario-conditioned reliability metrics; justice is quantified through region- and household-level distributional indicators.",
+      "methodology_es": "Optimización binivel y estocástica acoplada a un modelo de evaluación integrada. Las restricciones de resiliencia se incorporan de forma endógena mediante métricas de confiabilidad condicionadas a escenarios; la justicia se cuantifica mediante indicadores distributivos a nivel regional y de hogares.",
       "results": "",
       "keywords": ["deep decarbonization", "resilience", "just transition", "renewables", "Chile"],
       "team": [
@@ -43,6 +45,7 @@
       "tagline_es": "Construyendo políticas energéticas resilientes en Asia-Pacífico mediante la certificación del hidrógeno y sus derivados.",
       "source": "APEC EWG 104-105",
       "funding_institution": "Asia-Pacific Economic Cooperation, Energy Working Group",
+      "funding_institution_es": "Cooperación Económica Asia-Pacífico (APEC), Grupo de Trabajo de Energía",
       "role": "Principal Investigator",
       "role_es": "Investigador/a principal",
       "status": "active",
@@ -57,8 +60,11 @@
         "Assess implications for cross-border hydrogen trade and market integration.",
         "Produce a policy briefing for the Ministry of Energy of Chile's APEC engagement."
       ],
+      "objectives_es": ["Mapear los esquemas de certificación de hidrógeno en las economías APEC e identificar divergencias.", "Evaluar las implicancias para el comercio transfronterizo de hidrógeno y la integración de mercados.", "Elaborar una minuta de política para la participación del Ministerio de Energía de Chile en APEC."],
       "methodology": "Comparative policy analysis of APEC economies; structured stakeholder consultations; framework for cross-recognition of certificates.",
+      "methodology_es": "Análisis comparativo de políticas en las economías APEC; consultas estructuradas con actores relevantes; marco para el reconocimiento mutuo de certificados.",
       "results": "Briefing material delivered to the Ministry of Energy of Chile (2025); public-facing policy report in preparation.",
+      "results_es": "Material de apoyo entregado al Ministerio de Energía de Chile (2025); informe de política de acceso público en preparación.",
       "keywords": ["hydrogen", "certification", "APEC", "energy policy"],
       "team": [
         { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
@@ -86,8 +92,11 @@
         "Assess the role of Power-to-X as a cross-sector integrator.",
         "Quantify 100%-renewable pathways with endogenous nexus constraints."
       ],
+      "objectives_es": ["Desarrollar un marco de optimización acoplado de energía, agua y alimentos.", "Evaluar el rol de Power-to-X como integrador intersectorial.", "Cuantificar trayectorias 100 % renovables con restricciones endógenas del nexo."],
       "methodology": "Integrated Assessment Modeling (GCAM-LA) soft-linked to a high-resolution power-system optimization model (PyPSA / H2RES).",
+      "methodology_es": "Modelamiento de evaluación integrada (GCAM-LA) vinculado de forma blanda (soft-linking) a un modelo de optimización de sistemas eléctricos de alta resolución (PyPSA / H2RES).",
       "results": "Several Q1 publications in Energy and Energy Strategy Reviews; cross-model linking framework published with applications to Bolivia and Chile.",
+      "results_es": "Varias publicaciones Q1 en Energy y Energy Strategy Reviews; marco de vinculación entre modelos publicado, con aplicaciones a Bolivia y Chile.",
       "keywords": ["energy-water-food nexus", "Power-to-X", "100% renewables", "decarbonization"],
       "team": [
         { "member_id": "felipe-feijoo",   "role": "Principal Investigator" },
@@ -116,6 +125,7 @@
         "Design coordinated incentive schemes.",
         "Assess grid-side impacts under high-penetration scenarios."
       ],
+      "objectives_es": ["Caracterizar los patrones de adopción de vehículos eléctricos y generación fotovoltaica a nivel de hogares.", "Diseñar esquemas de incentivos coordinados.", "Evaluar los impactos en la red en escenarios de alta penetración."],
       "keywords": ["electric vehicles", "distributed PV", "residential", "incentive design"],
       "team": [
         { "member_id": "felipe-feijoo",   "role": "Co-Principal Investigator" },
@@ -143,6 +153,7 @@
         "Run a 4th International Workshop on Resilient Energy Systems.",
         "Train graduate students through hands-on modeling and policy analysis."
       ],
+      "objectives_es": ["Desarrollar modelos multiescala de sistemas energéticos con métricas incorporadas de resiliencia y equidad.", "Realizar el 4.º Taller Internacional sobre Sistemas Energéticos Resilientes.", "Formar estudiantes de posgrado mediante modelamiento práctico y análisis de políticas."],
       "keywords": ["resilience", "just transition", "multiscale", "workshop"],
       "team": [
         { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
@@ -168,6 +179,7 @@
         "Build models linking urban form, mobility, and heat exposure.",
         "Develop tools for municipal climate-adaptation planning."
       ],
+      "objectives_es": ["Construir modelos que vinculen la forma urbana, la movilidad y la exposición al calor.", "Desarrollar herramientas para la planificación municipal de adaptación climática."],
       "keywords": ["AI", "smart cities", "heat exposure", "climate adaptation"],
       "team": [
         { "member_id": "felipe-feijoo", "role": "Principal Investigator" }
@@ -193,6 +205,7 @@
         "Build the first GCAM-LA configurations for nexus analysis.",
         "Publish on water-energy trade-offs under aggressive mitigation."
       ],
+      "objectives_es": ["Construir las primeras configuraciones de GCAM-LA para el análisis del nexo.", "Publicar sobre las tensiones entre agua y energía bajo escenarios de mitigación ambiciosa."],
       "keywords": ["nexus", "GCAM", "1.5C", "Latin America"],
       "team": [
         { "member_id": "felipe-feijoo",    "role": "Principal Investigator" },
@@ -212,6 +225,7 @@
       "status": "completed",
       "period": "2021 – 2023",
       "amount": "Competitive",
+      "amount_es": "Fondo concursable",
       "scope": "national",
       "research_areas": ["power-systems-energy-markets"],
       "abstract": "Studied charging-infrastructure requirements and grid-flexibility needs for electromobility deployment in Chile.",
@@ -271,11 +285,13 @@
       "source": "U.S. Department of Energy",
       "source_es": "Departamento de Energía de EE. UU.",
       "funding_institution": "U.S. Department of Energy",
+      "funding_institution_es": "Departamento de Energía de EE. UU.",
       "role": "Co-Principal Investigator",
       "role_es": "Co-investigador/a principal",
       "status": "completed",
       "period": "2022 – 2024",
       "amount": "In-kind",
+      "amount_es": "Aporte en especie",
       "scope": "international",
       "research_areas": ["global-climate-modeling"],
       "abstract": "Contributed Latin-American modeling support to the Net Zero World Initiative led by the U.S. Department of Energy and PNNL/JGCRI.",
@@ -293,6 +309,7 @@
       "tagline_es": "Marcos de política resilientes para las economías APEC.",
       "source": "APEC",
       "funding_institution": "Asia-Pacific Economic Cooperation",
+      "funding_institution_es": "Cooperación Económica Asia-Pacífico (APEC)",
       "role": "Principal Investigator",
       "role_es": "Investigador/a principal",
       "status": "completed",
@@ -315,6 +332,7 @@
       "source": "Croatian Science Foundation",
       "source_es": "Fundación Croata para la Ciencia",
       "funding_institution": "Croatian Science Foundation",
+      "funding_institution_es": "Fundación Croata para la Ciencia",
       "role": "Co-Principal Investigator",
       "role_es": "Co-investigador/a principal",
       "status": "active",
@@ -337,6 +355,7 @@
       "tagline_es": "Mapeo de los impulsores de la demanda de hidrógeno en las economías APEC.",
       "source": "APEC",
       "funding_institution": "Asia-Pacific Economic Cooperation",
+      "funding_institution_es": "Cooperación Económica Asia-Pacífico (APEC)",
       "role": "Principal Investigator",
       "role_es": "Investigador/a principal",
       "status": "active",
