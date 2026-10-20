@@ -72,7 +72,8 @@
   }
 
   /* ----- Mark active nav link based on URL ----- */
-  var path = location.pathname.replace(/\/+$/, '').split('/').pop() || 'index.html';
+  var last = location.pathname.split('/').pop();
+  var path = /\.html$/.test(last) ? last : 'index.html';  // site root (.../SCALE/) is the home page
   // Detail pages count as their parent section.
   var page = {
     'member.html':        'team.html',
@@ -84,7 +85,8 @@
   var view = new URLSearchParams(location.search).get('view');
   $$('#nav-menu > li').forEach(function (li) {
     var top = $('a', li);
-    var active = top && top.getAttribute('href') === page;
+    var topHref = top && (top.getAttribute('href') === './' ? 'index.html' : top.getAttribute('href'));
+    var active = topHref === page;
     $$('.nav-sub a', li).forEach(function (a) {
       var q = (a.getAttribute('href') || '').split('?');
       if (q[0] !== page) return;
