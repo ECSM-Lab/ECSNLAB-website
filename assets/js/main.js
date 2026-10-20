@@ -124,8 +124,6 @@
       li.appendChild(socialLinks('nav-social-mobile'));
       menu.appendChild(li);
     }
-    var footBrand = $('.footer-text');
-    if (footBrand) footBrand.appendChild(socialLinks('footer-social'));
   }
 
   /* ----- Back-to-top button ----- */
