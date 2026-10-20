@@ -11,10 +11,10 @@
   "vision": "To be a leading Latin American reference in climate and energy analysis for decision-making, training engineers and analysts who design evidence-based, equitable pathways towards a sustainable future.",
 
   "stats": [
-    { "value": "+100",  "label": "Peer-reviewed publications" },
-    { "value": "+13",   "label": "Funded projects" },
-    { "value": "+45",   "label": "Students & alumni" },
-    { "value": "27",    "label": "Countries reached" }
+    { "value": "+100",  "label": "Peer-reviewed publications", "label_es": "Publicaciones con revisión por pares" },
+    { "value": "+13",   "label": "Funded projects", "label_es": "Proyectos financiados" },
+    { "value": "+45",   "label": "Students & alumni", "label_es": "Estudiantes y alumni" },
+    { "value": "27",    "label": "Countries reached", "label_es": "Países alcanzados" }
   ],
 
   "contact": {

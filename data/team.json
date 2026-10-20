@@ -4,12 +4,14 @@
   "members": [
     {
       "id": "monica-castaneda",
+      "role_label_es": "Codirectora",
       "name": "Monica Castañeda",
       "honorific": "Prof.",
       "credentials": "Ph.D.",
       "bibtex_name": "Castañeda",
       "role": "Co-Director",
       "title": "Professor, Systems Area · Lab Co-Director",
+      "title_es": "Profesora, Área de Sistemas · Codirectora del laboratorio",
       "affiliation": "School of Industrial Engineering, PUCV",
       "email": "monica.castaneda@pucv.cl",
       "photo": "assets/images/monica-castaneda.jpeg",
@@ -21,6 +23,7 @@
       ],
       "keywords": ["system dynamics", "simulation", "energy markets", "energy policy", "renewables", "security of supply"],
       "bio_short": "Co-Director of SCALE. Works on energy markets, energy policy, and renewable integration using system dynamics and simulation, with applications in Colombia and the United Kingdom.",
+      "bio_short_es": "Codirectora de SCALE. Trabaja en mercados de energía, política energética e integración de energías renovables mediante dinámica de sistemas y simulación, con aplicaciones en Colombia y el Reino Unido.",
       "bio_long": "Monica Castañeda is a Professor in the Systems Area of the School of Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile, and Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab). Her research uses system dynamics and simulation to understand how energy markets and policies shape the transition to low-carbon power systems. She has studied electricity-market reform in Great Britain, the long-term effects of feed-in tariffs on residential solar, the so-called utility death spiral, and the security of supply of hydro-dominated systems such as Colombia's, including pathways towards 100% renewable electricity. Her work appears in journals such as Energy Policy, Renewable Energy, Renewable and Sustainable Energy Reviews, Energy, and the European Journal of Operational Research. She supervises graduate students in the lab and contributes to projects on decarbonization pathways and energy planning for Latin America. She holds a Ph.D. in Engineering, an M.Sc. in Systems Engineering, and a degree in Administrative Engineering, all from Universidad Nacional de Colombia.",
       "education": [
         "Ph.D. in Engineering, Universidad Nacional de Colombia",
@@ -38,12 +41,14 @@
     },
     {
       "id": "felipe-feijoo",
+      "role_label_es": "Codirector",
       "name": "Felipe Feijoo",
       "honorific": "Prof.",
       "credentials": "Ph.D.",
       "bibtex_name": "Felipe Feijoo",
       "role": "Co-Director",
       "title": "Associate Professor · Lab Co-Director",
+      "title_es": "Profesor Asociado · Codirector del laboratorio",
       "affiliation": "School of Industrial Engineering, PUCV",
       "email": "felipe.feijoo@pucv.cl",
       "photo": "assets/images/felipe-feijoo.jpg",
@@ -54,6 +59,7 @@
         "Energy–water–food nexus"
       ],
       "bio_short": "Co-Director of SCALE. Lead Author for IPCC WGIII (Energy Systems), advisor to Chile's Ministry of Environment, and APEC consultant on hydrogen certification.",
+      "bio_short_es": "Codirector de SCALE. Autor principal del Grupo de Trabajo III del IPCC (Sistemas Energéticos), asesor del Ministerio del Medio Ambiente de Chile y consultor de APEC en certificación de hidrógeno.",
       "bio_long": "Felipe Feijoo is an Associate Professor at the School of Industrial Engineering of Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab) and works at the intersection of energy systems modeling, climate policy, and operations research, with an emphasis on deep-decarbonization pathways under uncertainty and the interactions among energy, water, land, and food systems. He serves as a Lead Author for IPCC Working Group III (Chapter on Energy Systems), as advisor to the Scientific Committee on Climate Change at the Ministry of Environment of Chile, and as APEC consultant on hydrogen certification. He is Subject Editor of the journal ENERGY (Q1, IF 9.4), Co-Chair for the Americas of the SDEWES Centre, and Chair of the PhD program in Industrial Engineering at PUCV. He held postdoctoral positions at the University of Zagreb, PNNL/JGCRI (US DOE), and Johns Hopkins/MIT, and earned his Ph.D. from the University of South Florida.",
       "education": [
         "Ph.D., Industrial Engineering, University of South Florida, 2015",

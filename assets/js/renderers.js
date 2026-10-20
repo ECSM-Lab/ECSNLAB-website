@@ -15,6 +15,10 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
   var $   = function (sel, root) { return (root || document).querySelector(sel); };
 
   function bold(node) { if (window.ECS && window.ECS.boldLeaders) window.ECS.boldLeaders(node); }
+  var ES = document.documentElement.lang === 'es';
+  // Displayed role (role_label / role_label_es lets a gendered Spanish label
+  // differ from the role used for grouping).
+  function roleLabel(m) { return m.role_label || m.role || ''; }
 
   /* If a fetch fails, show a visible error in the container instead of a
      silent empty block. Linked to diagnose.html so the user can see what's
@@ -103,7 +107,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
         return '<article class="leader">' +
                   leaderPhoto(m) +
                   '<div>' +
-                    '<p class="leader-role">' + ESC(m.role) + '</p>' +
+                    '<p class="leader-role">' + ESC(roleLabel(m)) + '</p>' +
                     '<h3 class="leader-name">' + ESC(m.name) +
                       (m.credentials ? ', <span class="soft">' + ESC(m.credentials) + '</span>' : '') +
                     '</h3>' +
@@ -299,7 +303,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
                       return '<article class="leader">' +
                                 leaderPhoto(m) +
                                 '<div>' +
-                                  '<p class="leader-role">' + ESC(m.role) + '</p>' +
+                                  '<p class="leader-role">' + ESC(roleLabel(m)) + '</p>' +
                                   '<h3 class="leader-name">' + ESC(m.name) +
                                     (m.credentials ? ', <span class="soft">' + ESC(m.credentials) + '</span>' : '') +
                                   '</h3>' +
@@ -642,7 +646,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
             '<div class="profile-grid">' +
               profilePhoto(m.name, m.photo) +
               '<div>' +
-                '<p class="profile-eyebrow">' + ESC(m.role || '') + (m.subrole ? ' · ' + ESC(m.subrole) : '') + '</p>' +
+                '<p class="profile-eyebrow">' + ESC(roleLabel(m)) + (m.subrole ? ' · ' + ESC(m.subrole) : '') + '</p>' +
                 '<h1 class="profile-name">' + ESC(m.name) + '</h1>' +
                 '<p class="profile-title">' + ESC(m.title || m.affiliation || '') + '</p>' +
                 '<div class="profile-meta">' +
@@ -670,7 +674,8 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
                 (m.bibtex_name ? (
                   '<h3 id="member-pubs">Publications</h3>' +
                   '<p class="section-sub" style="margin-bottom:14px">' +
-                    'Publications where <strong>' + ESC(m.name) + '</strong> appears as an author.' +
+                    (ES ? 'Publicaciones en las que <strong>' + ESC(m.name) + '</strong> aparece como autor/a.'
+                        : 'Publications where <strong>' + ESC(m.name) + '</strong> appears as an author.') +
                   '</p>' +
                   '<div class="pub-filters" role="region" aria-label="Filters">' +
                   '  <input type="search" id="pub-search" placeholder="Search title, venue, keyword…" />' +
@@ -756,7 +761,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
       if (p.keywords && p.keywords.length && window.ECSPubs && window.ECSPubs.init) {
         pubsBlock =
           '<h3 id="publications">Related publications</h3>' +
-          '<p class="section-sub" style="margin-bottom:14px">Publications matching this project\'s topics, pulled from <code>publications.bib</code> and <code>reports.bib</code>.</p>' +
+          '<p class="section-sub" style="margin-bottom:14px">Publications matching this project\'s topics.</p>' +
           '<div class="pub-filters" role="region"><input type="search" id="pub-search" placeholder="Filter…"/><select id="pub-year"><option value="all">All years</option></select><span class="pub-count" id="pub-count"></span></div>' +
           '<div class="pub-subsection" id="pub-subsection-journals"><div id="pub-list-journals" class="pub-list"><p class="loading">Loading…</p></div></div>' +
           '<div class="pub-subsection" id="pub-subsection-reports"><div id="pub-list-reports" class="pub-list"></div></div>';
@@ -854,7 +859,7 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
             // Publications block (uses the BibTeX engine, scoped to area keywords)
             (a.keywords && a.keywords.length && window.ECSPubs ? (
               '<h3 id="publications">Related publications</h3>' +
-              '<p class="section-sub" style="margin-bottom:14px">Publications matching this area\'s topics, pulled from <code>publications.bib</code> and <code>reports.bib</code>.</p>' +
+              '<p class="section-sub" style="margin-bottom:14px">Publications matching this area\'s topics.</p>' +
               '<div class="pub-filters" role="region"><input type="search" id="pub-search" placeholder="Filter…"/><select id="pub-year"><option value="all">All years</option></select><span class="pub-count" id="pub-count"></span></div>' +
               '<div class="pub-subsection" id="pub-subsection-journals"><div id="pub-list-journals" class="pub-list"><p class="loading">Loading…</p></div></div>' +
               '<div class="pub-subsection" id="pub-subsection-reports"><div id="pub-list-reports" class="pub-list"></div></div>'
@@ -933,9 +938,11 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
         members.filter(function (x) { return x.role === 'Co-Director' && x.email; })
           .forEach(function (x) { emails.push(x.email); });
       }
-      var contactBlock = '<div class="aside-block"><h4>Apply</h4><p>If interested, write to ' +
-        emails.map(function (e) { return '<a href="mailto:' + ESC(e) + '">' + ESC(e) + '</a>'; }).join(' and ') +
-        ' with a brief CV and research statement.</p></div>';
+      var contactBlock = '<div class="aside-block"><h4>Apply</h4><p>' +
+        (ES ? 'Si te interesa, escribe a ' : 'If interested, write to ') +
+        emails.map(function (e) { return '<a href="mailto:' + ESC(e) + '">' + ESC(e) + '</a>'; }).join(ES ? ' y ' : ' and ') +
+        (ES ? ' con un breve CV y una declaración de intereses de investigación.' : ' with a brief CV and research statement.') +
+        '</p></div>';
 
       root.innerHTML =
         '<section class="detail-hero"><div class="container">' +

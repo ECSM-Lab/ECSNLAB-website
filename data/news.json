@@ -7,7 +7,9 @@
       "date": "2026-01-15",
       "kind": "news",
       "title": "Lab Challenges 2026: RES-JUST workshop, APEC hydrogen, and Energy Planning Summer School",
+      "title_es": "Desafíos del laboratorio 2026: taller RES-JUST, hidrógeno APEC y Escuela de Verano de Planificación Energética",
       "summary": "The lab launches three flagship initiatives for 2026: the 4th International Workshop on Resilient Energy Systems for a Just Transition (RES-JUST), the APEC project on local demand as an enabler of a low-carbon hydrogen economy, and a Summer School on Energy Planning of 100% Renewable Energy Systems.",
+      "summary_es": "El laboratorio lanza tres iniciativas emblemáticas para 2026: el 4.º Taller Internacional sobre Sistemas Energéticos Resilientes para una Transición Justa (RES-JUST), el proyecto APEC sobre la demanda local como habilitante de una economía del hidrógeno de bajas emisiones, y una Escuela de Verano sobre Planificación Energética de Sistemas 100 % Renovables.",
       "link": ""
     },
     {
@@ -15,7 +17,9 @@
       "date": "2025-09-01",
       "kind": "news",
       "title": "Felipe Feijoo named Lead Author for IPCC AR7, Working Group III",
+      "title_es": "Felipe Feijoo es nombrado Autor Principal del Grupo de Trabajo III del AR7 del IPCC",
       "summary": "Lab Co-Director Felipe Feijoo has been confirmed as Lead Author for the chapter on Energy Systems in the upcoming IPCC Seventh Assessment Report, Working Group III on Climate Mitigation.",
+      "summary_es": "Felipe Feijoo, codirector del laboratorio, fue confirmado como Autor Principal del capítulo sobre Sistemas Energéticos del próximo Séptimo Informe de Evaluación del IPCC, Grupo de Trabajo III sobre Mitigación del Cambio Climático.",
       "link": ""
     },
     {
@@ -23,7 +27,9 @@
       "date": "2024-03-01",
       "kind": "conference",
       "title": "4th Latin American SDEWES Conference, Viña del Mar",
+      "title_es": "4.ª Conferencia Latinoamericana SDEWES, Viña del Mar",
       "summary": "The lab co-organized the 4th LA Conference on Sustainable Development of Energy, Water and Environment Systems, with 130 on-site participants from 62 institutions across 27 countries. The program included 130 oral presentations, 16 regular sessions, 3 plenary lectures, and a panel.",
+      "summary_es": "El laboratorio coorganizó la 4.ª Conferencia Latinoamericana sobre Desarrollo Sostenible de Sistemas de Energía, Agua y Medio Ambiente, con 130 participantes presenciales de 62 instituciones de 27 países. El programa incluyó 130 presentaciones orales, 16 sesiones regulares, 3 conferencias plenarias y un panel.",
       "link": ""
     },
     {
@@ -31,7 +37,9 @@
       "date": "2025-04-01",
       "kind": "event",
       "title": "APEC project on hydrogen certification kicks off",
+      "title_es": "Comienza el proyecto APEC sobre certificación de hidrógeno",
       "summary": "The lab begins its APEC EWG 104-105 engagement, supporting the Ministry of Energy of Chile in mapping hydrogen-certification regimes across Asia-Pacific economies.",
+      "summary_es": "El laboratorio inicia su participación en APEC EWG 104-105, apoyando al Ministerio de Energía de Chile en el mapeo de los esquemas de certificación de hidrógeno en las economías de Asia-Pacífico.",
       "link": ""
     },
     {
@@ -39,7 +47,9 @@
       "date": "2026-03-01",
       "kind": "award",
       "title": "DECARB-R+J project awarded FONDECYT Regular funding",
+      "title_es": "El proyecto DECARB-R+J se adjudica financiamiento FONDECYT Regular",
       "summary": "The DECARB-R+J project, on deep-decarbonization pathways with endogenous resilience and justice, has been awarded a 4-year FONDECYT Regular grant from ANID.",
+      "summary_es": "El proyecto DECARB-R+J, sobre trayectorias de descarbonización profunda con resiliencia y justicia endógenas, se adjudicó un proyecto FONDECYT Regular de ANID por 4 años.",
       "link": ""
     }
   ]

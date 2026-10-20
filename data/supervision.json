@@ -5,8 +5,10 @@
     {
       "id": "phd-resilience-justice",
       "title": "Endogenous resilience and justice in long-term energy planning",
+      "title_es": "Resiliencia y justicia endógenas en la planificación energética de largo plazo",
       "area": "Energy & Climate Systems",
       "summary": "Develop optimization frameworks that endogenously represent resilience to extreme events and distributional justice in capacity-expansion models.",
+      "summary_es": "Desarrollar marcos de optimización que representen de forma endógena la resiliencia ante eventos extremos y la justicia distributiva en modelos de expansión de capacidad.",
       "description": "This thesis advances integrated decarbonization modeling by embedding resilience and justice metrics directly into long-term capacity-expansion optimization. The work links to the DECARB-R+J project and may include applications to Chilean and Latin-American pathways.",
       "motivation": "Long-term energy planning models rarely account for resilience to extreme climate events or for the distributional impacts of policy choices. This thesis closes that gap.",
       "objectives": [
@@ -24,8 +26,10 @@
     {
       "id": "phd-power-to-x",
       "title": "Power-to-X integration in 100% renewable systems",
+      "title_es": "Integración de Power-to-X en sistemas 100 % renovables",
       "area": "Power Systems & Energy Markets",
       "summary": "Quantify the role of Power-to-X technologies as cross-sector flexibility resources in 100%-renewable power systems.",
+      "summary_es": "Cuantificar el rol de las tecnologías Power-to-X como recursos de flexibilidad intersectorial en sistemas eléctricos 100 % renovables.",
       "description": "Studies the system-level value of Power-to-X (hydrogen, e-fuels, e-chemicals) when used as flexibility for a 100% renewable power system, with attention to economic, technical, and policy dimensions.",
       "motivation": "Decarbonizing the energy system requires linking electricity to other sectors. Power-to-X is the bridge, but its system value under different policy regimes is poorly understood.",
       "objectives": [
@@ -43,8 +47,10 @@
     {
       "id": "phd-test-flores",
       "title": "[Test] Cross-border hydrogen trade modelling",
+      "title_es": "[Prueba] Modelamiento del comercio transfronterizo de hidrógeno",
       "area": "Energy & Climate Systems",
       "summary": "Test entry showing Francisco Flores as supervisor on an opportunity. Demonstrates how opportunities link to a person's profile.",
+      "summary_es": "Entrada de prueba que muestra a Francisco Flores como supervisor de una oportunidad. Demuestra cómo las oportunidades se vinculan con el perfil de una persona.",
       "description": "Placeholder PhD topic created to validate that opportunities supervised by an alumnus / postdoc surface correctly on their profile page. Replace with real content.",
       "motivation": "Validates that the opportunity-to-supervisor link works regardless of role (current postdoc, former postdoc, alumnus).",
       "objectives": [
@@ -64,8 +70,10 @@
     {
       "id": "msc-ev-pv-incentives",
       "title": "Coordinated EV + distributed PV incentives",
+      "title_es": "Incentivos coordinados para vehículos eléctricos y generación fotovoltaica distribuida",
       "area": "Power Systems & Energy Markets",
       "summary": "Design and evaluate incentive schemes that coordinate residential adoption of electric vehicles and distributed PV.",
+      "summary_es": "Diseñar y evaluar esquemas de incentivos que coordinen la adopción residencial de vehículos eléctricos y de generación fotovoltaica distribuida.",
       "description": "Combines household-level adoption modeling with grid-side analysis to design coordinated incentive packages for EV and PV uptake in Chilean households.",
       "motivation": "Adoption of electric vehicles and distributed PV is highly correlated, but incentives are typically designed in isolation. Coordinated design unlocks system-level efficiency.",
       "objectives": [
@@ -82,8 +90,10 @@
     {
       "id": "msc-just-transition-indicators",
       "title": "Quantitative indicators of just transition",
+      "title_es": "Indicadores cuantitativos de transición justa",
       "area": "Energy Sustainability & Policy",
       "summary": "Develop and apply quantitative indicators of procedural and distributional justice in decarbonization.",
+      "summary_es": "Desarrollar y aplicar indicadores cuantitativos de justicia procedimental y distributiva en la descarbonización.",
       "description": "Builds a workable set of indicators of just transition for Chilean decarbonization, drawing on the literature and on data from the Chilean electricity sector.",
       "motivation": "Just-transition concepts are widely discussed but rarely measured. This thesis builds operational indicators that can feed back into policy and modelling.",
       "objectives": [
@@ -100,8 +110,10 @@
     {
       "id": "msc-carbon-removal",
       "title": "Carbon-removal sequestration pathways for Chile",
+      "title_es": "Trayectorias de remoción de carbono para Chile",
       "area": "Global Climate Modeling",
       "summary": "Map and assess feasible carbon-removal pathways for Chile under net-zero and net-negative scenarios.",
+      "summary_es": "Mapear y evaluar trayectorias factibles de remoción de carbono para Chile en escenarios de carbono neutralidad y de emisiones netas negativas.",
       "description": "Surveys candidate carbon-removal technologies and develops scenarios for their deployment in Chile, with attention to land, water, and energy constraints.",
       "motivation": "Net-zero and net-negative pathways depend on carbon removal at scale. Chile's options are under-studied.",
       "objectives": [

@@ -166,9 +166,26 @@
     var m = location.search.match(new RegExp('[?&]' + name + '=([^&]+)'));
     return m ? decodeURIComponent(m[1]) : '';
   };
+  // In Spanish (see i18n.js), any "<field>_es" value in the JSON data
+  // replaces "<field>"; fields without a translation stay in English.
+  function localize(o) {
+    if (Array.isArray(o)) { o.forEach(localize); return o; }
+    if (o && typeof o === 'object') {
+      Object.keys(o).forEach(function (k) {
+        var v = o[k];
+        if (/_es$/.test(k)) {
+          if (v != null && v !== '' && !(Array.isArray(v) && !v.length)) o[k.slice(0, -3)] = v;
+        } else {
+          localize(v);
+        }
+      });
+    }
+    return o;
+  }
   window.ECS.fetchJSON = function (url) {
     return fetch(url, { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + ' on ' + url); return r.json(); });
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status + ' on ' + url); return r.json(); })
+      .then(function (data) { return document.documentElement.lang === 'es' ? localize(data) : data; });
   };
   window.ECS.fetchText = function (url) {
     return fetch(url, { cache: 'no-cache' })
