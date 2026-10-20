@@ -1,5 +1,5 @@
 {
-  "_comment_howto": "Single source of truth for all team members. Each member has a unique id (slug) used by member.html?id=<slug>. The 'role' field drives grouping on team.html — use exactly: 'Director', 'Co-Director', 'Researcher', 'Postdoctoral Researcher' (current postdocs), 'PhD Student', 'Master's Student', 'Undergraduate Student', 'Visiting Scholar', 'Alumni' (former students), 'Former Postdoc' (former postdocs). Set 'group' to 'national' or 'international' for collaborators. Photos go in assets/images/<id>.jpg (or .jpeg/.png) — leave 'photo' empty if you have no photo and a default monogram will be used. SUPPORTED FIELDS (all optional unless noted): id (required), name (required), honorific, credentials, role (required), subrole (e.g. 'PhD Alumni' for alumni), title, affiliation, email, photo, bibtex_name (the exact author-name string used for this person in publications.bib — when set, the publications page on their profile shows only their papers and bolds their name), research_topics (array), keywords (array of short tags), thesis (title), thesis_summary (short paragraph), degree (e.g. 'PhD in Industrial Engineering'), supervisors (array of member ids), bio_short, bio_long, education (array of strings), current_position, year (graduation year for alumni), start_year, expected_year, status, projects (array of project ids — optional manual override; usually filled automatically by matching project.team[].member_id to this id), links (object with any of: scholar, orcid, github, linkedin, website, anid, cv, twitter).",
+  "_comment_howto": "Single source of truth for all team members. Each member has a unique id (slug) used by member.html?id=<slug>. The 'role' field drives grouping on team.html - use exactly: 'Director', 'Co-Director', 'Researcher', 'Postdoctoral Researcher' (current postdocs), 'PhD Student', 'Master's Student', 'Undergraduate Student', 'Visiting Scholar', 'Alumni' (former students), 'Former Postdoc' (former postdocs). Set 'group' to 'national' or 'international' for collaborators. Photos go in assets/images/<id>.jpg (or .jpeg/.png) - leave 'photo' empty if you have no photo and a default monogram will be used. SUPPORTED FIELDS (all optional unless noted): id (required), name (required), honorific, credentials, role (required), subrole (e.g. 'PhD Alumni' for alumni), title, affiliation, email, photo, bibtex_name (the exact author-name string used for this person in publications.bib - when set, the publications page on their profile shows only their papers and bolds their name), research_topics (array), keywords (array of short tags), thesis (title), thesis_summary (short paragraph), degree (e.g. 'PhD in Industrial Engineering'), supervisors (array of member ids), bio_short, bio_long, education (array of strings), current_position, year (graduation year for alumni), start_year, expected_year, status, projects (array of project ids - optional manual override; usually filled automatically by matching project.team[].member_id to this id), links (object with any of: scholar, orcid, github, linkedin, website, anid, cv, twitter).",
 
   "members": [
     {
@@ -23,9 +23,9 @@
       "bio_short": "Co-Director of SCALE. Works on energy markets, energy policy, and renewable integration using system dynamics and simulation, with applications in Colombia and the United Kingdom.",
       "bio_long": "Monica Castañeda is a Professor in the Systems Area of the School of Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile, and Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab). Her research uses system dynamics and simulation to understand how energy markets and policies shape the transition to low-carbon power systems. She has studied electricity-market reform in Great Britain, the long-term effects of feed-in tariffs on residential solar, the so-called utility death spiral, and the security of supply of hydro-dominated systems such as Colombia's, including pathways towards 100% renewable electricity. Her work appears in journals such as Energy Policy, Renewable Energy, Renewable and Sustainable Energy Reviews, Energy, and the European Journal of Operational Research. She supervises graduate students in the lab and contributes to projects on decarbonization pathways and energy planning for Latin America. She holds a Ph.D. in Engineering, an M.Sc. in Systems Engineering, and a degree in Administrative Engineering, all from Universidad Nacional de Colombia.",
       "education": [
-        "Ph.D. in Engineering — Universidad Nacional de Colombia",
-        "M.Sc. in Systems Engineering — Universidad Nacional de Colombia",
-        "Administrative Engineering — Universidad Nacional de Colombia"
+        "Ph.D. in Engineering, Universidad Nacional de Colombia",
+        "M.Sc. in Systems Engineering, Universidad Nacional de Colombia",
+        "Administrative Engineering, Universidad Nacional de Colombia"
       ],
       "links": {
         "scholar":  "https://scholar.google.com/citations?user=x6IGK7cAAAAJ&hl=en",
@@ -56,8 +56,8 @@
       "bio_short": "Co-Director of SCALE. Lead Author for IPCC WGIII (Energy Systems), advisor to Chile's Ministry of Environment, and APEC consultant on hydrogen certification.",
       "bio_long": "Felipe Feijoo is an Associate Professor at the School of Industrial Engineering of Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is Co-Director of SCALE (Sustainable Climate Analysis & Energy Decision Lab) and works at the intersection of energy systems modeling, climate policy, and operations research, with an emphasis on deep-decarbonization pathways under uncertainty and the interactions among energy, water, land, and food systems. He serves as a Lead Author for IPCC Working Group III (Chapter on Energy Systems), as advisor to the Scientific Committee on Climate Change at the Ministry of Environment of Chile, and as APEC consultant on hydrogen certification. He is Subject Editor of the journal ENERGY (Q1, IF 9.4), Co-Chair for the Americas of the SDEWES Centre, and Chair of the PhD program in Industrial Engineering at PUCV. He held postdoctoral positions at the University of Zagreb, PNNL/JGCRI (US DOE), and Johns Hopkins/MIT, and earned his Ph.D. from the University of South Florida.",
       "education": [
-        "Ph.D., Industrial Engineering — University of South Florida, 2015",
-        "B.S., Industrial Engineering — Universidad de La Frontera, 2010"
+        "Ph.D., Industrial Engineering, University of South Florida, 2015",
+        "B.S., Industrial Engineering, Universidad de La Frontera, 2010"
       ],
       "links": {
         "scholar":  "https://scholar.google.com/citations?user=miCMtj4AAAAJ&hl=en",
@@ -263,17 +263,40 @@
     {
       "id": "paola-paredes",
       "name": "Paola Paredes",
+      "credentials": "B.Eng.",
+      "bibtex_name": "Paola Paredes",
       "role": "PhD Student",
       "title": "PhD Student",
       "affiliation": "PhD in Industrial Engineering, PUCV",
-      "research_topics": ["Deep decarbonization pathways", "Endogenous resilience metrics"],
-      "thesis": "Endogenous resilience metrics in long-term energy-system planning.",
-      "bio_short": "PhD student working on deep-decarbonization pathways for Chile, with a focus on resilience under climate and supply-chain uncertainty.",
-      "supervisors": ["felipe-feijoo"],
+      "email": "paola.paredes@pucv.cl",
+      "research_topics": [
+        "Energy system resilience and climate risk assessment",
+        "Energy system modeling and optimization"
+      ],
+      "keywords": [
+        "Energy System Resilience",
+        "Energy System Modeling",
+        "Climate Uncertainty"
+      ],
+      "degree": "PhD in Industrial Engineering, PUCV",
+      "thesis": "Modeling and Assessment of Energy System Resilience under Climate and Operational Uncertainty",
+      "thesis_summary": "Extreme climate events threaten energy infrastructure and supply continuity, highlighting the need to assess resilience beyond conventional reliability indicators. This research proposes a framework to evaluate energy systems under climate and operational uncertainty. The H2RES model will simulate climate disturbances, sector interactions, and flexibility options. Probabilistic scenarios and stochastic planning will support the assessment of vulnerabilities and potential strategies to improve resilience and inform future energy planning.",
+      "bio_short": "PhD student in Industrial Engineering researching energy system resilience and decarbonization in Chile, with a focus on energy system modeling, extreme climate events, and cross-sector disruptions.",
+      "bio_long": "Paola Paredes is a PhD student in Industrial Engineering at the Pontificia Universidad Católica de Valparaíso (PUCV), Chile, supported by the Chilean Scholarship “Doctorado Nacional” awarded by the Agencia Nacional de Investigación y Desarrollo (ANID). She holds a degree in Energy Engineering from the Universidad Católica Boliviana San Pablo, Bolivia.\n\nHer research focuses on energy system modeling and assessing energy resilience under climate and operational uncertainty, with particular attention to the challenges of the transition to low-carbon energy systems. Her doctoral work explores how extreme climate events can affect energy infrastructure, system performance, and interactions across interconnected energy sectors. Her broader research interests include renewable energy integration, power system planning, energy security, and the development of quantitative frameworks for evaluating energy system reliability and resilience.\n\nShe is particularly interested in combining energy modeling with practical planning approaches and the development of sustainable, reliable, and resilient energy systems. Her long-term goal is to contribute to academic research and international collaboration in sustainable energy transitions.",
+      "education": [
+        "Bachelor's Degree in Energy Engineering, Universidad Católica Boliviana San Pablo, 2024"
+      ],
+      "supervisors": [
+        "felipe-feijoo"
+      ],
       "start_year": "2025",
       "expected_year": "2028",
       "status": "In progress",
-      "photo": ""
+      "photo": "",
+      "links": {
+        "orcid": "https://orcid.org/0009-0001-2470-9650",
+        "linkedin": "https://www.linkedin.com/in/paola-paredes-28b5ab331"
+      }
     },
     {
       "id": "isidora-loaiza",
@@ -327,6 +350,43 @@
       "status": "In progress",
       "photo": ""
     },
+    {
+      "id": "joaquin-vergara",
+      "name": "Joaquín Vergara Urrutia",
+      "role": "Master's Student",
+      "title": "M.Sc. Student in Industrial Engineering",
+      "affiliation": "School of Industrial Engineering, PUCV",
+      "email": "joaquin.vergara.u@mail.pucv.cl",
+      "research_topics": [
+        "Energy systems modeling",
+        "Operations research",
+        "Data analysis"
+      ],
+      "keywords": [
+        "Energy systems",
+        "Optimization",
+        "Data analytics",
+        "Operations research"
+      ],
+      "degree": "M.Sc. in Industrial Engineering",
+      "thesis": "Data-Driven Enhancement of Energy Dispatch and Forecasting in the H2RES Framework",
+      "thesis_summary": "This thesis investigates the integration of advanced data analytics and predictive modeling to improve energy dispatch and forecasting accuracy within the H2RES framework. Accurate forecasting of variable renewable energy generation and electricity demand is critical for the stability of modern power grids. By leveraging historical datasets and data-driven techniques, this research aims to refine the input parameters of the H2RES energy planning model. The enhanced framework will be applied to simulate scenarios with high renewable penetration, evaluating the operational and economic impacts of improved forecasting on decision-making. Ultimately, this work provides a robust data-driven approach to optimize resource allocation, reduce operational uncertainties, and support the transition towards sustainable and highly efficient energy systems.",
+      "bio_short": "M.Sc. Student in Industrial Engineering at PUCV.",
+      "bio_long": "Joaquín Vergara is a Master's student in Industrial Engineering at Pontificia Universidad Católica de Valparaíso (PUCV), Chile. He is currently participating in an Erasmus+ exchange program at the University of Zagreb, Croatia, focusing on energy engineering and energy systems modeling using the H2RES framework. His academic and professional background is deeply rooted in operations research, data analytics, and process optimization.\n\nThroughout his academic journey, Joaquín has been recognized for his outstanding performance. He received the Master's Academic Excellence Scholarship in 2025 for ranking among the top three students in his cohort, and was featured on the PUCV Industrial Engineering Honor Roll for two consecutive years (2023 and 2024).\n\nLooking ahead, Joaquín aims to apply his expertise in mathematical modeling and advanced data analytics to tackle complex challenges within the energy and logistics sectors.",
+      "education": [
+        "Bachelor of Engineering Sciences, Pontificia Universidad Católica de Valparaíso, 2025"
+      ],
+      "supervisors": [
+        "felipe-feijoo"
+      ],
+      "start_year": "2026",
+      "expected_year": "2028",
+      "status": "In progress",
+      "photo": "",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/joaqu%C3%ADn-vergara-urrutia-a7149926a/"
+      }
+    },
 
     {
       "id": "francisco-flores",
@@ -358,7 +418,7 @@
         "hydrogen", "Power-to-X", "energy transition planning"
       ],
       "bio_short": "Postdoctoral Researcher at the University of Zagreb. PhD alumnus of SCALE. Works on integrated energy and climate modelling for Latin America, combining IAMs, power-system optimization, and water-energy-land nexus analyses.",
-      "bio_long": "Francisco Flores is a Postdoctoral Researcher at the University of Zagreb and a PhD alumnus of SCALE at PUCV. His research develops and applies integrated modeling frameworks — coupling Integrated Assessment Models (GCAM, GCAM-LA) with high-resolution power-system optimization (PyPSA, H2RES) — to study deep-decarbonization pathways for Latin America. His work explicitly accounts for cross-border electricity and hydrogen trade, flexible technologies, and the feedbacks among energy, water, and land systems. He has published in journals including Energy, Energy Strategy Reviews, and Applied Energy, and has collaborated with the U.S. Department of Energy / PNNL on the Net Zero World Initiative.",
+      "bio_long": "Francisco Flores is a Postdoctoral Researcher at the University of Zagreb and a PhD alumnus of SCALE at PUCV. His research develops and applies integrated modeling frameworks, coupling Integrated Assessment Models (GCAM, GCAM-LA) with high-resolution power-system optimization (PyPSA, H2RES), to study deep-decarbonization pathways for Latin America. His work explicitly accounts for cross-border electricity and hydrogen trade, flexible technologies, and the feedbacks among energy, water, and land systems. He has published in journals including Energy, Energy Strategy Reviews, and Applied Energy, and has collaborated with the U.S. Department of Energy / PNNL on the Net Zero World Initiative.",
       "supervisors": ["felipe-feijoo"],
       "current_position": "Postdoctoral Researcher, University of Zagreb (Croatia)",
       "links": {

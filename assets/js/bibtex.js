@@ -1,5 +1,5 @@
 /* =============================================================
-   bibtex.js — BibTeX parser + publication renderer for SCALE
+   bibtex.js - BibTeX parser + publication renderer for SCALE
    - Reads publications.bib (peer-reviewed) and reports.bib (technical)
    - Renders into separate journal / report subsections
    - Filters: tab (journals/reports/all), search, year, author,
@@ -208,7 +208,7 @@
         var o = document.createElement('option'); o.value = String(y); o.textContent = y; yearSel.appendChild(o);
       });
     }
-    // Author — anyone who appears in at least 2 publications, plus the leadership
+    // Author - anyone who appears in at least 2 publications, plus the leadership
     var authorSel = document.getElementById('pub-author');
     if (authorSel) {
       var counts = {};
@@ -222,7 +222,7 @@
         authorSel.appendChild(o);
       });
     }
-    // Type — derived from BibTeX entry types
+    // Type - derived from BibTeX entry types
     var typeSel = document.getElementById('pub-type');
     if (typeSel) {
       var types = Array.from(new Set(STATE.all.map(function (p) { return p.type; })));
@@ -238,7 +238,7 @@
         typeSel.appendChild(o);
       });
     }
-    // Area — pulled from research-areas.json keywords (loaded separately if available)
+    // Area - pulled from research-areas.json keywords (loaded separately if available)
     var areaSel = document.getElementById('pub-area');
     if (areaSel && window.ECS && window.ECS.fetchJSON) {
       window.ECS.fetchJSON('data/research-areas.json').then(function (data) {

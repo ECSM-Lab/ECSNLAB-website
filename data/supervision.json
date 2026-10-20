@@ -27,7 +27,7 @@
       "area": "Power Systems & Energy Markets",
       "summary": "Quantify the role of Power-to-X technologies as cross-sector flexibility resources in 100%-renewable power systems.",
       "description": "Studies the system-level value of Power-to-X (hydrogen, e-fuels, e-chemicals) when used as flexibility for a 100% renewable power system, with attention to economic, technical, and policy dimensions.",
-      "motivation": "Decarbonizing the energy system requires linking electricity to other sectors. Power-to-X is the bridge — but its system value under different policy regimes is poorly understood.",
+      "motivation": "Decarbonizing the energy system requires linking electricity to other sectors. Power-to-X is the bridge, but its system value under different policy regimes is poorly understood.",
       "objectives": [
         "Develop high-resolution capacity-expansion models with Power-to-X.",
         "Quantify the system value of P2X under alternative policy regimes.",

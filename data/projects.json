@@ -1,5 +1,5 @@
 {
-  "_comment_howto": "Lab projects portfolio. Each project has an id (slug) used by project.html?id=<slug>. Schema: id, title, tagline, source (funding name), funding_institution, role (PI/Co-PI/etc.), status ('active', 'completed', 'review'), period, amount, scope ('national' or 'international'), research_areas (array of research-area ids — drives cross-links), abstract, objectives (array), methodology, results, keywords (array), team (array of {member_id, role}); related_publications (array of free-text {title, venue, year, url}). Missing fields are skipped gracefully.",
+  "_comment_howto": "Lab projects portfolio. Each project has an id (slug) used by project.html?id=<slug>. Schema: id, title, tagline, source (funding name), funding_institution, role (PI/Co-PI/etc.), status ('active', 'completed', 'review'), period, amount, scope ('national' or 'international'), research_areas (array of research-area ids - drives cross-links), abstract, objectives (array), methodology, results, keywords (array), team (array of {member_id, role}); related_publications (array of free-text {title, venue, year, url}). Missing fields are skipped gracefully.",
 
   "projects": [
     {
@@ -7,7 +7,7 @@
       "title": "DECARB-R+J",
       "tagline": "Advancing deep decarbonization pathways through endogenous modeling of resilience, justice, and renewable integration.",
       "source": "FONDECYT Regular (ANID, Chile)",
-      "funding_institution": "ANID — Agencia Nacional de Investigación y Desarrollo (Chile)",
+      "funding_institution": "ANID, Agencia Nacional de Investigación y Desarrollo (Chile)",
       "role": "Principal Investigator",
       "status": "active",
       "period": "2026 – 2029",
@@ -28,7 +28,8 @@
         { "member_id": "felipe-feijoo",   "role": "Principal Investigator" },
         { "member_id": "monica-castaneda","role": "Co-Investigator" },
         { "member_id": "paola-paredes",   "role": "PhD Student" },
-        { "member_id": "alonso-gonzalez", "role": "Master's Student" }
+        { "member_id": "alonso-gonzalez", "role": "Master's Student" },
+        { "member_id": "joaquin-vergara", "role": "Master's Student" }
       ],
       "related_publications": []
     },
@@ -37,7 +38,7 @@
       "title": "APEC Hydrogen Certification",
       "tagline": "Building resilient energy policies in Asia-Pacific through certification of hydrogen and its derivatives.",
       "source": "APEC EWG 104-105",
-      "funding_institution": "Asia-Pacific Economic Cooperation — Energy Working Group",
+      "funding_institution": "Asia-Pacific Economic Cooperation, Energy Working Group",
       "role": "Principal Investigator",
       "status": "active",
       "period": "2025 – 2026",
@@ -63,7 +64,7 @@
       "title": "INTERNEXUS",
       "tagline": "Energy–Water–Food nexus and Power-to-X for deep-decarbonization pathways toward 100% renewable energy systems.",
       "source": "FONDECYT Regular (ANID, Chile)",
-      "funding_institution": "ANID — Agencia Nacional de Investigación y Desarrollo (Chile)",
+      "funding_institution": "ANID, Agencia Nacional de Investigación y Desarrollo (Chile)",
       "role": "Principal Investigator",
       "status": "active",
       "period": "2022 – 2026",
@@ -134,7 +135,7 @@
     },
     {
       "id": "heat-ai-cities",
-      "title": "HEAT — AI for Smart Cities",
+      "title": "HEAT: AI for Smart Cities",
       "tagline": "Heat exposure analytics and AI-supported urban planning.",
       "source": "PUCV Centennial",
       "funding_institution": "Pontificia Universidad Católica de Valparaíso",
@@ -156,7 +157,7 @@
     },
     {
       "id": "enter-1-5n",
-      "title": "ENTER-1.5N — Energy–Water–Food Nexus",
+      "title": "ENTER-1.5N: Energy–Water–Food Nexus",
       "tagline": "Integrated nexus modeling for 1.5 °C-compatible pathways.",
       "source": "FONDECYT Iniciación (ANID, Chile)",
       "funding_institution": "ANID",
@@ -197,7 +198,7 @@
     },
     {
       "id": "equienergy",
-      "title": "EquiEnergy — Just Energy Transitions",
+      "title": "EquiEnergy: Just Energy Transitions",
       "tagline": "Distributional and equity dimensions of decarbonization.",
       "source": "FOVI (ANID, Chile)",
       "funding_institution": "ANID",
@@ -252,7 +253,7 @@
     },
     {
       "id": "apec-resilient",
-      "title": "Resilient Energy Policies — APEC",
+      "title": "Resilient Energy Policies: APEC",
       "tagline": "Resilient policy frameworks for APEC economies.",
       "source": "APEC",
       "funding_institution": "Asia-Pacific Economic Cooperation",
@@ -289,7 +290,7 @@
     },
     {
       "id": "apec-hydrogen-demand",
-      "title": "Hydrogen Demand — APEC",
+      "title": "Hydrogen Demand: APEC",
       "tagline": "Mapping hydrogen demand drivers in APEC economies.",
       "source": "APEC",
       "funding_institution": "Asia-Pacific Economic Cooperation",

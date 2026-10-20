@@ -1,5 +1,5 @@
 /* =============================================================
-   main.js — site-wide chrome (header, footer, nav, scroll, year)
+   main.js - site-wide chrome (header, footer, nav, scroll, year)
    Loaded by every page.
    ============================================================= */
 (function () {
@@ -73,7 +73,13 @@
 
   /* ----- Mark active nav link based on URL ----- */
   var path = location.pathname.replace(/\/+$/, '').split('/').pop() || 'index.html';
-  $$('#nav-menu a').forEach(function (a) {
+  var view = new URLSearchParams(location.search).get('view');
+  $$('#nav-menu .nav-sub a').forEach(function (a) {
+    var q = (a.getAttribute('href') || '').split('?');
+    var subView = new URLSearchParams(q[1] || '').get('view');
+    if (q[0] === path && subView === view) a.classList.add('is-active');
+  });
+  $$('#nav-menu > li > a').forEach(function (a) {
     var href = a.getAttribute('href');
     if (!href) return;
     if (href === path || (path === 'index.html' && href === './') || (path === '' && href === 'index.html')) {

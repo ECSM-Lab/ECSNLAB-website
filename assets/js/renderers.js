@@ -1,7 +1,7 @@
-/* ECS renderers — build 20260427 */
-console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOString());
+/* ECS renderers - build 20260427 */
+console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOString());
 /* =============================================================
-   renderers.js — render data-driven content from JSON files
+   renderers.js - render data-driven content from JSON files
    Functions defined under window.ECSRender:
      team, projects, researchAreas, news, supervision, leadership,
      stats, memberDetail, projectDetail, areaDetail
@@ -235,9 +235,36 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
     'Visiting Scholar', 'Alumni', 'Former Postdoc'
   ];
 
+  // team.html?view=collaborators|visiting shows a subset; default is the core team.
+  var TEAM_VIEWS = {
+    team: {
+      title: 'Our team',
+      sub: 'Co-directors, researchers, students, and alumni.',
+      intro: 'SCALE brings together faculty, postdoctoral researchers, graduate and undergraduate students.'
+    },
+    collaborators: {
+      title: 'Collaborators',
+      sub: 'National and international research partners.',
+      intro: 'SCALE works with a network of national and international collaborators across universities and research centers.'
+    },
+    visiting: {
+      title: 'Visiting researchers',
+      sub: 'Visiting scholars and exchange students.',
+      intro: 'Researchers and students who have joined SCALE through research stays and exchange programs.'
+    }
+  };
+
   function renderTeam(sel) {
     return window.ECS.fetchJSON('data/team.json').then(function (data) {
       var el = $(sel); if (!el) return data;
+      var view = new URLSearchParams(location.search).get('view');
+      if (!TEAM_VIEWS[view]) view = 'team';
+      var v = TEAM_VIEWS[view];
+      var setText = function (id, txt) { var n = document.getElementById(id); if (n) n.textContent = txt; };
+      setText('team-title', v.title);
+      setText('team-sub', v.sub);
+      setText('team-intro', v.intro);
+      if (view !== 'team') document.title = v.title + ' | SCALE';
       var members = data.members || [];
       var groups = {};
       members.forEach(function (m) {
@@ -246,6 +273,22 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
         groups[key].push(m);
       });
       var html = '';
+      if (view === 'collaborators') {
+        var collab = groups['Researcher'] || [];
+        html += teamSection('National Collaborators',
+                            collab.filter(function (m) { return m.group === 'national'; }));
+        html += teamSection('International Collaborators',
+                            collab.filter(function (m) { return m.group === 'international'; }));
+        el.innerHTML = html;
+        bold(el);
+        return data;
+      }
+      if (view === 'visiting') {
+        html += teamSection('Visiting Scholars', groups['Visiting Scholar']);
+        el.innerHTML = html;
+        bold(el);
+        return data;
+      }
       // Director + Co-Director get the rich leadership card (same as home).
       var leaders = (groups['Director'] || []).concat(groups['Co-Director'] || []);
       if (leaders.length) {
@@ -272,12 +315,10 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       // Then everyone else with the regular grid.
       ROLE_ORDER.forEach(function (role) {
         if (role === 'Director' || role === 'Co-Director') return; // handled above
+        if (role === 'Visiting Scholar') return; // shown in the "visiting" view
         if (!groups[role] || !groups[role].length) return;
         if (role === 'Researcher') {
-          html += teamSection('National Collaborators',
-                              groups[role].filter(function (m) { return m.group === 'national'; }));
-          html += teamSection('International Collaborators',
-                              groups[role].filter(function (m) { return m.group === 'international'; }));
+          // Collaborators (with a group) are shown in the "collaborators" view.
           html += teamSection('Researchers',
                               groups[role].filter(function (m) { return !m.group; }));
         } else if (role === 'Alumni') {
@@ -479,7 +520,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
                           OR any project listed in m.projects[]
        - publications:    BibTeX entries matching m.bibtex_name
                           (default: regex on the member's name)
-                          — uses the same parser/renderer as
+                          - uses the same parser/renderer as
                             publications.html via window.ECSPubs.
      ============================================================ */
   function renderMemberDetail(rootSel) {
@@ -513,7 +554,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
           return (p.team || []).some(function (t) { return t.member_id === m.id; });
         });
 
-        document.title = m.name + ' — SCALE';
+        document.title = m.name + ' | SCALE';
 
         var statusBadge = '';
         if (m.role === 'Alumni')                      statusBadge = '<span class="tag tag-neutral">' + ESC(m.subrole || 'Alumni') + '</span>';
@@ -529,7 +570,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
         }
         var emailHtml = m.email ? '<div class="aside-block"><h4>Email</h4><p><a href="mailto:' + ESC(m.email) + '">' + ESC(m.email) + '</a></p></div>' : '';
 
-        // Profile / external links — the JSON 'links' object can contain any
+        // Profile / external links - the JSON 'links' object can contain any
         // of: scholar, orcid, github, linkedin, website, anid, cv, twitter.
         var linksHtml = '';
         if (m.links && Object.keys(m.links).length) {
@@ -562,7 +603,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
             (m.degree ? '<p style="color:var(--ink-muted)">' + ESC(m.degree) + (m.year ? ' · ' + ESC(m.year) : '') + '</p>' : '')
           : '';
         var bioHtml = (m.bio_long || m.bio_short)
-          ? '<h3>Biography</h3><p>' + ESC(m.bio_long || m.bio_short) + '</p>'
+          ? '<h3>Biography</h3>' + String(m.bio_long || m.bio_short).split(/\n\s*\n/).map(function (para) { return '<p>' + ESC(para) + '</p>'; }).join('')
           : '';
         var positionHtml = m.current_position
           ? '<div class="aside-block"><h4>Current position</h4><p>' + ESC(m.current_position) + (m.year ? '<br/><span style="color:var(--ink-muted)">Graduated ' + ESC(m.year) + '</span>' : '') + '</p></div>'
@@ -624,13 +665,12 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
                 projectsHtml +
                 opportunitiesHtml +
 
-                /* Publications block — populated below by ECSPubs.init() if
+                /* Publications block - populated below by ECSPubs.init() if
                    the member has a bibtex_name defined. */
                 (m.bibtex_name ? (
                   '<h3 id="member-pubs">Publications</h3>' +
                   '<p class="section-sub" style="margin-bottom:14px">' +
-                    'Publications where <strong>' + ESC(m.name) + '</strong> appears as an author, ' +
-                    'pulled automatically from <code>publications.bib</code> and <code>reports.bib</code>.' +
+                    'Publications where <strong>' + ESC(m.name) + '</strong> appears as an author.' +
                   '</p>' +
                   '<div class="pub-filters" role="region" aria-label="Filters">' +
                   '  <input type="search" id="pub-search" placeholder="Search title, venue, keyword…" />' +
@@ -683,7 +723,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var areas   = res[2].areas   || [];
       var root = $(rootSel); if (!root) return;
       if (!p) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Project not found. <a href="projects.html">← Back to projects</a></p></div></section>'; return; }
-      document.title = p.title + ' — SCALE';
+      document.title = p.title + ' | SCALE';
       function memberLink(mid, fallbackName) {
         var mm = members.find(function (x) { return x.id === mid; });
         if (mm) return '<a href="member.html?id=' + mm.id + '">' + ESC(mm.name) + '</a>';
@@ -710,7 +750,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
         ? '<div class="pub-keywords" style="margin-top:18px">' + p.keywords.map(function (k) { return '<span class="kw">' + ESC(k) + '</span>'; }).join('') + '</div>'
         : '';
 
-      // Publications block — only added if project has keywords AND
+      // Publications block - only added if project has keywords AND
       // the bibtex engine is loaded.
       var pubsBlock = '';
       if (p.keywords && p.keywords.length && window.ECSPubs && window.ECSPubs.init) {
@@ -736,7 +776,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
             pubsBlock +
           '</div>' +
           '<aside>' +
-            '<div class="aside-block"><h4>Funding</h4><p>' + ESC(p.source || '—') + '</p>' +
+            '<div class="aside-block"><h4>Funding</h4><p>' + ESC(p.source || '-') + '</p>' +
             (p.funding_institution ? '<p style="font-size:0.85rem;color:var(--ink-muted);margin-top:6px">' + ESC(p.funding_institution) + '</p>' : '') +
             (p.amount ? '<p style="margin-top:6px"><strong>Amount:</strong> ' + ESC(p.amount) + '</p>' : '') +
             (p.role ? '<p style="margin-top:6px"><strong>Role:</strong> ' + ESC(p.role) + '</p>' : '') +
@@ -772,7 +812,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var allMembers  = res[2].members  || [];
       var root = $(rootSel); if (!root) return;
       if (!a) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Research area not found. <a href="research.html">← Back</a></p></div></section>'; return; }
-      document.title = a.title + ' — SCALE';
+      document.title = a.title + ' | SCALE';
 
       var areaProjects = allProjects.filter(function (p) {
         return (p.research_areas || []).indexOf(a.id) >= 0 || (a.projects || []).indexOf(p.id) >= 0;
@@ -853,7 +893,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
       var t = allTopics.find(function (x) { return x.id === id; });
       var root = $(rootSel); if (!root) return;
       if (!t) { root.innerHTML = '<section class="section"><div class="container"><p class="pub-empty">Topic not found. <a href="opportunities.html">← Back</a></p></div></section>'; return; }
-      document.title = t.title + ' — SCALE';
+      document.title = t.title + ' | SCALE';
 
       var levelPill = /PhD/i.test(t.level)
         ? '<span class="pill deg-phd">PhD</span>'
@@ -922,7 +962,7 @@ console.log("[ECS] renderers.js build 20260427 loaded — " + new Date().toISOSt
   }
 
   /* Make supervision cards link to topic.html */
-  // (Override drawSup output by extending rendering below — handled inline in
+  // (Override drawSup output by extending rendering below - handled inline in
   // the section above. We re-wire the card to be a link-card.)
 
   // Export

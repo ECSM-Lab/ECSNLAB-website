@@ -1,7 +1,7 @@
 {
   "_comment": "Lab-wide metadata. Edit values, commit, push. Used by every page header/footer/home.",
 
-  "name": "SCALE — Sustainable Climate Analysis & Energy Decision Lab",
+  "name": "SCALE: Sustainable Climate Analysis & Energy Decision Lab",
   "short_name": "SCALE",
   "tagline": "Climate and energy analysis for better decisions",
   "institution": "School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV)",
@@ -11,7 +11,7 @@
   "vision": "To be a leading Latin American reference in climate and energy analysis for decision-making, training engineers and analysts who design evidence-based, equitable pathways towards a sustainable future.",
 
   "stats": [
-    { "value": "~75",   "label": "Peer-reviewed publications" },
+    { "value": "+100",  "label": "Peer-reviewed publications" },
     { "value": "13+",   "label": "Funded projects" },
     { "value": "45+",   "label": "Students & alumni" },
     { "value": "27",    "label": "Countries reached" }

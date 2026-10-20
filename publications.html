@@ -5,15 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>/* Apply the saved or system theme before first paint */(function(){var t;try{t=localStorage.getItem("scale-theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.setAttribute("data-theme",t)})();</script>
-  <title>Publications — SCALE</title>
-  <meta name="description" content="Peer-reviewed publications, reports, and technical documents from SCALE — generated from BibTeX." />
+  <title>Publications | SCALE</title>
+  <meta name="description" content="Peer-reviewed publications, reports, and technical documents from SCALE." />
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261019c" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261020a" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -32,7 +32,13 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="research.html">Research</a></li>
-      <li><a href="team.html">Team</a></li>
+      <li class="has-sub"><a href="team.html" aria-haspopup="true">People<span class="caret" aria-hidden="true"></span></a>
+        <ul class="nav-sub">
+          <li><a href="team.html">Team</a></li>
+          <li><a href="team.html?view=collaborators">Collaborators</a></li>
+          <li><a href="team.html?view=visiting">Visiting</a></li>
+        </ul>
+      </li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="publications.html">Publications</a></li>
       <li><a href="news.html">News</a></li>
@@ -45,15 +51,12 @@
 <section class="detail-hero"><div class="container">
   <p class="profile-eyebrow">Publications</p>
   <h1 class="profile-name">Publications</h1>
-  <p class="profile-title">Peer-reviewed journals, conference proceedings, book chapters, and reports — generated from BibTeX.</p>
+  <p class="profile-title">Peer-reviewed journals, conference proceedings, book chapters, and reports.</p>
 </div></section>
 
 <section class="section"><div class="container">
   <p class="section-sub" style="margin-bottom:18px">
-    Publications are rendered from
-    <code>publications.bib</code> (peer-reviewed work) and
-    <code>reports.bib</code> (technical / advisory). Click a title to expand
-    the abstract, copy the BibTeX, and find the DOI.
+    Click a title to expand the abstract, copy the BibTeX, and find the DOI.
     Names of <strong>Felipe Feijoo</strong> and <strong>Monica Castañeda</strong> are highlighted automatically.
   </p>
 
@@ -91,7 +94,7 @@
       <img class="footer-logo" src="assets/images/logo-mark-dark.svg" alt="" aria-hidden="true" />
       <div>
         <h3><img class="footer-wordmark" src="assets/images/wordmark-dark.svg" alt="SCALE" /></h3>
-        <p>Sustainable Climate Analysis &amp; Energy Decision Lab — School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV) — Valparaíso, Chile.</p>
+        <p>Sustainable Climate Analysis &amp; Energy Decision Lab, School of Industrial Engineering, Pontificia Universidad Católica de Valparaíso (PUCV), Valparaíso, Chile.</p>
       </div>
     </div>
     <div>
@@ -123,11 +126,11 @@
     </div>
   </div>
   <div class="container foot-bottom">
-    <span>© <span id="year"></span> SCALE — PUCV</span>
+    <span>© <span id="year"></span> SCALE · PUCV</span>
     <span>Valparaíso, Chile</span>
   </div>
 </footer>
 <a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑</a>
-<script src="assets/js/main.js?v=20261019c"></script>
-<script src="assets/js/bibtex.js?v=20261019c"></script><script>ECSPubs.init({ initialType: "journals" });</script>
+<script src="assets/js/main.js?v=20261020a"></script>
+<script src="assets/js/bibtex.js?v=20261020a"></script><script>ECSPubs.init({ initialType: "journals" });</script>
 </body></html>

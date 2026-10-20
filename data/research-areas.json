@@ -1,5 +1,5 @@
 {
-  "_comment_howto": "Six research areas. Edit text below. Each area has an id (slug) used by research-area.html?id=<slug>. The 'paper_count' is shown on the card. The 'projects' and 'people' arrays are id-references to projects.json and team.json — they render as cross-links automatically. The 'keywords' array drives the publications filter on publications.html.",
+  "_comment_howto": "Six research areas. Edit text below. Each area has an id (slug) used by research-area.html?id=<slug>. The 'paper_count' is shown on the card. The 'projects' and 'people' arrays are id-references to projects.json and team.json - they render as cross-links automatically. The 'keywords' array drives the publications filter on publications.html.",
 
   "areas": [
     {
@@ -7,11 +7,11 @@
       "title": "Energy Sustainability & Policy",
       "tagline": "Scenario analysis, multi-objective optimization, and life-cycle assessment for sustainable energy systems.",
       "paper_count": "~21 papers",
-      "description": "We design and evaluate sustainable energy policies through quantitative scenario analysis, multi-objective optimization, and life-cycle assessment. Our work links policy levers — carbon pricing, mandates, subsidies — to measurable outcomes in cost, emissions, equity, and resilience. We collaborate with national ministries, APEC, and the IPCC to translate models into actionable guidance.",
+      "description": "We design and evaluate sustainable energy policies through quantitative scenario analysis, multi-objective optimization, and life-cycle assessment. Our work links policy levers (carbon pricing, mandates, subsidies) to measurable outcomes in cost, emissions, equity, and resilience. We collaborate with national ministries, APEC, and the IPCC to translate models into actionable guidance.",
       "methods": ["Scenario analysis", "Multi-objective optimization", "Life-cycle assessment", "Cost–benefit & policy modeling"],
       "keywords": ["energy policy", "sustainability", "decarbonization", "scenario analysis", "life-cycle assessment"],
       "projects": ["decarb-r-j", "apec-hydrogen", "internexus", "res-just"],
-      "people":   ["felipe-feijoo", "monica-castaneda"]
+      "people":   ["felipe-feijoo", "monica-castaneda", "paola-paredes", "joaquin-vergara"]
     },
     {
       "id": "power-systems-energy-markets",
@@ -22,7 +22,7 @@
       "methods": ["Mixed Complementarity Problems (MCP)", "Bilevel & Stackelberg models", "Stochastic programming", "Equilibrium analysis"],
       "keywords": ["power systems", "electricity markets", "stochastic programming", "bilevel optimization", "game theory"],
       "projects": ["internexus", "ev-pv-strategy"],
-      "people":   ["felipe-feijoo"]
+      "people":   ["felipe-feijoo", "paola-paredes", "joaquin-vergara"]
     },
     {
       "id": "global-climate-modeling",
@@ -44,7 +44,7 @@
       "methods": ["Linear & integer programming", "Nonlinear & bilevel optimization", "MCP reformulations", "Decomposition & large-scale algorithms"],
       "keywords": ["operations research", "optimization", "bilevel", "MCP", "stochastic programming"],
       "projects": ["internexus", "decarb-r-j"],
-      "people":   ["felipe-feijoo"]
+      "people":   ["felipe-feijoo", "joaquin-vergara"]
     },
     {
       "id": "ai-machine-learning",
