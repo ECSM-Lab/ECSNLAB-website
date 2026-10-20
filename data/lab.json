@@ -12,8 +12,8 @@
 
   "stats": [
     { "value": "+100",  "label": "Peer-reviewed publications" },
-    { "value": "13+",   "label": "Funded projects" },
-    { "value": "45+",   "label": "Students & alumni" },
+    { "value": "+13",   "label": "Funded projects" },
+    { "value": "+45",   "label": "Students & alumni" },
     { "value": "27",    "label": "Countries reached" }
   ],
 
