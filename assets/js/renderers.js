@@ -276,15 +276,15 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
       if (view === 'collaborators') {
         var collab = groups['Researcher'] || [];
         html += teamSection('National Collaborators',
-                            collab.filter(function (m) { return m.group === 'national'; }));
+                            collab.filter(function (m) { return m.group === 'national'; }), true);
         html += teamSection('International Collaborators',
-                            collab.filter(function (m) { return m.group === 'international'; }));
+                            collab.filter(function (m) { return m.group === 'international'; }), true);
         el.innerHTML = html;
         bold(el);
         return data;
       }
       if (view === 'visiting') {
-        html += teamSection('Visiting Scholars', groups['Visiting Scholar']);
+        html += teamSection('Visiting Scholars', groups['Visiting Scholar'], true);
         el.innerHTML = html;
         bold(el);
         return data;
@@ -341,11 +341,11 @@ console.log("[ECS] renderers.js build 20260427 loaded - " + new Date().toISOStri
       return data;
     }).catch(function (err) { showError(sel, 'data/team.json', err); });
   }
-  function teamSection(title, members) {
+  function teamSection(title, members, compact) {
     if (!members || !members.length) return '';
     return '<section class="team-section">' +
              '<h3 class="sub-title">' + ESC(title) + '</h3>' +
-             '<div class="cards">' +
+             '<div class="cards' + (compact ? ' cards-compact' : '') + '">' +
                 members.map(memberCard).join('') +
              '</div>' +
            '</section>';

@@ -535,6 +535,20 @@ p { margin: 0 0 1em; }
 }
 .member-affil { font-size: 0.88rem; color: var(--ink-soft); margin-top: 8px; }
 
+/* Compact cards (Collaborators / Visiting views) */
+.team-section .cards.cards-compact {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px;
+}
+.cards-compact .member-card { padding: 16px 14px; }
+.cards-compact .member-photo { width: 64px; height: 64px; margin-bottom: 10px; }
+.cards-compact .member-photo-fallback { font-size: 1.4rem; }
+.cards-compact .member-card h4 { font-size: 0.98rem; }
+.cards-compact .member-role { font-size: 0.7rem; }
+.cards-compact .member-affil { font-size: 0.8rem; margin-top: 6px; }
+.cards-compact .member-card .member-topics { font-size: 0.76rem; }
+.cards-compact .card-foot { padding-top: 10px; }
+.cards-compact .readmore { font-size: 0.82rem; }
+
 /* =========================================================================
    Leadership block (home)
    ========================================================================= */
